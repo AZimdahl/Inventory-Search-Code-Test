@@ -1,12 +1,12 @@
 // pages/index-page/index-page.component.ts
 
 // TypeScript
-import {ChangeDetectionStrategy, Component, OnDestroy} from '@angular/core';
-import {FormBuilder, Validators} from '@angular/forms';
-import {BehaviorSubject, merge, Subject} from 'rxjs';
-import {debounceTime, filter, map, shareReplay, startWith, switchMap, takeUntil, tap} from 'rxjs/operators';
-import {InventoryItem, InventorySearchQuery, SearchBy,} from '../../models/inventory-search.models';
-import {InventorySearchApiService} from '../../services/inventory-search-api.service';
+import { ChangeDetectionStrategy, Component, OnDestroy } from '@angular/core';
+import { FormBuilder, Validators } from '@angular/forms';
+import { BehaviorSubject, merge, Subject } from 'rxjs';
+import { debounceTime, filter, map, shareReplay, startWith, switchMap, takeUntil, tap } from 'rxjs/operators';
+import { InventoryItem, InventorySearchQuery, SearchBy, } from '../../models/inventory-search.models';
+import { InventorySearchApiService } from '../../services/inventory-search-api.service';
 import { InjectionToken, Inject, OnInit, Optional } from '@angular/core';
 import { finalize } from 'rxjs/operators';
 
@@ -33,8 +33,14 @@ export class IndexPageComponent implements OnDestroy, OnInit {
    * - Keep a configurable debounce value (overridable via DI) for throttling user actions.
    * - Create a form group with fields for criteria, by, branches, and onlyAvailable.
    */
-  // (Implement fields here)
-
+  // (Implement fields here)\
+  _debounce = 50;
+  loading$: BehaviorSubject<boolean> = new BehaviorSubject<boolean>(false);
+  errorMessage: string | null = null;
+  form: ReturnType<FormBuilder['group']>;
+  items$: Subject<InventoryItem[]> = new Subject<InventoryItem[]>();
+  total$: Subject<number> = new Subject<number>();
+  pageSize = 10;
 
   constructor(
     private readonly fb: FormBuilder,
@@ -62,7 +68,7 @@ export class IndexPageComponent implements OnDestroy, OnInit {
    */
 
   ngOnInit(): void {
-// implement the code
+    // implement the code
   }
 
   ngOnDestroy(): void {
@@ -70,7 +76,22 @@ export class IndexPageComponent implements OnDestroy, OnInit {
   }
 
   onSearch() {
- // implement the search
+    // implement the search
+    const query = this.buildQuery();
+    this.api.search(query).pipe(
+      finalize(() => this.loading$.next(false))
+    ).subscribe({
+      next: (response) => {
+        this.errorMessage = null;
+        if (response?.data) {
+          this.items$.next(response.data.items);
+          this.total$.next(response.data.total);
+        }
+      },
+      error: (err) => {
+        this.errorMessage = 'Search failed. Please try again.';
+      }
+    });
   }
 
   onEnterKey() {
@@ -79,20 +100,26 @@ export class IndexPageComponent implements OnDestroy, OnInit {
   }
 
   onSort(field: keyof InventoryItem) {
-  // implement the sort functionality
+    // implement the sort functionality
   }
 
   onPageChange(pageIndex: number) {
-// implement the required code
+    // implement the required code
   }
   // Handle branches input changes from template
   onBranchesChange(event: Event) {
-// implement the code
+    // implement the code
   }
 
   // Build the query
   private buildQuery(): InventorySearchQuery {
-// implement the code
+    // implement the code
+    return {
+      criteria: this.form.value.criteria,
+      by: this.form.value.by,
+      branches: this.form.value.branches,
+      onlyAvailable: this.form.value.onlyAvailable,
+    } as InventorySearchQuery;
   }
 
   protected readonly String = String;

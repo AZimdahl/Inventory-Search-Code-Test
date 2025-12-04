@@ -40,7 +40,7 @@ export class IndexPageComponent implements OnDestroy, OnInit {
   form: ReturnType<FormBuilder['group']>;
   items$: Subject<InventoryItem[]> = new Subject<InventoryItem[]>();
   total$: Subject<number> = new Subject<number>();
-  pageSize = 10;
+  pageSize = 20;
 
   constructor(
     private readonly fb: FormBuilder,
@@ -84,6 +84,7 @@ export class IndexPageComponent implements OnDestroy, OnInit {
       next: (response) => {
         this.errorMessage = null;
         if (response?.data) {
+          console.log('Search results:', response.data);
           this.items$.next(response.data.items);
           this.total$.next(response.data.total);
         }

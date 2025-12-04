@@ -1,10 +1,10 @@
 //services/inventory-search-api.service.ts
 
 // TypeScript
-import {HttpClient, HttpParams} from '@angular/common/http';
-import {Inject, Injectable, InjectionToken} from '@angular/core';
-import {Observable} from 'rxjs';
-import {shareReplay} from 'rxjs/operators';
+import { HttpClient, HttpParams } from '@angular/common/http';
+import { Inject, Injectable, InjectionToken } from '@angular/core';
+import { Observable } from 'rxjs';
+import { shareReplay } from 'rxjs/operators';
 import {
   ApiEnvelope,
   InventorySearchQuery,
@@ -32,7 +32,7 @@ export class InventorySearchApiService {
   constructor(
     private readonly http: HttpClient,
     @Inject(INVENTORY_API_BASE) private readonly baseUrl: string
-  ) {}
+  ) { }
 
   search(query: InventorySearchQuery): Observable<ApiEnvelope<PagedInventoryResponse>> {
 
@@ -47,7 +47,51 @@ export class InventorySearchApiService {
      * this.http.get<??????>(`${this.baseUrl}/inventory/search`, { params })
      */
 
+    // init cache key
+    const key = this.cacheKey(query);
 
+    // check for cached entry
+    console.log('cache before:', this.cache);
+    const now = Date.now();
+    this.cache = this.cache.filter(e => e.expiry > now);
+    const cached = this.cache.find(e => e.key === key);
+
+    if (cached) {
+      console.log('cached:', cached);
+      return cached.obs$;
+    }
+
+    // init params with paging
+    let params: HttpParams = new HttpParams(
+      {
+        fromObject: {
+          page: query.page?.toString() || '1',
+          size: query.size?.toString() || '20',
+        }
+      }
+    );
+
+    // build params
+    if (query) {
+      params = new HttpParams({
+        fromObject: {
+          criteria: query.criteria,
+          by: query.by,
+          branches: query.branches?.join(',') || '',
+        }
+      });
+
+      if (query.onlyAvailable) params = params.set('onlyAvailable', 'true');
+      if (query.sort) params = params.set('sort', `${query.sort.field}:${query.sort.direction}`);
+    }
+    const response: Observable<ApiEnvelope<PagedInventoryResponse>> = this.http.get<ApiEnvelope<PagedInventoryResponse>>(
+      `${this.baseUrl}/inventory/search`, { params }
+    ).pipe(shareReplay(1));
+
+    // store response
+    this.remember(this.cache, { key, obs$: response });
+
+    return response;
   }
 
   getPeakAvailability(partNumber: string): Observable<ApiEnvelope<PeakAvailability>> {
@@ -60,8 +104,30 @@ export class InventorySearchApiService {
      * - Remember the observable with a TTL (time to live); keep this method free of UI concerns.
      * this.http.get<??????>(`${this.baseUrl}/inventory/availability/peak`, { params})
      */
+    const key = partNumber.trim().toLowerCase();
 
+    // check for cached entry
+    const now = Date.now();
+    this.peakCache = this.peakCache.filter(e => e.expiry > now);
+    const cached = this.peakCache.find(e => e.key === key);
 
+    if (cached) {
+      return cached.obs$;
+    }
+
+    // otherwise, make request
+    // init params
+    const params = new HttpParams({ fromObject: { partNumber } });
+
+    // make request
+    const response: Observable<ApiEnvelope<PeakAvailability>> = this.http.get<ApiEnvelope<PeakAvailability>>(
+      `${this.baseUrl}/inventory/availability/peak`, { params }
+    ).pipe(shareReplay(1));
+
+    // store response
+    this.remember(this.peakCache, { key, obs$: response });
+
+    return response;
   }
 
   /**
@@ -71,23 +137,47 @@ export class InventorySearchApiService {
    * - Think about whether failed results should be cached the same way as successful ones.
    * - Keep this purely about data/memoization; avoid UI/side-effects here.
    */
-
   private remember<T>(
     cache: CacheEntry<T>[],
     entry: { key: string; obs$: Observable<T> }
   ) {
+    const now = Date.now();
 
+    // Evict expired entries
+    cache = cache.filter(e => e.expiry > now);
+    // Evict oldest if at capacity
+    if (cache.length >= CACHE_MAX_ENTRIES) {
+      cache.sort((a, b) => a.expiry - b.expiry);
+      cache.shift();
+    }
+    cache.push({ ...entry, expiry: now + CACHE_TTL_MS });
+
+    // store
+    cache = cache;
+
+    console.log('cache now:', cache);
   }
-  /**
-   * Challenge hint:
-   * - Produce a stable key that uniquely represents the query.
-   * - Normalize values (e.g., trim, lowercase) to avoid duplicate keys for equivalent inputs.
-   * - Ensure ordering doesn’t affect the key (e.g., sort arrays like branches).
-   * - Include every parameter that can change results; omit those that do not.
-   * - Choose delimiters that won’t collide with real data.
-   */
+
 
   private cacheKey(q: InventorySearchQuery): string {
+    /**
+     * Challenge hint:
+     * - Produce a stable key that uniquely represents the query.
+     * - Normalize values (e.g., trim, lowercase) to avoid duplicate keys for equivalent inputs.
+     * - Ensure ordering doesn’t affect the key (e.g., sort arrays like branches).
+     * - Include every parameter that can change results; omit those that do not.
+     * - Choose delimiters that won’t collide with real data.
+     */
+    let key: string;
+    key = q.criteria.trim().toLowerCase();
+    key += `|by:${q.by}`;
+    if (q.branches && q.branches.length > 0) {
+      key += `|branches:${q.branches.map(b => b.trim().toLowerCase()).sort().join(',')}`;
+    }
+    key += `|onlyAvailable:${q.onlyAvailable ? '1' : '0'}`;
+    key += `|page:${q.page || 1}`;
+    key += `|size:${q.size || 20}`;
 
+    return key;
   }
 }

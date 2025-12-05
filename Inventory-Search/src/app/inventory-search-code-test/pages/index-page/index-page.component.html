@@ -30,40 +30,43 @@ Search By
 
   <!-- this is where the search criteria should probably be displayed  and entered
   -->
-  <form [formGroup]="form">
-    <input id="criteria" formControlName="criteria" placeholder="Enter part number, description, or SKU" />
-    <label for="by">Search By</label>
-    <select id="by" formControlName="by">
-      <option value="PartNumber">Part Number</option>
-      <option value="Description">Description</option>
-      <option value="SupplierSKU">Supplier SKU</option>
-    </select>
-    <label for="branches">Branches</label>
-    <select id="branches" formControlName="branches" multiple (change)="onBranchesChange($event)">
-      <option value="SEA">SEA</option>
-      <option value="PDX">PDX</option>
-      <option value="SFO">SFO</option>
-      <option value="LAX">LAX</option>
-      <option value="DEN">DEN</option>
-      <option value="PHX">PHX</option>
-      <option value="DAL">DAL</option>
-      <option value="ORD">ORD</option>
-      <option value="ATL">ATL</option>
-      <option value="JFK">JFK</option>
-    </select>
-    <label for="onlyAvailable">Only Available</label>
-    <input id="onlyAvailable" type="checkbox" formControlName="onlyAvailable" />
-    <button type="button" (click)="onSearch()">Search</button>
+  <form [formGroup]="form" class="form">
+    <div class="row">
+      <label for="criteria">Search Criteria</label>
+      <label for="by">Search By</label>
+      <label for="branches">Branches</label>
+    </div>
+    <div class="row">
+      <input id="criteria" formControlName="criteria" placeholder="Enter part number, description, or SKU" />
+      <select id="by" formControlName="by">
+        <option value="PartNumber">Part Number</option>
+        <option value="Description">Description</option>
+        <option value="SupplierSKU">Supplier SKU</option>
+      </select>
+      <select id="branches" formControlName="branches" multiple (change)="onBranchesChange($event)">
+        <option value="SEA">SEA</option>
+        <option value="PDX">PDX</option>
+        <option value="SFO">SFO</option>
+        <option value="LAX">LAX</option>
+        <option value="DEN">DEN</option>
+        <option value="PHX">PHX</option>
+        <option value="DAL">DAL</option>
+        <option value="ORD">ORD</option>
+        <option value="ATL">ATL</option>
+        <option value="JFK">JFK</option>
+      </select>
+      <div>
+        <label for="onlyAvailable">Only Available</label>
+        <input id="onlyAvailable" type="checkbox" formControlName="onlyAvailable" class="checkbox"/>
+      </div>
+      <button type="button" (click)="onSearch()">Search</button>
+    </div>
   </form>
   <div class="loading" *ngIf="loading$ | async">Loading…</div>
   <!-- Simple inline error display -->
   <div class="error" *ngIf="errorMessage">{{ errorMessage }}</div>
 
-  <inventory-results-table
-    [items]="items$ | async"
-    [total]="(total$ | async) ?? 0"
-    [pageSize]="pageSize"
-    (sort)="onSort($event)"
-    (pageChange)="onPageChange($event)">
+  <inventory-results-table [items]="items$ | async" [total]="(total$ | async) ?? 0" [pageSize]="pageSize"
+    (sort)="onSort($event)" (pageChange)="onPageChange($event)">
   </inventory-results-table>
 </div>

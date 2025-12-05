@@ -62,28 +62,28 @@ export class InventorySearchApiService {
     }
 
     // init params with paging
-    let params: HttpParams = new HttpParams(
-      {
-        fromObject: {
-          page: query.page?.toString() || '1',
-          size: query.size?.toString() || '20',
-        }
-      }
-    );
+    let params: HttpParams = new HttpParams();
 
     // build params
     if (query) {
       params = new HttpParams({
+        ...params,
         fromObject: {
           criteria: query.criteria,
           by: query.by,
-          branches: query.branches?.join(',') || '',
+          page: query.page?.toString() || '0',
+          size: query.size?.toString() || '20',
         }
       });
 
-      if (query.onlyAvailable) params = params.set('onlyAvailable', 'true');
+      if (query.onlyAvailable) params = params.set('onlyAvailable', 'true'); // only needs to be passed when true
       if (query.sort) params = params.set('sort', `${query.sort.field}:${query.sort.direction}`);
+      if (query.branches && query.branches.length > 0) {
+        params = params.set('branches', query.branches.join(','));
+      }
     }
+
+    // make request
     const response: Observable<ApiEnvelope<PagedInventoryResponse>> = this.http.get<ApiEnvelope<PagedInventoryResponse>>(
       `${this.baseUrl}/inventory/search`, { params }
     ).pipe(shareReplay(1));
@@ -117,7 +117,7 @@ export class InventorySearchApiService {
 
     // otherwise, make request
     // init params
-    const params = new HttpParams({ fromObject: { partNumber } });
+    const params: HttpParams = new HttpParams({ fromObject: { partNumber } });
 
     // make request
     const response: Observable<ApiEnvelope<PeakAvailability>> = this.http.get<ApiEnvelope<PeakAvailability>>(
@@ -143,19 +143,18 @@ export class InventorySearchApiService {
   ) {
     const now = Date.now();
 
-    // Evict expired entries
-    cache = cache.filter(e => e.expiry > now);
+    // Evict expired entries (mutate in place)
+    for (let i = cache.length - 1; i >= 0; i--) {
+      if (cache[i].expiry <= now) {
+        cache.splice(i, 1);
+      }
+    }
     // Evict oldest if at capacity
     if (cache.length >= CACHE_MAX_ENTRIES) {
       cache.sort((a, b) => a.expiry - b.expiry);
-      cache.shift();
+      cache.splice(0, 1);
     }
     cache.push({ ...entry, expiry: now + CACHE_TTL_MS });
-
-    // store
-    cache = cache;
-
-    console.log('cache now:', cache);
   }
 
 

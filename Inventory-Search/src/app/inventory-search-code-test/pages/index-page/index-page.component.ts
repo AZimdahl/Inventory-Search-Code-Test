@@ -2,7 +2,7 @@
 
 // TypeScript
 import { ChangeDetectionStrategy, Component, OnDestroy } from '@angular/core';
-import { FormBuilder, Validators } from '@angular/forms';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { BehaviorSubject, merge, Subject } from 'rxjs';
 import { debounceTime, filter, map, shareReplay, startWith, switchMap, takeUntil, tap } from 'rxjs/operators';
 import { InventoryItem, InventorySearchQuery, SearchBy, } from '../../models/inventory-search.models';
@@ -33,14 +33,15 @@ export class IndexPageComponent implements OnDestroy, OnInit {
    * - Keep a configurable debounce value (overridable via DI) for throttling user actions.
    * - Create a form group with fields for criteria, by, branches, and onlyAvailable.
    */
-  // (Implement fields here)\
-  _debounce = 50;
+  // (Implement fields here)
+  private _debounce = 0;
+  private query$ = new Subject<InventorySearchQuery>();
+  form: FormGroup;
+  pageSize = 20;
+  total$: BehaviorSubject<number> = new BehaviorSubject<number>(0);
+  items$: BehaviorSubject<InventoryItem[]> = new BehaviorSubject<InventoryItem[]>([]);
   loading$: BehaviorSubject<boolean> = new BehaviorSubject<boolean>(false);
   errorMessage: string | null = null;
-  form: ReturnType<FormBuilder['group']>;
-  items$: Subject<InventoryItem[]> = new Subject<InventoryItem[]>();
-  total$: Subject<number> = new Subject<number>();
-  pageSize = 20;
 
   constructor(
     private readonly fb: FormBuilder,
@@ -68,29 +69,39 @@ export class IndexPageComponent implements OnDestroy, OnInit {
    */
 
   ngOnInit(): void {
-    // implement the code
+    // Trigger initial search
+    this.onSearch();
   }
 
   ngOnDestroy(): void {
-    // implement the cleanup
+    this.loading$.complete();
+    this.items$.complete();
+    this.total$.complete();
   }
 
   onSearch() {
-    // implement the search
     const query = this.buildQuery();
+
+    this.loading$.next(true); // start loading indicator
+    this.errorMessage = null; // reset error message
+
     this.api.search(query).pipe(
       finalize(() => this.loading$.next(false))
     ).subscribe({
       next: (response) => {
         this.errorMessage = null;
-        if (response?.data) {
-          console.log('Search results:', response.data);
+
+        // check for failure
+        if (response.isFailed) {
+          this.errorMessage = response.message || 'Search failed. Please try again.';
+          this.items$.next([]);
+        } else if (response.data) {
           this.items$.next(response.data.items);
           this.total$.next(response.data.total);
         }
       },
       error: (err) => {
-        this.errorMessage = 'Search failed. Please try again.';
+        this.errorMessage = err?.message || 'Search failed. Please try again.';
       }
     });
   }
@@ -115,12 +126,16 @@ export class IndexPageComponent implements OnDestroy, OnInit {
   // Build the query
   private buildQuery(): InventorySearchQuery {
     // implement the code
-    return {
+    const query: InventorySearchQuery = {
       criteria: this.form.value.criteria,
       by: this.form.value.by,
       branches: this.form.value.branches,
       onlyAvailable: this.form.value.onlyAvailable,
-    } as InventorySearchQuery;
+      page: 0,
+      size: 20,
+    };
+
+    return query;
   }
 
   protected readonly String = String;

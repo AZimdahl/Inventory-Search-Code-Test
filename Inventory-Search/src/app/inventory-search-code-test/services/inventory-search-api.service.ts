@@ -86,8 +86,8 @@ export class InventorySearchApiService {
       `${this.baseUrl}/inventory/search`, { params }
     ).pipe(shareReplay(1));
 
-    // store response
-    this.remember(this.cache, { key, obs$: response });
+    // store response - only cache successful results, not failed ones
+    this.remember(this.cache, { key, obs$: response }, (result) => !result.isFailed);
 
     return response;
   }
@@ -122,8 +122,8 @@ export class InventorySearchApiService {
       `${this.baseUrl}/inventory/availability/peak`, { params }
     ).pipe(shareReplay(1));
 
-    // store response
-    this.remember(this.peakCache, { key, obs$: response });
+    // store response - only cache successful results, not failed ones
+    this.remember(this.peakCache, { key, obs$: response }, (result) => !result.isFailed);
 
     return response;
   }
@@ -137,7 +137,8 @@ export class InventorySearchApiService {
    */
   private remember<T>(
     cache: CacheEntry<T>[],
-    entry: { key: string; obs$: Observable<T> }
+    entry: { key: string; obs$: Observable<T> },
+    shouldCache?: (result: T) => boolean
   ) {
     const now = Date.now();
 
@@ -147,6 +148,30 @@ export class InventorySearchApiService {
         cache.splice(i, 1);
       }
     }
+
+    // If shouldCache provided, subscribe once to check if we should cache this result
+    if (shouldCache) {
+      entry.obs$.subscribe({
+        next: (result) => {
+          if (shouldCache(result)) {
+            this.addToCache(cache, entry, now);
+          }
+        },
+        error: () => {
+          // Don't cache errors - allow retry on network failures
+        }
+      });
+    } else {
+      // No filter, cache immediately
+      this.addToCache(cache, entry, now);
+    }
+  }
+
+  private addToCache<T>(
+    cache: CacheEntry<T>[],
+    entry: { key: string; obs$: Observable<T> },
+    now: number
+  ) {
     // Evict oldest if at capacity
     if (cache.length >= CACHE_MAX_ENTRIES) {
       cache.sort((a, b) => a.expiry - b.expiry);
@@ -179,8 +204,6 @@ export class InventorySearchApiService {
       // no need to sort or normalize branches as selection order is preserved using multiple select and are not typed values
       key += `|branches:${q.branches.join(',')}`;
     }
-
-    console.log('Cache key:', key);
 
     return key;
   }

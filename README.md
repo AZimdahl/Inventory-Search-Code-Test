@@ -16,12 +16,7 @@
 
 ## TODO:
 * Fix:
-  * Branches not clickable anymore?
 * Feat:
-  * Handle failing response in cache
-    * Attaching failing incrementer to cache value
-      * increment fail value each attempt
-      * limit number of failed attempts until key expires
   * UI/UX
     * Table styling
     * Form styling

@@ -178,7 +178,7 @@ export class IndexPageComponent implements OnDestroy, OnInit {
   private handleSearchResponse(response: any): void {
     this.errorMessage = null;
 
-    if (response.isFailed) this.handleSearchError(response.message);
+    if (response.isFailed) this.handleSearchError(response);
     else if (response.data) {
       this.items$.next(response.data.items);
       this.total$.next(response.data.total);

@@ -111,7 +111,7 @@ export class ResultsTableComponent {
 
   private handlePeakResponse(response: any, partNumber: string): void {
     this.errorMessage = null;
-    if (response.isFailed) this.handlePeakError(response.message, partNumber);
+    if (response.isFailed) this.handlePeakError(response, partNumber);
     else if (response.data) {
       this.peakByPart = { ...this.peakByPart, [partNumber]: response.data };
     }

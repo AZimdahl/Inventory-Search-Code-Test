@@ -19,9 +19,15 @@
  -->
 <table>
   <thead>
-
+    <tr>
+      <th></th>
+      <th *ngFor="let h of headers" (click)="onHeaderClick(h.field)" class="sortable">
+        {{ h.label }}
+      </th>
+      <th>Actions</th>
+    </tr>
   </thead>
-<!-- Data rows
+  <!-- Data rows
 hint use <button (click)="toggleExpand(item)" aria-label="expand row">▸</button>
 with appropriate class to expand/collapse the row on first column click
 use           (click)="onPeakButton(item)" for peakAvailability button
@@ -45,7 +51,58 @@ Lots
 {{ b.branch }}: {{ b.qty }}
   -->
   <tbody>
+    <ng-container *ngFor="let item of items">
+      <tr>
+        <td>
+          <button (click)="toggleExpand(item)" aria-label="expand row" class="expand-btn"
+            [class.expanded]="expanded[item.partNumber]">
+            {{ expanded[item.partNumber] ? '▾' : '▸' }}
+          </button>
+        </td>
+        <td>{{ item.partNumber }}</td>
+        <td>{{ item.supplierSku }}</td>
+        <td>{{ item.description }}</td>
+        <td>{{ item.branch }}</td>
+        <td>{{ item.availableQty }}</td>
+        <td>{{ item.uom }}</td>
+        <td>{{ item.leadTimeDays ?? '--' }}</td>
+        <td>{{ (item.lastPurchaseDate | date:'MMM d, y - h:mm a') || '--' }}</td>
+        <td>
+          <button (click)="onPeakButton(item)" [disabled]="peakLoading[item.partNumber]">
+            {{ peakLoading[item.partNumber] ? 'Loading...' : 'Peak Availability' }}
+          </button>
+        </td>
+      </tr>
+      <tr *ngIf="expanded[item.partNumber]" class="expanded-row">
+        <td colspan="10">
+          <div class="expanded-content">
+            <div class="lots-section" *ngIf="item.lots && item.lots.length > 0; else noLots">
+              <strong>Lots:</strong>
+              <ul *ngFor="let lot of item.lots" class="lot-item">
+                <li>Lot {{ lot.lotNumber }} — Qty {{ lot.qty }} — Exp {{ (lot.expirationDate | date:'MMM d, y - h:mm a') || 'N/A' }}</li>
+              </ul>
+            </div>
+            <ng-template #noLots>
+              <div class="no-lots">No lot details available.</div>
+            </ng-template>
 
+            <div class="peak-section" *ngIf="peakByPart[item.partNumber]; else noPeak">
+              <div><strong>Part:</strong> {{ peakByPart[item.partNumber]?.partNumber || item.partNumber }}</div>
+              <div><strong>Total available:</strong> {{ peakByPart[item.partNumber]?.totalAvailable ?? 0 }}</div>
+              <div><strong>By branch:</strong></div>
+              <ul *ngFor="let b of peakByPart[item.partNumber]?.branches" class="branch-qty">
+                <li>{{ b.branch }}: {{ b.qty }}</li>
+              </ul>
+            </div>
+
+            <ng-template #noPeak>
+              <div class="no-peak">No peak availability loaded yet. Use the "Peak Availability" button to load data.
+              </div>
+            </ng-template>
+          </div>
+        </td>
+      </tr>
+    </ng-container>
   </tbody>
 </table>
 

@@ -16,6 +16,7 @@ export interface InventorySearchQuery {
 
 export type InventoryItemSortableFields =
   | 'partNumber'
+  | 'supplierSku'
   | 'description'
   | 'branch'
   | 'availableQty'

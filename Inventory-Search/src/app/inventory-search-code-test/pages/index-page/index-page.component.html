@@ -37,13 +37,13 @@ Search By
       <label for="branches">Branches</label>
     </div>
     <div class="row">
-      <input id="criteria" formControlName="criteria" placeholder="Enter part number, description, or SKU" />
+      <input id="criteria" formControlName="criteria" placeholder="Enter part number, description, or SKU" (keyup.enter)="onEnterKey()" />
       <select id="by" formControlName="by">
         <option value="PartNumber">Part Number</option>
         <option value="Description">Description</option>
         <option value="SupplierSKU">Supplier SKU</option>
       </select>
-      <select id="branches" formControlName="branches" multiple (change)="onBranchesChange($event)">
+      <select id="branches" formControlName="branches" multiple>
         <option value="SEA">SEA</option>
         <option value="PDX">PDX</option>
         <option value="SFO">SFO</option>
@@ -57,8 +57,10 @@ Search By
       </select>
       <div>
         <label for="onlyAvailable">Only Available</label>
-        <input id="onlyAvailable" type="checkbox" formControlName="onlyAvailable" class="checkbox"/>
+        <input id="onlyAvailable" type="checkbox" formControlName="onlyAvailable" class="checkbox" />
       </div>
+    </div>
+    <div class="row">
       <button type="button" (click)="onSearch()">Search</button>
     </div>
   </form>

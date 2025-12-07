@@ -51,13 +51,11 @@ export class InventorySearchApiService {
     const key = this.cacheKey(query);
 
     // check for cached entry
-    console.log('cache before:', this.cache);
     const now = Date.now();
     this.cache = this.cache.filter(e => e.expiry > now);
     const cached = this.cache.find(e => e.key === key);
 
     if (cached) {
-      console.log('cached:', cached);
       return cached.obs$;
     }
 
@@ -73,10 +71,10 @@ export class InventorySearchApiService {
           by: query.by,
           page: query.page?.toString() || '0',
           size: query.size?.toString() || '20',
+          onlyAvailable: query.onlyAvailable || 'false',
         }
       });
 
-      if (query.onlyAvailable) params = params.set('onlyAvailable', 'true'); // only needs to be passed when true
       if (query.sort) params = params.set('sort', `${query.sort.field}:${query.sort.direction}`);
       if (query.branches && query.branches.length > 0) {
         params = params.set('branches', query.branches.join(','));
@@ -170,12 +168,19 @@ export class InventorySearchApiService {
     let key: string;
     key = q.criteria.trim().toLowerCase();
     key += `|by:${q.by}`;
-    if (q.branches && q.branches.length > 0) {
-      key += `|branches:${q.branches.map(b => b.trim().toLowerCase()).sort().join(',')}`;
-    }
-    key += `|onlyAvailable:${q.onlyAvailable ? '1' : '0'}`;
-    key += `|page:${q.page || 1}`;
+    key += `|onlyAvailable:${q.onlyAvailable ? 'true' : 'false'}`;
+    key += `|page:${q.page || 0}`;
     key += `|size:${q.size || 20}`;
+
+    if (q.sort) {
+      key += `|sort:${q.sort.field}:${q.sort.direction}`;
+    }
+    if (q.branches && q.branches.length > 0) {
+      // no need to sort or normalize branches as selection order is preserved using multiple select and are not typed values
+      key += `|branches:${q.branches.join(',')}`;
+    }
+
+    console.log('Cache key:', key);
 
     return key;
   }

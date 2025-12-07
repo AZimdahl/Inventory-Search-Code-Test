@@ -4,11 +4,10 @@
 import { ChangeDetectionStrategy, Component, OnDestroy } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { BehaviorSubject, merge, Subject } from 'rxjs';
-import { debounceTime, filter, map, shareReplay, startWith, switchMap, takeUntil, tap } from 'rxjs/operators';
-import { InventoryItem, InventorySearchQuery, SearchBy, } from '../../models/inventory-search.models';
+import { debounceTime, filter, finalize, switchMap, takeUntil, tap } from 'rxjs/operators';
+import { InventoryItem, InventoryItemSortableFields, InventorySearchQuery, SearchBy, } from '../../models/inventory-search.models';
 import { InventorySearchApiService } from '../../services/inventory-search-api.service';
 import { InjectionToken, Inject, OnInit, Optional } from '@angular/core';
-import { finalize } from 'rxjs/operators';
 
 type SortDir = 'asc' | 'desc';
 interface SortState { field: keyof InventoryItem | ''; direction: SortDir; }
@@ -33,14 +32,20 @@ export class IndexPageComponent implements OnDestroy, OnInit {
    * - Keep a configurable debounce value (overridable via DI) for throttling user actions.
    * - Create a form group with fields for criteria, by, branches, and onlyAvailable.
    */
-  // (Implement fields here)
-  private _debounce = 0;
-  private query$ = new Subject<InventorySearchQuery>();
+  private _debounce = 50; // default 50ms
+  private destroy$ = new Subject<void>();
+  private searchTrigger$ = new Subject<void>();
+  private sortChange$ = new Subject<SortState>();
+  private pageChange$ = new Subject<number>();
+
   form: FormGroup;
   pageSize = 20;
-  total$: BehaviorSubject<number> = new BehaviorSubject<number>(0);
-  items$: BehaviorSubject<InventoryItem[]> = new BehaviorSubject<InventoryItem[]>([]);
-  loading$: BehaviorSubject<boolean> = new BehaviorSubject<boolean>(false);
+  currentPage = 0;
+  currentSort: SortState = { field: '', direction: 'asc' };
+
+  total$ = new BehaviorSubject<number>(0);
+  items$ = new BehaviorSubject<InventoryItem[]>([]);
+  loading$ = new BehaviorSubject<boolean>(false);
   errorMessage: string | null = null;
 
   constructor(
@@ -69,41 +74,62 @@ export class IndexPageComponent implements OnDestroy, OnInit {
    */
 
   ngOnInit(): void {
+    // Compose the reactive search pipeline
+    // Merge all three input streams: manual search, sort changes, and page changes
+    merge(
+      this.searchTrigger$.pipe(
+        tap(() => this.currentPage = 0) // Reset page when new search is triggered
+      ),
+      this.pageChange$.pipe(
+        tap((pageIndex) => this.currentPage = pageIndex) // Update current page
+      ),
+      this.sortChange$.pipe(
+        tap((sortState) => {
+          // Update sort state and reset page
+          this.currentSort = sortState;
+          this.currentPage = 0;
+        })
+      ),
+    )
+      .pipe(
+        debounceTime(this._debounce), // Debounce to throttle rapid user interactions
+        filter(() => this.form.valid), // Only proceed if form is valid
+        tap(() => {
+          this.loading$.next(true);
+          this.errorMessage = null;
+        }),
+        switchMap(() => {
+          // Transform to query and execute search
+          const query = this.buildQuery();
+          return this.api.search(query).pipe(
+            finalize(() => this.loading$.next(false))
+          );
+        }),
+        takeUntil(this.destroy$) // Cleanup on destroy
+      )
+      .subscribe({
+        next: (response) => this.handleSearchResponse(response),
+        error: (err) => this.handleSearchError(err)
+      });
+
     // Trigger initial search
-    this.onSearch();
+    this.searchTrigger$.next();
   }
 
   ngOnDestroy(): void {
+    this.destroy$.next();
+    this.destroy$.complete();
+    this.searchTrigger$.complete();
+    this.sortChange$.complete();
+    this.pageChange$.complete();
     this.loading$.complete();
     this.items$.complete();
     this.total$.complete();
   }
 
   onSearch() {
-    const query = this.buildQuery();
-
-    this.loading$.next(true); // start loading indicator
-    this.errorMessage = null; // reset error message
-
-    this.api.search(query).pipe(
-      finalize(() => this.loading$.next(false))
-    ).subscribe({
-      next: (response) => {
-        this.errorMessage = null;
-
-        // check for failure
-        if (response.isFailed) {
-          this.errorMessage = response.message || 'Search failed. Please try again.';
-          this.items$.next([]);
-        } else if (response.data) {
-          this.items$.next(response.data.items);
-          this.total$.next(response.data.total);
-        }
-      },
-      error: (err) => {
-        this.errorMessage = err?.message || 'Search failed. Please try again.';
-      }
-    });
+    // Trigger the reactive search pipeline
+    this.searchTrigger$.next();
   }
 
   onEnterKey() {
@@ -113,29 +139,56 @@ export class IndexPageComponent implements OnDestroy, OnInit {
 
   onSort(field: keyof InventoryItem) {
     // implement the sort functionality
+    const direction: SortDir = (
+      this.currentSort.field === field && this.currentSort.direction === 'asc'
+        ? 'desc'
+        : 'asc'
+    );
+
+    this.sortChange$.next({ field, direction });
   }
 
   onPageChange(pageIndex: number) {
-    // implement the required code
-  }
-  // Handle branches input changes from template
-  onBranchesChange(event: Event) {
-    // implement the code
+    // Emit page change to the reactive pipeline
+    this.pageChange$.next(pageIndex);
   }
 
-  // Build the query
+  // Build the query from current form state and pagination/sort state
   private buildQuery(): InventorySearchQuery {
-    // implement the code
     const query: InventorySearchQuery = {
       criteria: this.form.value.criteria,
       by: this.form.value.by,
-      branches: this.form.value.branches,
-      onlyAvailable: this.form.value.onlyAvailable,
-      page: 0,
-      size: 20,
+      branches: this.form.value.branches || [],
+      onlyAvailable: this.form.value.onlyAvailable || false,
+      page: this.currentPage,
+      size: this.pageSize,
     };
 
+    // Add sort if a field is selected
+    if (this.currentSort.field) {
+      query.sort = {
+        field: this.currentSort.field as InventoryItemSortableFields,
+        direction: this.currentSort.direction
+      };
+    }
+
     return query;
+  }
+
+  private handleSearchResponse(response: any): void {
+    this.errorMessage = null;
+
+    if (response.isFailed) this.handleSearchError(response.message);
+    else if (response.data) {
+      this.items$.next(response.data.items);
+      this.total$.next(response.data.total);
+    }
+  }
+
+  private handleSearchError(err: any): void {
+    this.errorMessage = err?.message || 'Search failed. Please try again.';
+    this.items$.next([]);
+    this.total$.next(0);
   }
 
   protected readonly String = String;

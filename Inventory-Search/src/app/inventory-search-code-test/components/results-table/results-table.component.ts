@@ -1,8 +1,8 @@
 //components/results-table/results-table.component.ts
 
 // TypeScript
-import {ChangeDetectionStrategy, Component, EventEmitter, Input, Output} from '@angular/core';
-import {InventoryItem, PeakAvailability} from '../../models/inventory-search.models';
+import { ChangeDetectionStrategy, ChangeDetectorRef, Component, EventEmitter, Input, Output } from '@angular/core';
+import { InventoryItem, PeakAvailability } from '../../models/inventory-search.models';
 import { InventorySearchApiService } from '../../services/inventory-search-api.service';
 
 
@@ -42,30 +42,61 @@ export class ResultsTableComponent {
 
   constructor(
     private readonly api: InventorySearchApiService,
-  ) {}
+    private readonly cdr: ChangeDetectorRef
+  ) { }
 
   onHeaderClick(field: keyof InventoryItem) {
     // The data to be sorted on the column
+    this.pageIndex = 0; // reset to first page on sort
+    this.sort.emit(field);
   }
 
   toggleExpand(item: InventoryItem) {
     // Toggle the expanded state of a row
+    const key = item.partNumber;
+    this.expanded = { ...this.expanded, [key]: !this.expanded[key] };
+    this.cdr.markForCheck();
   }
-
 
   // Fetch peak availability for a given item/part
   fetchPeakAvailability(item: InventoryItem) {
     // Needs to call the API to get the peak availability for the part
     // on an error
     // Failed to load peak availability along with any error returned by the API
+    const key = item.partNumber;
 
+    // Set loading state with immutable update
+    this.peakLoading = { ...this.peakLoading, [key]: true };
+    this.errorMessage = null;
+    this.cdr.markForCheck();
+
+    this.api.getPeakAvailability(item.partNumber).subscribe({
+      next: (response) => {
+        this.peakLoading = { ...this.peakLoading, [key]: false };
+        this.handlePeakResponse(response, key);
+        this.cdr.markForCheck();
+      },
+      error: (err) => {
+        this.peakLoading = { ...this.peakLoading, [key]: false };
+        this.handlePeakError(err, key);
+        this.cdr.markForCheck();
+      }
+    });
   }
 
   // Convenience: fetch and expand inline panel
   onPeakButton(item: InventoryItem) {
+    const key = item.partNumber;
 
     // Expand the row if not expanded
+    if (!this.expanded[key]) {
+      this.expanded[key] = true;
+    }
 
+    // Fetch peak availability if not already loaded
+    if (!this.peakByPart[key] && !this.peakLoading[key]) {
+      this.fetchPeakAvailability(item);
+    }
   }
 
   totalPages(total: number, size: number) {
@@ -74,5 +105,20 @@ export class ResultsTableComponent {
 
   goTo(page: number) {
     // go to specific page
+    this.pageIndex = page;
+    this.pageChange.emit(page);
+  }
+
+  private handlePeakResponse(response: any, partNumber: string): void {
+    this.errorMessage = null;
+    if (response.isFailed) this.handlePeakError(response.message, partNumber);
+    else if (response.data) {
+      this.peakByPart = { ...this.peakByPart, [partNumber]: response.data };
+    }
+  }
+
+  private handlePeakError(err: any, partNumber: string): void {
+    this.errorMessage = `Failed to load peak availability: ${err?.message || 'Unknown error'}`;
+    this.peakByPart = { ...this.peakByPart, [partNumber]: null };
   }
 }

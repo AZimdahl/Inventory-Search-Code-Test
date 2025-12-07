@@ -1,13 +1,12 @@
 // pages/index-page/index-page.component.ts
 
 // TypeScript
-import { ChangeDetectionStrategy, Component, OnDestroy } from '@angular/core';
+import { ChangeDetectionStrategy, Component, OnDestroy, InjectionToken, Inject, OnInit, Optional } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { BehaviorSubject, merge, Subject } from 'rxjs';
 import { debounceTime, filter, finalize, switchMap, takeUntil, tap } from 'rxjs/operators';
 import { InventoryItem, InventoryItemSortableFields, InventorySearchQuery, SearchBy, } from '../../models/inventory-search.models';
 import { InventorySearchApiService } from '../../services/inventory-search-api.service';
-import { InjectionToken, Inject, OnInit, Optional } from '@angular/core';
 
 type SortDir = 'asc' | 'desc';
 interface SortState { field: keyof InventoryItem | ''; direction: SortDir; }
@@ -151,6 +150,11 @@ export class IndexPageComponent implements OnDestroy, OnInit {
   onPageChange(pageIndex: number) {
     // Emit page change to the reactive pipeline
     this.pageChange$.next(pageIndex);
+  }
+
+  // Handle branches input changes from template
+  onBranchesChange(event: Event) {
+
   }
 
   // Build the query from current form state and pagination/sort state

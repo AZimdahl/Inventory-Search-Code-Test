@@ -17,8 +17,6 @@
     dotnet run
     ```
 
-
-
 2. **Start the frontend**:
   1. Navigate to `./Inventory-Search` in a bash terminal
   2. Run:
@@ -48,5 +46,4 @@
 * Feat:
   * Set up FE unit tests
 * .NET
-  * C# Files
   * Test cases

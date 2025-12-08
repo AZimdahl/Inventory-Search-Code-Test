@@ -152,11 +152,6 @@ export class IndexPageComponent implements OnDestroy, OnInit {
     this.pageChange$.next(pageIndex);
   }
 
-  // Handle branches input changes from template
-  onBranchesChange(event: Event) {
-
-  }
-
   // Build the query from current form state and pagination/sort state
   private buildQuery(): InventorySearchQuery {
     const query: InventorySearchQuery = {
@@ -186,6 +181,10 @@ export class IndexPageComponent implements OnDestroy, OnInit {
     else if (response.data) {
       this.items$.next(response.data.items);
       this.total$.next(response.data.total);
+
+      if (response.data.total === 0) {
+        this.errorMessage = 'No results found.';
+      }
     }
   }
 

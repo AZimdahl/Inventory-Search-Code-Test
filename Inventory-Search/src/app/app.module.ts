@@ -6,6 +6,7 @@ import {AppComponent} from './app.component';
 // Import the code-test feature module
 import {InventorySearchCodeTestModule} from './inventory-search-code-test/inventory-search.module';
 import {INVENTORY_API_BASE} from './inventory-search-code-test/services/inventory-search-api.service';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 
 @NgModule({
   declarations: [AppComponent],
@@ -15,7 +16,8 @@ import {INVENTORY_API_BASE} from './inventory-search-code-test/services/inventor
   ],
   providers: [
     // Point to your mock server or real API
-    { provide: INVENTORY_API_BASE, useValue: 'http://localhost:3001/api' }
+    { provide: INVENTORY_API_BASE, useValue: 'http://localhost:3001/api' },
+    provideAnimationsAsync()
   ],
   bootstrap: [AppComponent]
 })

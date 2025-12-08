@@ -12,17 +12,16 @@
   * Prompted to write base code after getting stuck to correct incorrect code and engineer base level functionality. Then I review the code to make sure it makes sense to me and will refactor as needed to either fix bugs or to resolve other needs/enhance desired behavior
 * Google Search
   * Help with knowledge gaps and using unfamiliar concepts
-
+* Angular Material
+  * Installed Angular package for visually better UI components and simpler to implement to use for forms
+  * Used for Input, Select, Multiselect, Button, Tooltips and Icons
 
 ## TODO:
 * Fix:
 * Feat:
   * UI/UX
     * Table styling
-    * Form styling
-      * Branches to have checkboxes to show multi-select
     * Lots and peak styling
-    * Rendering page nav only after data exists
     * I'm thinking show only the Search button with a confirmation modal that shows all the search options, w/ a generated summary in logical format for easy to read/understand
     * improve pagination
       * page size change

@@ -32,43 +32,61 @@ Search By
   -->
   <form [formGroup]="form" class="form">
     <div class="row">
-      <label for="criteria">Search Criteria</label>
-      <label for="by">Search By</label>
-      <label for="branches">Branches</label>
-    </div>
-    <div class="row">
-      <input id="criteria" formControlName="criteria" placeholder="Enter part number, description, or SKU" (keyup.enter)="onEnterKey()" />
-      <select id="by" formControlName="by">
-        <option value="PartNumber">Part Number</option>
-        <option value="Description">Description</option>
-        <option value="SupplierSKU">Supplier SKU</option>
-      </select>
-      <!-- <select id="branches" formControlName="branches" multiple>
-        <option value="SEA">SEA</option>
-        <option value="PDX">PDX</option> 
-        <option value="SFO">SFO</option>
-        <option value="LAX">LAX</option>
-        <option value="DEN">DEN</option>
-        <option value="PHX">PHX</option>
-        <option value="DAL">DAL</option>
-        <option value="ORD">ORD</option>
-        <option value="ATL">ATL</option>
-        <option value="JFK">JFK</option>
-      </select> -->
-      <div>
-        <label for="onlyAvailable">Only Available</label>
-        <input id="onlyAvailable" type="checkbox" formControlName="onlyAvailable" class="checkbox" />
-      </div>
-    </div>
-    <div class="row">
-      <button type="button" (click)="onSearch()">Search</button>
+      <!-- Search Button -->
+      <button mat-fab extended (click)="onSearch()" [disabled]="!form.get('criteria')?.value || (loading$ | async)"
+        disabledInteractive [matTooltip]="!form.get('criteria')?.value ? 'Enter search criteria' : ''"
+        aria-label="search button">
+        <mat-icon>search</mat-icon>
+        Search
+      </button>
+
+      <!-- Search Criteria -->
+      <mat-form-field>
+        <mat-label for="criteria">Search Criteria</mat-label>
+        <input matInput id="criteria" formControlName="criteria" placeholder="Enter part number, description, or SKU"
+          (keyup.enter)="onEnterKey()" />
+      </mat-form-field>
+
+      <!-- Search By -->
+      <mat-form-field>
+        <mat-label for="by">Search By</mat-label>
+        <mat-select id="by" formControlName="by">
+          <mat-option value="PartNumber">Part Number</mat-option>
+          <mat-option value="Description">Description</mat-option>
+          <mat-option value="SupplierSKU">Supplier SKU</mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <!-- Branches -->
+      <mat-form-field>
+        <mat-label for="branches">Branches</mat-label>
+        <mat-select id="branches" formControlName="branches" multiple
+          matTooltip="Select one or more branches to filter results">
+          <mat-option value="SEA">SEA</mat-option>
+          <mat-option value="PDX">PDX</mat-option>
+          <mat-option value="SFO">SFO</mat-option>
+          <mat-option value="LAX">LAX</mat-option>
+          <mat-option value="DEN">DEN</mat-option>
+          <mat-option value="PHX">PHX</mat-option>
+          <mat-option value="DAL">DAL</mat-option>
+          <mat-option value="ORD">ORD</mat-option>
+          <mat-option value="ATL">ATL</mat-option>
+          <mat-option value="JFK">JFK</mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <!-- Only Available -->
+      <mat-checkbox id="onlyAvailable" formControlName="onlyAvailable" labelPosition="after"
+        matTooltip="Show only available items">
+        Only Available
+      </mat-checkbox>
     </div>
   </form>
   <div class="loading" *ngIf="loading$ | async">Loading…</div>
   <!-- Simple inline error display -->
   <div class="error" *ngIf="errorMessage">{{ errorMessage }}</div>
 
-  <inventory-results-table [items]="items$ | async" [total]="(total$ | async) ?? 0" [pageSize]="pageSize"
-    (sort)="onSort($event)" (pageChange)="onPageChange($event)">
+  <inventory-results-table *ngIf="total$ | async" [items]="items$ | async" [total]="(total$ | async) ?? 0"
+    [pageSize]="pageSize" (sort)="onSort($event)" (pageChange)="onPageChange($event)">
   </inventory-results-table>
 </div>

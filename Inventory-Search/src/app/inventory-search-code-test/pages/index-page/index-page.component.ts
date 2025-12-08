@@ -1,12 +1,13 @@
 // pages/index-page/index-page.component.ts
 
 // TypeScript
-import { ChangeDetectionStrategy, Component, OnDestroy, InjectionToken, Inject, OnInit, Optional } from '@angular/core';
+import { ChangeDetectionStrategy, Component, OnDestroy, InjectionToken, Inject, OnInit, Optional, ViewChild } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { BehaviorSubject, merge, Subject } from 'rxjs';
 import { debounceTime, filter, finalize, switchMap, takeUntil, tap } from 'rxjs/operators';
 import { InventoryItem, InventoryItemSortableFields, InventorySearchQuery, SearchBy, } from '../../models/inventory-search.models';
 import { InventorySearchApiService } from '../../services/inventory-search-api.service';
+import { ResultsTableComponent } from '../../components/results-table/results-table.component';
 
 type SortDir = 'asc' | 'desc';
 interface SortState { field: keyof InventoryItem | ''; direction: SortDir; }
@@ -22,6 +23,8 @@ export const INVENTORY_SEARCH_DEBOUNCE_MS = new InjectionToken<number>('INVENTOR
   standalone: false
 })
 export class IndexPageComponent implements OnDestroy, OnInit {
+  @ViewChild(ResultsTableComponent) resultsTable?: ResultsTableComponent; // access to child component methods to collapse rows on new search/page/sort
+
   private _debounce = 50; // default 50ms
   private destroy$ = new Subject<void>();
   private searchTrigger$ = new Subject<void>();
@@ -59,16 +62,23 @@ export class IndexPageComponent implements OnDestroy, OnInit {
     // Merge all three input streams: manual search, sort changes, and page changes
     merge(
       this.searchTrigger$.pipe(
-        tap(() => this.currentPage = 0) // Reset page when new search is triggered
+        tap(() => {
+          this.currentPage = 0; // Reset page when new search is triggered
+          this.resultsTable?.collapseAll(); // Collapse all expanded rows
+        })
       ),
       this.pageChange$.pipe(
-        tap((pageIndex) => this.currentPage = pageIndex) // Update current page
+        tap((pageIndex) => {
+          this.currentPage = pageIndex; // Update current page
+          this.resultsTable?.collapseAll(); // Collapse all expanded rows
+        })
       ),
       this.sortChange$.pipe(
         tap((sortState) => {
           // Update sort state and reset page
           this.currentSort = sortState;
           this.currentPage = 0;
+          this.resultsTable?.collapseAll(); // Collapse all expanded rows
         })
       ),
     )

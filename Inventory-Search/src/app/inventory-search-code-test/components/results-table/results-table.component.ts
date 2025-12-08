@@ -4,6 +4,7 @@
 import { ChangeDetectionStrategy, ChangeDetectorRef, Component, EventEmitter, Input, Output } from '@angular/core';
 import { InventoryItem, PeakAvailability } from '../../models/inventory-search.models';
 import { InventorySearchApiService } from '../../services/inventory-search-api.service';
+import { PageEvent } from '@angular/material/paginator';
 
 
 @Component({
@@ -54,7 +55,19 @@ export class ResultsTableComponent {
   toggleExpand(item: InventoryItem) {
     // Toggle the expanded state of a row
     const key = item.partNumber;
-    this.expanded = { ...this.expanded, [key]: !this.expanded[key] };
+    this.expanded = { ...this.expanded, [key]: !this.expanded[key] }; // immutable update
+    
+    // if all are collapsed, reset this.expanded for header icon state
+    if (Object.values(this.expanded).every(v => !v)) {
+      this.expanded = {};
+    }
+
+    this.cdr.markForCheck();
+  }
+
+  collapseAll() {
+    // Collapse all expanded rows
+    this.expanded = {};
     this.cdr.markForCheck();
   }
 
@@ -101,6 +114,10 @@ export class ResultsTableComponent {
 
   totalPages(total: number, size: number) {
     return Math.max(1, Math.ceil((total ?? 0) / (size || 1)));
+  }
+
+  handlePageEvent(event: PageEvent) {
+    this.goTo(event.pageIndex);
   }
 
   goTo(page: number) {

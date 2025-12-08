@@ -35,18 +35,6 @@ export class InventorySearchApiService {
   ) { }
 
   search(query: InventorySearchQuery): Observable<ApiEnvelope<PagedInventoryResponse>> {
-
-    /**
-     * Challenge hint:
-     * - Derive a stable cache key from the query (include all fields that affect results).
-     * - Keep a small in-memory cache with expiration; reuse in-flight/completed observables.
-     * - Translate the query into HTTP params; include optional fields only when present.
-     * - Return a shared observable so multiple subscribers don’t duplicate requests.
-     * - Avoid mixing UI concerns; this layer should only compose and return data streams.
-     *
-     * this.http.get<??????>(`${this.baseUrl}/inventory/search`, { params })
-     */
-
     // init cache key
     const key = this.cacheKey(query);
 
@@ -93,15 +81,6 @@ export class InventorySearchApiService {
   }
 
   getPeakAvailability(partNumber: string): Observable<ApiEnvelope<PeakAvailability>> {
-    /**
-     * Challenge hint:
-     * - Use the part number to form a cache key for this lookup.
-     * - Evict stale entries before attempting a cache hit.
-     * - If cached, return the shared observable to avoid duplicate requests.
-     * - Otherwise, issue a GET with the partNumber as a query param and share the result.
-     * - Remember the observable with a TTL (time to live); keep this method free of UI concerns.
-     * this.http.get<??????>(`${this.baseUrl}/inventory/availability/peak`, { params})
-     */
     const key = partNumber.trim().toLowerCase();
 
     // check for cached entry
@@ -128,13 +107,6 @@ export class InventorySearchApiService {
     return response;
   }
 
-  /**
-   * Challenge hint:
-   * - Keep the cache small and predictable; decide what to evict when full.
-   * - Consider how expiration (TTL) interacts with capacity-based eviction.
-   * - Think about whether failed results should be cached the same way as successful ones.
-   * - Keep this purely about data/memoization; avoid UI/side-effects here.
-   */
   private remember<T>(
     cache: CacheEntry<T>[],
     entry: { key: string; obs$: Observable<T> },
@@ -182,14 +154,6 @@ export class InventorySearchApiService {
 
 
   private cacheKey(q: InventorySearchQuery): string {
-    /**
-     * Challenge hint:
-     * - Produce a stable key that uniquely represents the query.
-     * - Normalize values (e.g., trim, lowercase) to avoid duplicate keys for equivalent inputs.
-     * - Ensure ordering doesn’t affect the key (e.g., sort arrays like branches).
-     * - Include every parameter that can change results; omit those that do not.
-     * - Choose delimiters that won’t collide with real data.
-     */
     let key: string;
     key = q.criteria.trim().toLowerCase();
     key += `|by:${q.by}`;

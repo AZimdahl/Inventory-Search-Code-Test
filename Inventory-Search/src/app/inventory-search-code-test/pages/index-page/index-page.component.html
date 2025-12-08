@@ -1,31 +1,6 @@
 <!--pages/index-page/index-page.component.html -->
 
 <!-- HTML -->
-<!-- class="inventory-search"
- this is the ugly display of the form
- requirement is to create a better user interface that is cleaner and more pleasing
- to the eye
- -->
-<!-- Hints
-For search utilize the onSearch() method
-for the search values
-(keyup.enter)="onEnterKey()" placeholder="Enter part number, description, or SKU"
-
-Criteria is the value to search
-Part numbers are prefixed with 'AB', 'ZX', 'LM', 'QP', 'RT'
-supplierSku as prefixed with 'SUP', 'VND', 'OEM'
-Description may contain the following words
-'Premium', 'Standard', 'Heavy-Duty', 'Lightweight', 'Compact', 'Industrial', 'Economy'
-'Bearing', 'Valve', 'Coupling', 'Gasket', 'Clamp', 'Fitting', 'Seal', 'Adapter', 'Pump', 'Filter'
-
-branches are 'SEA', 'PDX', 'SFO', 'LAX', 'DEN', 'PHX', 'DAL', 'ORD', 'ATL', 'JFK'
-(change)="onBranchesChange($event)"
-
-Search By
-  <option value="PartNumber">Part Number</option>
-  <option value="Description">Description</option>
-  <option value="SupplierSKU">Supplier SKU</option>
--->
 <div class="inventory-search">
 
   <!-- this is where the search criteria should probably be displayed  and entered
@@ -33,9 +8,13 @@ Search By
   <form [formGroup]="form" class="form">
     <div class="row">
       <!-- Search Button -->
-      <button mat-fab extended (click)="onSearch()" [disabled]="!form.get('criteria')?.value || (loading$ | async)"
-        disabledInteractive [matTooltip]="!form.get('criteria')?.value ? 'Enter search criteria' : ''"
-        aria-label="search button">
+      <button mat-fab extended
+        (click)="onSearch()"
+        [disabled]="!form.get('criteria')?.value || (loading$ | async)"
+        disabledInteractive
+        [matTooltip]="!form.get('criteria')?.value ? 'Enter search criteria' : ''"
+        aria-label="search inventory"
+      >
         <mat-icon>search</mat-icon>
         Search
       </button>
@@ -43,8 +22,7 @@ Search By
       <!-- Search Criteria -->
       <mat-form-field>
         <mat-label for="criteria">Search Criteria</mat-label>
-        <input matInput id="criteria" formControlName="criteria" placeholder="Enter part number, description, or SKU"
-          (keyup.enter)="onEnterKey()" />
+        <input matInput id="criteria" formControlName="criteria" placeholder="Enter part number, description, or SKU" (keyup.enter)="onEnterKey()" />
       </mat-form-field>
 
       <!-- Search By -->
@@ -61,7 +39,8 @@ Search By
       <mat-form-field>
         <mat-label for="branches">Branches</mat-label>
         <mat-select id="branches" formControlName="branches" multiple
-          matTooltip="Select one or more branches to filter results">
+          matTooltip="Select one or more branches to filter results"
+        >
           <mat-option value="SEA">SEA</mat-option>
           <mat-option value="PDX">PDX</mat-option>
           <mat-option value="SFO">SFO</mat-option>
@@ -77,16 +56,18 @@ Search By
 
       <!-- Only Available -->
       <mat-checkbox id="onlyAvailable" formControlName="onlyAvailable" labelPosition="after"
-        matTooltip="Show only available items">
+        matTooltip="Show only available items"
+      >
         Only Available
       </mat-checkbox>
     </div>
   </form>
-  <div class="loading" *ngIf="loading$ | async">Loading…</div>
+  <mat-progress-bar class="loading" *ngIf="loading$ | async" mode="indeterminate"></mat-progress-bar>
   <!-- Simple inline error display -->
   <div class="error" *ngIf="errorMessage">{{ errorMessage }}</div>
 
   <inventory-results-table *ngIf="total$ | async" [items]="items$ | async" [total]="(total$ | async) ?? 0"
-    [pageSize]="pageSize" (sort)="onSort($event)" (pageChange)="onPageChange($event)">
+    [pageSize]="pageSize" (sort)="onSort($event)" (pageChange)="onPageChange($event)"
+  >
   </inventory-results-table>
 </div>

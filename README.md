@@ -2,6 +2,25 @@
 
 ## Quick Start Instructions
 
+### Prerequisites
+- Node.js (v18+)
+- npm (v9+)
+- .NET 8.0 SDK (if using InventoryServer)
+
+### Steps
+1. **Start the backend** (choose one):
+  - Option A: `inventory-mock-api` - See [ReadMe.txt](./inventory-mock-api/ReadMe.txt)
+  - Option B: `InventoryServer` - TBD
+
+2. **Start the frontend**:
+  1. Navigate to /Inventory-Search in terminal
+  2. Run:
+    ```bash
+    npm install
+    npm start
+    ```
+
+3. **Open the application**: [http://localhost:4200/](http://localhost:4200/)
 
 ## Tools Used:
 * VS Code
@@ -12,20 +31,13 @@
   * Prompted to write base code after getting stuck to correct incorrect code and engineer base level functionality. Then I review the code to make sure it makes sense to me and will refactor as needed to either fix bugs or to resolve other needs/enhance desired behavior
 * Google Search
   * Help with knowledge gaps and using unfamiliar concepts
-* Angular Material
+* [Angular Material](https://v18.material.angular.dev/)
   * Installed Angular package for visually better UI components and simpler to implement to use for forms
-  * Used for Input, Select, Multiselect, Button, Tooltips and Icons
+  * Used for Input, Select, Multiselect, Button, Tooltips, Icons, Table Pagination and Loading Indicators
 
 ## TODO:
 * Fix:
 * Feat:
-  * UI/UX
-    * Table styling
-    * Lots and peak styling
-    * I'm thinking show only the Search button with a confirmation modal that shows all the search options, w/ a generated summary in logical format for easy to read/understand
-    * improve pagination
-      * page size change
-      * jump pages
   * Set up tests
 * .NET
   * C# Files

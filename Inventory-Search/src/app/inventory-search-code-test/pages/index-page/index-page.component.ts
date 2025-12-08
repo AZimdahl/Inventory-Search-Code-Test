@@ -22,15 +22,6 @@ export const INVENTORY_SEARCH_DEBOUNCE_MS = new InjectionToken<number>('INVENTOR
   standalone: false
 })
 export class IndexPageComponent implements OnDestroy, OnInit {
-  /**
-   * Challenge hint (replace this block with your state fields):
-   * - Define reactive controllers for: search trigger, sort state, and current page.
-   * - Expose public observables for: total count and items list derived from responses.
-   * - Track loading as a boolean BehaviorSubject toggled around requests.
-   * - Keep a simple string errorMessage to show failures inline.
-   * - Keep a configurable debounce value (overridable via DI) for throttling user actions.
-   * - Create a form group with fields for criteria, by, branches, and onlyAvailable.
-   */
   private _debounce = 50; // default 50ms
   private destroy$ = new Subject<void>();
   private searchTrigger$ = new Subject<void>();
@@ -62,15 +53,6 @@ export class IndexPageComponent implements OnDestroy, OnInit {
       onlyAvailable: [false],
     });
   }
-
-  /**
-   * Code challenge – high-level goal:
-   * - Compose a reactive search pipeline driven by three inputs: manual search trigger, sort changes, and page changes.
-   * - Debounce and transform those inputs into a typed query object, then execute the request while canceling stale ones.
-   * - Expose loading, total count, and items as observables suitable for OnPush + async pipe.
-   * - Handle failures with a simple inline message; keep all UI state separate from API concerns.
-   * - Ensure proper cleanup of subscriptions and efficient re-use of the latest emissions.
-   */
 
   ngOnInit(): void {
     // Compose the reactive search pipeline

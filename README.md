@@ -37,8 +37,9 @@
 
 ## TODO:
 * Fix:
+  * Failing unit tests on FE
 * Feat:
-  * Set up tests
+  * Set up FE unit tests
 * .NET
   * C# Files
   * Test cases

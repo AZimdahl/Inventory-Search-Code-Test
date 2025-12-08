@@ -9,6 +9,19 @@ import {CUSTOM_ELEMENTS_SCHEMA} from '@angular/core';
 import { Subject } from 'rxjs';
 import { INVENTORY_SEARCH_DEBOUNCE_MS } from '../pages/index-page/index-page.component';
 
+// Import Angular Material modules used in the component
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatSelectModule } from '@angular/material/select';
+import { MatInputModule } from '@angular/material/input';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
+import { MatTooltipModule } from '@angular/material/tooltip';
+import { MatProgressBarModule } from '@angular/material/progress-bar';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { MatPaginatorModule } from '@angular/material/paginator';
+
 describe('IndexPageComponent', () => {
   let fixture: ComponentFixture<IndexPageComponent>;
 
@@ -16,7 +29,21 @@ describe('IndexPageComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       declarations: [IndexPageComponent],
-      imports: [ReactiveFormsModule, HttpClientTestingModule],
+      imports: [
+        ReactiveFormsModule,
+        HttpClientTestingModule,
+        BrowserAnimationsModule,
+        MatFormFieldModule,
+        MatSelectModule,
+        MatInputModule,
+        MatCheckboxModule,
+        MatButtonModule,
+        MatIconModule,
+        MatTooltipModule,
+        MatProgressBarModule,
+        MatProgressSpinnerModule,
+        MatPaginatorModule
+      ],
       providers: [
         { provide: INVENTORY_API_BASE, useValue: '/api' },
         InventorySearchApiService,

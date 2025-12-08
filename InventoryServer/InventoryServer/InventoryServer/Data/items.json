@@ -1,0 +1,5915 @@
+{
+  "items": [
+    {
+      "partNumber": "AB-1000",
+      "supplierSku": "SUP50000",
+      "description": "Premium Pump 0",
+      "branch": "LAX",
+      "availableQty": 469,
+      "uom": "EA",
+      "leadTimeDays": null,
+      "lastPurchaseDate": "2024-05-13T17:29:26.492Z"
+    },
+    {
+      "partNumber": "ZX-1001",
+      "supplierSku": "VND50001",
+      "description": "Industrial Adapter 1",
+      "branch": "SFO",
+      "availableQty": 232,
+      "uom": "LB",
+      "leadTimeDays": 20,
+      "lastPurchaseDate": "2023-12-27T17:29:26.493Z"
+    },
+    {
+      "partNumber": "LM-1002",
+      "supplierSku": "OEM50002",
+      "description": "Premium Bearing 2",
+      "branch": "LAX",
+      "availableQty": 299,
+      "uom": "RL",
+      "leadTimeDays": null,
+      "lastPurchaseDate": "2025-02-12T17:29:26.493Z"
+    },
+    {
+      "partNumber": "QP-1003",
+      "supplierSku": "SUP50003",
+      "description": "Industrial Seal 3",
+      "branch": "DAL",
+      "availableQty": 245,
+      "uom": "EA",
+      "leadTimeDays": 13,
+      "lastPurchaseDate": null,
+      "lots": [
+        {
+          "lotNumber": "LOT-61206",
+          "qty": 245,
+          "expirationDate": "2026-09-06T17:29:26.493Z"
+        }
+      ]
+    },
+    {
+      "partNumber": "RT-1004",
+      "supplierSku": "VND50004",
+      "description": "Lightweight Seal 4",
+      "branch": "SFO",
+      "availableQty": 447,
+      "uom": "PK",
+      "leadTimeDays": 41,
+      "lastPurchaseDate": "2025-01-07T17:29:26.493Z",
+      "lots": [
+        {
+          "lotNumber": "LOT-22836",
+          "qty": 21,
+          "expirationDate": "2026-07-13T17:29:26.493Z"
+        },
+        {
+          "lotNumber": "LOT-41759",
+          "qty": 426,
+          "expirationDate": null
+        }
+      ]
+    },
+    {
+      "partNumber": "AB-1005",
+      "supplierSku": "OEM50005",
+      "description": "Industrial Clamp 5",
+      "branch": "ORD",
+      "availableQty": 265,
+      "uom": "BX",
+      "leadTimeDays": null,
+      "lastPurchaseDate": "2023-12-29T17:29:26.493Z",
+      "lots": [
+        {
+          "lotNumber": "LOT-72817",
+          "qty": 11,
+          "expirationDate": null
+        },
+        {
+          "lotNumber": "LOT-28154",
+          "qty": 254,
+          "expirationDate": null
+        }
+      ]
+    },
+    {
+      "partNumber": "ZX-1006",
+      "supplierSku": "SUP50006",
+      "description": "Industrial Bearing 6",
+      "branch": "SFO",
+      "availableQty": 360,
+      "uom": "LB",
+      "leadTimeDays": 22,
+      "lastPurchaseDate": "2025-11-25T17:29:26.493Z",
+      "lots": [
+        {
+          "lotNumber": "LOT-33443",
+          "qty": 334,
+          "expirationDate": null
+        },
+        {
+          "lotNumber": "LOT-36199",
+          "qty": 26,
+          "expirationDate": null
+        }
+      ]
+    },
+    {
+      "partNumber": "LM-1007",
+      "supplierSku": "VND50007",
+      "description": "Premium Seal 7",
+      "branch": "ORD",
+      "availableQty": 467,
+      "uom": "PK",
+      "leadTimeDays": 23,
+      "lastPurchaseDate": "2024-12-12T17:29:26.493Z"
+    },
+    {
+      "partNumber": "QP-1008",
+      "supplierSku": "OEM50008",
+      "description": "Premium Bearing 8",
+      "branch": "ORD",
+      "availableQty": 427,
+      "uom": "FT",
+      "leadTimeDays": 7,
+      "lastPurchaseDate": "2025-07-06T17:29:26.493Z"
+    },
+    {
+      "partNumber": "RT-1009",
+      "supplierSku": "SUP50009",
+      "description": "Standard Clamp 9",
+      "branch": "SEA",
+      "availableQty": 437,
+      "uom": "PK",
+      "leadTimeDays": 9,
+      "lastPurchaseDate": "2024-11-30T17:29:26.493Z"
+    },
+    {
+      "partNumber": "AB-1010",
+      "supplierSku": "VND50010",
+      "description": "Compact Coupling 10",
+      "branch": "PHX",
+      "availableQty": 369,
+      "uom": "BX",
+      "leadTimeDays": 28,
+      "lastPurchaseDate": "2023-11-05T17:29:26.493Z",
+      "lots": [
+        {
+          "lotNumber": "LOT-25437",
+          "qty": 369,
+          "expirationDate": "2026-06-10T17:29:26.493Z"
+        }
+      ]
+    },
+    {
+      "partNumber": "ZX-1011",
+      "supplierSku": "OEM50011",
+      "description": "Economy Seal 11",
+      "branch": "SEA",
+      "availableQty": 470,
+      "uom": "PK",
+      "leadTimeDays": 2,
+      "lastPurchaseDate": null
+    },
+    {
+      "partNumber": "LM-1012",
+      "supplierSku": "SUP50012",
+      "description": "Standard Coupling 12",
+      "branch": "PHX",
+      "availableQty": 68,
+      "uom": "FT",
+      "leadTimeDays": 35,
+      "lastPurchaseDate": "2024-08-19T17:29:26.493Z"
+    },
+    {
+      "partNumber": "QP-1013",
+      "supplierSku": "VND50013",
+      "description": "Heavy-Duty Fitting 13",
+      "branch": "DEN",
+      "availableQty": 261,
+      "uom": "LB",
+      "leadTimeDays": null,
+      "lastPurchaseDate": null
+    },
+    {
+      "partNumber": "RT-1014",
+      "supplierSku": "OEM50014",
+      "description": "Industrial Valve 14",
+      "branch": "PHX",
+      "availableQty": 58,
+      "uom": "BX",
+      "leadTimeDays": null,
+      "lastPurchaseDate": "2023-08-03T17:29:26.493Z",
+      "lots": [
+        {
+          "lotNumber": "LOT-49095",
+          "qty": 28,
+          "expirationDate": null
+        },
+        {
+          "lotNumber": "LOT-62082",
+          "qty": 30,
+          "expirationDate": null
+        }
+      ]
+    },
+    {
+      "partNumber": "AB-1015",
+      "supplierSku": "SUP50015",
+      "description": "Compact Filter 15",
+      "branch": "DAL",
+      "availableQty": 160,
+      "uom": "FT",
+      "leadTimeDays": 6,
+      "lastPurchaseDate": null
+    },
+    {
+      "partNumber": "ZX-1016",
+      "supplierSku": "VND50016",
+      "description": "Heavy-Duty Seal 16",
+      "branch": "ATL",
+      "availableQty": 212,
+      "uom": "RL",
+      "leadTimeDays": null,
+      "lastPurchaseDate": "2025-03-29T17:29:26.493Z",
+      "lots": [
+        {
+          "lotNumber": "LOT-51935",
+          "qty": 88,
+          "expirationDate": "2026-09-06T17:29:26.493Z"
+        },
+        {
+          "lotNumber": "LOT-63827",
+          "qty": 5,
+          "expirationDate": "2026-03-04T17:29:26.493Z"
+        },
+        {
+          "lotNumber": "LOT-25412",
+          "qty": 119,
+          "expirationDate": null
+        }
+      ]
+    },
+    {
+      "partNumber": "LM-1017",
+      "supplierSku": "OEM50017",
+      "description": "Standard Gasket 17",
+      "branch": "ORD",
+      "availableQty": 459,
+      "uom": "FT",
+      "leadTimeDays": 39,
+      "lastPurchaseDate": null
+    },
+    {
+      "partNumber": "QP-1018",
+      "supplierSku": "SUP50018",
+      "description": "Compact Filter 18",
+      "branch": "ORD",
+      "availableQty": 375,
+      "uom": "BX",
+      "leadTimeDays": 24,
+      "lastPurchaseDate": "2023-11-27T17:29:26.493Z",
+      "lots": [
+        {
+          "lotNumber": "LOT-44161",
+          "qty": 247,
+          "expirationDate": "2026-11-25T17:29:26.493Z"
+        },
+        {
+          "lotNumber": "LOT-28799",
+          "qty": 128,
+          "expirationDate": null
+        }
+      ]
+    },
+    {
+      "partNumber": "RT-1019",
+      "supplierSku": "VND50019",
+      "description": "Premium Adapter 19",
+      "branch": "SFO",
+      "availableQty": 160,
+      "uom": "RL",
+      "leadTimeDays": 14,
+      "lastPurchaseDate": null
+    },
+    {
+      "partNumber": "AB-1020",
+      "supplierSku": "OEM50020",
+      "description": "Standard Pump 20",
+      "branch": "DAL",
+      "availableQty": 302,
+      "uom": "BX",
+      "leadTimeDays": 8,
+      "lastPurchaseDate": "2024-10-14T17:29:26.493Z"
+    },
+    {
+      "partNumber": "ZX-1021",
+      "supplierSku": "SUP50021",
+      "description": "Standard Adapter 21",
+      "branch": "ATL",
+      "availableQty": 458,
+      "uom": "LB",
+      "leadTimeDays": 17,
+      "lastPurchaseDate": null
+    },
+    {
+      "partNumber": "LM-1022",
+      "supplierSku": "VND50022",
+      "description": "Lightweight Clamp 22",
+      "branch": "SEA",
+      "availableQty": 334,
+      "uom": "BX",
+      "leadTimeDays": 8,
+      "lastPurchaseDate": "2024-01-01T17:29:26.493Z"
+    },
+    {
+      "partNumber": "QP-1023",
+      "supplierSku": "OEM50023",
+      "description": "Standard Filter 23",
+      "branch": "PDX",
+      "availableQty": 4,
+      "uom": "PK",
+      "leadTimeDays": 38,
+      "lastPurchaseDate": "2023-08-25T17:29:26.493Z"
+    },
+    {
+      "partNumber": "RT-1024",
+      "supplierSku": "SUP50024",
+      "description": "Standard Pump 24",
+      "branch": "JFK",
+      "availableQty": 130,
+      "uom": "EA",
+      "leadTimeDays": 13,
+      "lastPurchaseDate": "2023-04-06T17:29:26.493Z"
+    },
+    {
+      "partNumber": "AB-1025",
+      "supplierSku": "VND50025",
+      "description": "Industrial Adapter 25",
+      "branch": "SEA",
+      "availableQty": 347,
+      "uom": "FT",
+      "leadTimeDays": 4,
+      "lastPurchaseDate": null
+    },
+    {
+      "partNumber": "ZX-1026",
+      "supplierSku": "OEM50026",
+      "description": "Standard Fitting 26",
+      "branch": "DEN",
+      "availableQty": 115,
+      "uom": "PK",
+      "leadTimeDays": 30,
+      "lastPurchaseDate": "2025-03-25T17:29:26.493Z",
+      "lots": [
+        {
+          "lotNumber": "LOT-16064",
+          "qty": 107,
+          "expirationDate": "2026-06-30T17:29:26.493Z"
+        },
+        {
+          "lotNumber": "LOT-27999",
+          "qty": 8,
+          "expirationDate": "2026-05-30T17:29:26.493Z"
+        }
+      ]
+    },
+    {
+      "partNumber": "LM-1027",
+      "supplierSku": "SUP50027",
+      "description": "Industrial Filter 27",
+      "branch": "SEA",
+      "availableQty": 142,
+      "uom": "BX",
+      "leadTimeDays": 20,
+      "lastPurchaseDate": "2023-09-25T17:29:26.493Z"
+    },
+    {
+      "partNumber": "QP-1028",
+      "supplierSku": "VND50028",
+      "description": "Compact Coupling 28",
+      "branch": "DEN",
+      "availableQty": 186,
+      "uom": "RL",
+      "leadTimeDays": 15,
+      "lastPurchaseDate": "2025-06-03T17:29:26.493Z"
+    },
+    {
+      "partNumber": "RT-1029",
+      "supplierSku": "OEM50029",
+      "description": "Premium Valve 29",
+      "branch": "PDX",
+      "availableQty": 263,
+      "uom": "EA",
+      "leadTimeDays": 36,
+      "lastPurchaseDate": "2023-05-23T17:29:26.493Z",
+      "lots": [
+        {
+          "lotNumber": "LOT-60935",
+          "qty": 174,
+          "expirationDate": "2026-02-13T17:29:26.493Z"
+        },
+        {
+          "lotNumber": "LOT-77582",
+          "qty": 50,
+          "expirationDate": "2026-10-22T17:29:26.493Z"
+        },
+        {
+          "lotNumber": "LOT-92055",
+          "qty": 39,
+          "expirationDate": "2025-12-19T17:29:26.493Z"
+        }
+      ]
+    },
+    {
+      "partNumber": "AB-1030",
+      "supplierSku": "SUP50030",
+      "description": "Lightweight Filter 30",
+      "branch": "DAL",
+      "availableQty": 454,
+      "uom": "PK",
+      "leadTimeDays": null,
+      "lastPurchaseDate": "2024-05-18T17:29:26.493Z",
+      "lots": [
+        {
+          "lotNumber": "LOT-17831",
+          "qty": 215,
+          "expirationDate": null
+        },
+        {
+          "lotNumber": "LOT-25410",
+          "qty": 239,
+          "expirationDate": "2026-05-03T17:29:26.493Z"
+        }
+      ]
+    },
+    {
+      "partNumber": "ZX-1031",
+      "supplierSku": "VND50031",
+      "description": "Heavy-Duty Bearing 31",
+      "branch": "PHX",
+      "availableQty": 376,
+      "uom": "EA",
+      "leadTimeDays": 36,
+      "lastPurchaseDate": "2024-03-03T17:29:26.493Z"
+    },
+    {
+      "partNumber": "LM-1032",
+      "supplierSku": "OEM50032",
+      "description": "Industrial Valve 32",
+      "branch": "DAL",
+      "availableQty": 352,
+      "uom": "FT",
+      "leadTimeDays": 28,
+      "lastPurchaseDate": null
+    },
+    {
+      "partNumber": "QP-1033",
+      "supplierSku": "SUP50033",
+      "description": "Heavy-Duty Filter 33",
+      "branch": "LAX",
+      "availableQty": 53,
+      "uom": "BX",
+      "leadTimeDays": 31,
+      "lastPurchaseDate": "2025-06-26T17:29:26.493Z",
+      "lots": [
+        {
+          "lotNumber": "LOT-40397",
+          "qty": 53,
+          "expirationDate": null
+        }
+      ]
+    },
+    {
+      "partNumber": "RT-1034",
+      "supplierSku": "VND50034",
+      "description": "Standard Gasket 34",
+      "branch": "LAX",
+      "availableQty": 336,
+      "uom": "FT",
+      "leadTimeDays": null,
+      "lastPurchaseDate": "2024-04-15T17:29:26.493Z",
+      "lots": [
+        {
+          "lotNumber": "LOT-68461",
+          "qty": 336,
+          "expirationDate": null
+        }
+      ]
+    },
+    {
+      "partNumber": "AB-1035",
+      "supplierSku": "OEM50035",
+      "description": "Industrial Fitting 35",
+      "branch": "PHX",
+      "availableQty": 418,
+      "uom": "FT",
+      "leadTimeDays": 34,
+      "lastPurchaseDate": null
+    },
+    {
+      "partNumber": "ZX-1036",
+      "supplierSku": "SUP50036",
+      "description": "Compact Bearing 36",
+      "branch": "DAL",
+      "availableQty": 110,
+      "uom": "PK",
+      "leadTimeDays": null,
+      "lastPurchaseDate": "2023-05-02T17:29:26.493Z"
+    },
+    {
+      "partNumber": "LM-1037",
+      "supplierSku": "VND50037",
+      "description": "Premium Filter 37",
+      "branch": "LAX",
+      "availableQty": 163,
+      "uom": "FT",
+      "leadTimeDays": 41,
+      "lastPurchaseDate": "2025-08-04T17:29:26.493Z",
+      "lots": [
+        {
+          "lotNumber": "LOT-23826",
+          "qty": 163,
+          "expirationDate": null
+        }
+      ]
+    },
+    {
+      "partNumber": "QP-1038",
+      "supplierSku": "OEM50038",
+      "description": "Compact Fitting 38",
+      "branch": "PHX",
+      "availableQty": 310,
+      "uom": "LB",
+      "leadTimeDays": 14,
+      "lastPurchaseDate": "2025-09-29T17:29:26.493Z"
+    },
+    {
+      "partNumber": "RT-1039",
+      "supplierSku": "SUP50039",
+      "description": "Lightweight Fitting 39",
+      "branch": "ATL",
+      "availableQty": 188,
+      "uom": "RL",
+      "leadTimeDays": 1,
+      "lastPurchaseDate": "2025-06-05T17:29:26.493Z"
+    },
+    {
+      "partNumber": "AB-1040",
+      "supplierSku": "VND50040",
+      "description": "Heavy-Duty Bearing 40",
+      "branch": "DEN",
+      "availableQty": 191,
+      "uom": "LB",
+      "leadTimeDays": 33,
+      "lastPurchaseDate": "2025-11-22T17:29:26.493Z"
+    },
+    {
+      "partNumber": "ZX-1041",
+      "supplierSku": "OEM50041",
+      "description": "Compact Adapter 41",
+      "branch": "PDX",
+      "availableQty": 283,
+      "uom": "RL",
+      "leadTimeDays": 38,
+      "lastPurchaseDate": "2024-04-11T17:29:26.493Z",
+      "lots": [
+        {
+          "lotNumber": "LOT-89849",
+          "qty": 283,
+          "expirationDate": "2026-07-11T17:29:26.493Z"
+        }
+      ]
+    },
+    {
+      "partNumber": "LM-1042",
+      "supplierSku": "SUP50042",
+      "description": "Heavy-Duty Adapter 42",
+      "branch": "LAX",
+      "availableQty": 267,
+      "uom": "PK",
+      "leadTimeDays": 18,
+      "lastPurchaseDate": null
+    },
+    {
+      "partNumber": "QP-1043",
+      "supplierSku": "VND50043",
+      "description": "Industrial Coupling 43",
+      "branch": "ATL",
+      "availableQty": 228,
+      "uom": "FT",
+      "leadTimeDays": 22,
+      "lastPurchaseDate": null
+    },
+    {
+      "partNumber": "RT-1044",
+      "supplierSku": "OEM50044",
+      "description": "Lightweight Adapter 44",
+      "branch": "LAX",
+      "availableQty": 372,
+      "uom": "FT",
+      "leadTimeDays": null,
+      "lastPurchaseDate": "2025-10-17T17:29:26.493Z"
+    },
+    {
+      "partNumber": "AB-1045",
+      "supplierSku": "SUP50045",
+      "description": "Standard Fitting 45",
+      "branch": "JFK",
+      "availableQty": 486,
+      "uom": "EA",
+      "leadTimeDays": null,
+      "lastPurchaseDate": "2025-03-27T17:29:26.493Z",
+      "lots": [
+        {
+          "lotNumber": "LOT-93231",
+          "qty": 10,
+          "expirationDate": null
+        },
+        {
+          "lotNumber": "LOT-56292",
+          "qty": 476,
+          "expirationDate": null
+        }
+      ]
+    },
+    {
+      "partNumber": "ZX-1046",
+      "supplierSku": "VND50046",
+      "description": "Premium Clamp 46",
+      "branch": "PHX",
+      "availableQty": 263,
+      "uom": "RL",
+      "leadTimeDays": 38,
+      "lastPurchaseDate": "2024-04-24T17:29:26.493Z",
+      "lots": [
+        {
+          "lotNumber": "LOT-54979",
+          "qty": 263,
+          "expirationDate": null
+        }
+      ]
+    },
+    {
+      "partNumber": "LM-1047",
+      "supplierSku": "OEM50047",
+      "description": "Standard Adapter 47",
+      "branch": "SFO",
+      "availableQty": 339,
+      "uom": "LB",
+      "leadTimeDays": 30,
+      "lastPurchaseDate": null,
+      "lots": [
+        {
+          "lotNumber": "LOT-71233",
+          "qty": 293,
+          "expirationDate": "2026-10-31T17:29:26.493Z"
+        },
+        {
+          "lotNumber": "LOT-15510",
+          "qty": 46,
+          "expirationDate": "2027-01-09T17:29:26.493Z"
+        }
+      ]
+    },
+    {
+      "partNumber": "QP-1048",
+      "supplierSku": "SUP50048",
+      "description": "Compact Seal 48",
+      "branch": "SFO",
+      "availableQty": 327,
+      "uom": "EA",
+      "leadTimeDays": null,
+      "lastPurchaseDate": null
+    },
+    {
+      "partNumber": "RT-1049",
+      "supplierSku": "VND50049",
+      "description": "Industrial Adapter 49",
+      "branch": "PDX",
+      "availableQty": 170,
+      "uom": "FT",
+      "leadTimeDays": 19,
+      "lastPurchaseDate": "2024-09-17T17:29:26.493Z"
+    },
+    {
+      "partNumber": "AB-1050",
+      "supplierSku": "OEM50050",
+      "description": "Heavy-Duty Filter 50",
+      "branch": "ATL",
+      "availableQty": 197,
+      "uom": "PK",
+      "leadTimeDays": null,
+      "lastPurchaseDate": "2023-05-11T17:29:26.493Z",
+      "lots": [
+        {
+          "lotNumber": "LOT-89613",
+          "qty": 177,
+          "expirationDate": "2026-10-14T17:29:26.493Z"
+        },
+        {
+          "lotNumber": "LOT-24942",
+          "qty": 19,
+          "expirationDate": "2026-03-07T17:29:26.493Z"
+        },
+        {
+          "lotNumber": "LOT-60428",
+          "qty": 1,
+          "expirationDate": null
+        }
+      ]
+    },
+    {
+      "partNumber": "ZX-1051",
+      "supplierSku": "SUP50051",
+      "description": "Compact Bearing 51",
+      "branch": "SFO",
+      "availableQty": 44,
+      "uom": "FT",
+      "leadTimeDays": 39,
+      "lastPurchaseDate": "2025-01-26T17:29:26.493Z"
+    },
+    {
+      "partNumber": "LM-1052",
+      "supplierSku": "VND50052",
+      "description": "Standard Fitting 52",
+      "branch": "DAL",
+      "availableQty": 233,
+      "uom": "EA",
+      "leadTimeDays": 34,
+      "lastPurchaseDate": null
+    },
+    {
+      "partNumber": "QP-1053",
+      "supplierSku": "OEM50053",
+      "description": "Economy Seal 53",
+      "branch": "LAX",
+      "availableQty": 253,
+      "uom": "PK",
+      "leadTimeDays": 15,
+      "lastPurchaseDate": "2025-02-03T17:29:26.493Z",
+      "lots": [
+        {
+          "lotNumber": "LOT-28319",
+          "qty": 45,
+          "expirationDate": "2026-05-15T17:29:26.493Z"
+        },
+        {
+          "lotNumber": "LOT-45521",
+          "qty": 27,
+          "expirationDate": "2026-08-11T17:29:26.493Z"
+        },
+        {
+          "lotNumber": "LOT-78296",
+          "qty": 181,
+          "expirationDate": "2026-08-14T17:29:26.493Z"
+        }
+      ]
+    },
+    {
+      "partNumber": "RT-1054",
+      "supplierSku": "SUP50054",
+      "description": "Lightweight Coupling 54",
+      "branch": "DAL",
+      "availableQty": 422,
+      "uom": "FT",
+      "leadTimeDays": 18,
+      "lastPurchaseDate": null
+    },
+    {
+      "partNumber": "AB-1055",
+      "supplierSku": "VND50055",
+      "description": "Premium Fitting 55",
+      "branch": "SFO",
+      "availableQty": 139,
+      "uom": "EA",
+      "leadTimeDays": 42,
+      "lastPurchaseDate": "2023-05-11T17:29:26.493Z",
+      "lots": [
+        {
+          "lotNumber": "LOT-10088",
+          "qty": 6,
+          "expirationDate": null
+        },
+        {
+          "lotNumber": "LOT-13105",
+          "qty": 133,
+          "expirationDate": null
+        }
+      ]
+    },
+    {
+      "partNumber": "ZX-1056",
+      "supplierSku": "OEM50056",
+      "description": "Premium Valve 56",
+      "branch": "DAL",
+      "availableQty": 435,
+      "uom": "BX",
+      "leadTimeDays": 22,
+      "lastPurchaseDate": null,
+      "lots": [
+        {
+          "lotNumber": "LOT-97870",
+          "qty": 435,
+          "expirationDate": "2026-06-11T17:29:26.493Z"
+        }
+      ]
+    },
+    {
+      "partNumber": "LM-1057",
+      "supplierSku": "SUP50057",
+      "description": "Economy Adapter 57",
+      "branch": "SEA",
+      "availableQty": 175,
+      "uom": "BX",
+      "leadTimeDays": 2,
+      "lastPurchaseDate": null,
+      "lots": [
+        {
+          "lotNumber": "LOT-21859",
+          "qty": 91,
+          "expirationDate": null
+        },
+        {
+          "lotNumber": "LOT-22949",
+          "qty": 43,
+          "expirationDate": "2026-08-20T17:29:26.493Z"
+        },
+        {
+          "lotNumber": "LOT-37675",
+          "qty": 41,
+          "expirationDate": null
+        }
+      ]
+    },
+    {
+      "partNumber": "QP-1058",
+      "supplierSku": "VND50058",
+      "description": "Economy Gasket 58",
+      "branch": "DAL",
+      "availableQty": 37,
+      "uom": "BX",
+      "leadTimeDays": 14,
+      "lastPurchaseDate": "2025-11-27T17:29:26.493Z"
+    },
+    {
+      "partNumber": "RT-1059",
+      "supplierSku": "OEM50059",
+      "description": "Economy Clamp 59",
+      "branch": "PHX",
+      "availableQty": 143,
+      "uom": "EA",
+      "leadTimeDays": 22,
+      "lastPurchaseDate": "2025-05-01T17:29:26.493Z"
+    },
+    {
+      "partNumber": "AB-1060",
+      "supplierSku": "SUP50060",
+      "description": "Premium Fitting 60",
+      "branch": "PHX",
+      "availableQty": 235,
+      "uom": "BX",
+      "leadTimeDays": 32,
+      "lastPurchaseDate": "2024-01-30T17:29:26.493Z"
+    },
+    {
+      "partNumber": "ZX-1061",
+      "supplierSku": "VND50061",
+      "description": "Heavy-Duty Adapter 61",
+      "branch": "DEN",
+      "availableQty": 455,
+      "uom": "LB",
+      "leadTimeDays": null,
+      "lastPurchaseDate": "2024-03-20T17:29:26.493Z",
+      "lots": [
+        {
+          "lotNumber": "LOT-16872",
+          "qty": 335,
+          "expirationDate": null
+        },
+        {
+          "lotNumber": "LOT-92169",
+          "qty": 120,
+          "expirationDate": "2026-10-29T17:29:26.493Z"
+        }
+      ]
+    },
+    {
+      "partNumber": "LM-1062",
+      "supplierSku": "OEM50062",
+      "description": "Economy Valve 62",
+      "branch": "PDX",
+      "availableQty": 94,
+      "uom": "LB",
+      "leadTimeDays": 38,
+      "lastPurchaseDate": "2025-11-15T17:29:26.493Z",
+      "lots": [
+        {
+          "lotNumber": "LOT-64531",
+          "qty": 94,
+          "expirationDate": null
+        }
+      ]
+    },
+    {
+      "partNumber": "QP-1063",
+      "supplierSku": "SUP50063",
+      "description": "Lightweight Fitting 63",
+      "branch": "ATL",
+      "availableQty": 182,
+      "uom": "FT",
+      "leadTimeDays": null,
+      "lastPurchaseDate": "2023-12-08T17:29:26.493Z"
+    },
+    {
+      "partNumber": "RT-1064",
+      "supplierSku": "VND50064",
+      "description": "Premium Gasket 64",
+      "branch": "DEN",
+      "availableQty": 398,
+      "uom": "LB",
+      "leadTimeDays": 4,
+      "lastPurchaseDate": "2025-02-05T17:29:26.493Z"
+    },
+    {
+      "partNumber": "AB-1065",
+      "supplierSku": "OEM50065",
+      "description": "Industrial Filter 65",
+      "branch": "SFO",
+      "availableQty": 199,
+      "uom": "FT",
+      "leadTimeDays": 18,
+      "lastPurchaseDate": "2023-08-04T17:29:26.493Z",
+      "lots": [
+        {
+          "lotNumber": "LOT-28511",
+          "qty": 101,
+          "expirationDate": "2026-11-02T17:29:26.493Z"
+        },
+        {
+          "lotNumber": "LOT-13896",
+          "qty": 98,
+          "expirationDate": "2026-07-10T17:29:26.493Z"
+        }
+      ]
+    },
+    {
+      "partNumber": "ZX-1066",
+      "supplierSku": "SUP50066",
+      "description": "Premium Valve 66",
+      "branch": "LAX",
+      "availableQty": 426,
+      "uom": "FT",
+      "leadTimeDays": 32,
+      "lastPurchaseDate": "2024-06-09T17:29:26.493Z"
+    },
+    {
+      "partNumber": "LM-1067",
+      "supplierSku": "VND50067",
+      "description": "Premium Seal 67",
+      "branch": "DAL",
+      "availableQty": 83,
+      "uom": "EA",
+      "leadTimeDays": null,
+      "lastPurchaseDate": "2025-05-26T17:29:26.493Z",
+      "lots": [
+        {
+          "lotNumber": "LOT-67637",
+          "qty": 83,
+          "expirationDate": "2026-09-10T17:29:26.493Z"
+        }
+      ]
+    },
+    {
+      "partNumber": "QP-1068",
+      "supplierSku": "OEM50068",
+      "description": "Standard Adapter 68",
+      "branch": "ATL",
+      "availableQty": 320,
+      "uom": "FT",
+      "leadTimeDays": 4,
+      "lastPurchaseDate": "2024-08-20T17:29:26.493Z",
+      "lots": [
+        {
+          "lotNumber": "LOT-35717",
+          "qty": 320,
+          "expirationDate": null
+        }
+      ]
+    },
+    {
+      "partNumber": "RT-1069",
+      "supplierSku": "SUP50069",
+      "description": "Compact Pump 69",
+      "branch": "DEN",
+      "availableQty": 237,
+      "uom": "LB",
+      "leadTimeDays": null,
+      "lastPurchaseDate": null,
+      "lots": [
+        {
+          "lotNumber": "LOT-41540",
+          "qty": 220,
+          "expirationDate": "2026-11-05T17:29:26.493Z"
+        },
+        {
+          "lotNumber": "LOT-96685",
+          "qty": 3,
+          "expirationDate": null
+        },
+        {
+          "lotNumber": "LOT-54464",
+          "qty": 14,
+          "expirationDate": null
+        }
+      ]
+    },
+    {
+      "partNumber": "AB-1070",
+      "supplierSku": "VND50070",
+      "description": "Standard Gasket 70",
+      "branch": "PHX",
+      "availableQty": 46,
+      "uom": "PK",
+      "leadTimeDays": null,
+      "lastPurchaseDate": null
+    },
+    {
+      "partNumber": "ZX-1071",
+      "supplierSku": "OEM50071",
+      "description": "Standard Bearing 71",
+      "branch": "SEA",
+      "availableQty": 391,
+      "uom": "LB",
+      "leadTimeDays": 10,
+      "lastPurchaseDate": "2023-11-28T17:29:26.493Z"
+    },
+    {
+      "partNumber": "LM-1072",
+      "supplierSku": "SUP50072",
+      "description": "Standard Coupling 72",
+      "branch": "DAL",
+      "availableQty": 55,
+      "uom": "RL",
+      "leadTimeDays": 11,
+      "lastPurchaseDate": "2025-05-24T17:29:26.493Z"
+    },
+    {
+      "partNumber": "QP-1073",
+      "supplierSku": "VND50073",
+      "description": "Economy Bearing 73",
+      "branch": "PHX",
+      "availableQty": 257,
+      "uom": "FT",
+      "leadTimeDays": 13,
+      "lastPurchaseDate": null
+    },
+    {
+      "partNumber": "RT-1074",
+      "supplierSku": "OEM50074",
+      "description": "Lightweight Adapter 74",
+      "branch": "ATL",
+      "availableQty": 19,
+      "uom": "BX",
+      "leadTimeDays": 32,
+      "lastPurchaseDate": null,
+      "lots": [
+        {
+          "lotNumber": "LOT-92489",
+          "qty": 19,
+          "expirationDate": null
+        }
+      ]
+    },
+    {
+      "partNumber": "AB-1075",
+      "supplierSku": "SUP50075",
+      "description": "Standard Bearing 75",
+      "branch": "PDX",
+      "availableQty": 140,
+      "uom": "RL",
+      "leadTimeDays": null,
+      "lastPurchaseDate": null
+    },
+    {
+      "partNumber": "ZX-1076",
+      "supplierSku": "VND50076",
+      "description": "Heavy-Duty Valve 76",
+      "branch": "JFK",
+      "availableQty": 449,
+      "uom": "PK",
+      "leadTimeDays": null,
+      "lastPurchaseDate": null
+    },
+    {
+      "partNumber": "LM-1077",
+      "supplierSku": "OEM50077",
+      "description": "Standard Pump 77",
+      "branch": "PHX",
+      "availableQty": 16,
+      "uom": "EA",
+      "leadTimeDays": 25,
+      "lastPurchaseDate": "2023-04-17T17:29:26.493Z",
+      "lots": [
+        {
+          "lotNumber": "LOT-88444",
+          "qty": 11,
+          "expirationDate": null
+        },
+        {
+          "lotNumber": "LOT-78186",
+          "qty": 5,
+          "expirationDate": null
+        }
+      ]
+    },
+    {
+      "partNumber": "QP-1078",
+      "supplierSku": "SUP50078",
+      "description": "Standard Gasket 78",
+      "branch": "PHX",
+      "availableQty": 444,
+      "uom": "FT",
+      "leadTimeDays": 23,
+      "lastPurchaseDate": "2023-04-07T17:29:26.493Z"
+    },
+    {
+      "partNumber": "RT-1079",
+      "supplierSku": "VND50079",
+      "description": "Economy Gasket 79",
+      "branch": "SEA",
+      "availableQty": 181,
+      "uom": "EA",
+      "leadTimeDays": 33,
+      "lastPurchaseDate": "2024-08-12T17:29:26.493Z"
+    },
+    {
+      "partNumber": "AB-1080",
+      "supplierSku": "OEM50080",
+      "description": "Economy Bearing 80",
+      "branch": "JFK",
+      "availableQty": 129,
+      "uom": "PK",
+      "leadTimeDays": null,
+      "lastPurchaseDate": null
+    },
+    {
+      "partNumber": "ZX-1081",
+      "supplierSku": "SUP50081",
+      "description": "Lightweight Pump 81",
+      "branch": "SEA",
+      "availableQty": 17,
+      "uom": "RL",
+      "leadTimeDays": 6,
+      "lastPurchaseDate": "2023-07-19T17:29:26.493Z"
+    },
+    {
+      "partNumber": "LM-1082",
+      "supplierSku": "VND50082",
+      "description": "Lightweight Seal 82",
+      "branch": "ATL",
+      "availableQty": 35,
+      "uom": "RL",
+      "leadTimeDays": 17,
+      "lastPurchaseDate": "2025-05-14T17:29:26.493Z"
+    },
+    {
+      "partNumber": "QP-1083",
+      "supplierSku": "OEM50083",
+      "description": "Heavy-Duty Fitting 83",
+      "branch": "PDX",
+      "availableQty": 50,
+      "uom": "EA",
+      "leadTimeDays": 42,
+      "lastPurchaseDate": "2024-10-22T17:29:26.493Z",
+      "lots": [
+        {
+          "lotNumber": "LOT-92318",
+          "qty": 21,
+          "expirationDate": "2026-12-31T17:29:26.493Z"
+        },
+        {
+          "lotNumber": "LOT-54008",
+          "qty": 29,
+          "expirationDate": null
+        }
+      ]
+    },
+    {
+      "partNumber": "RT-1084",
+      "supplierSku": "SUP50084",
+      "description": "Economy Pump 84",
+      "branch": "LAX",
+      "availableQty": 370,
+      "uom": "BX",
+      "leadTimeDays": 9,
+      "lastPurchaseDate": "2023-07-06T17:29:26.493Z"
+    },
+    {
+      "partNumber": "AB-1085",
+      "supplierSku": "VND50085",
+      "description": "Premium Pump 85",
+      "branch": "DEN",
+      "availableQty": 327,
+      "uom": "RL",
+      "leadTimeDays": null,
+      "lastPurchaseDate": null
+    },
+    {
+      "partNumber": "ZX-1086",
+      "supplierSku": "OEM50086",
+      "description": "Industrial Coupling 86",
+      "branch": "SEA",
+      "availableQty": 229,
+      "uom": "EA",
+      "leadTimeDays": 23,
+      "lastPurchaseDate": "2025-11-05T17:29:26.493Z"
+    },
+    {
+      "partNumber": "LM-1087",
+      "supplierSku": "SUP50087",
+      "description": "Compact Clamp 87",
+      "branch": "SEA",
+      "availableQty": 241,
+      "uom": "PK",
+      "leadTimeDays": 32,
+      "lastPurchaseDate": "2024-10-13T17:29:26.493Z"
+    },
+    {
+      "partNumber": "QP-1088",
+      "supplierSku": "VND50088",
+      "description": "Lightweight Adapter 88",
+      "branch": "PDX",
+      "availableQty": 143,
+      "uom": "FT",
+      "leadTimeDays": 20,
+      "lastPurchaseDate": "2024-01-01T17:29:26.493Z",
+      "lots": [
+        {
+          "lotNumber": "LOT-76971",
+          "qty": 143,
+          "expirationDate": "2026-06-15T17:29:26.493Z"
+        }
+      ]
+    },
+    {
+      "partNumber": "RT-1089",
+      "supplierSku": "OEM50089",
+      "description": "Economy Seal 89",
+      "branch": "JFK",
+      "availableQty": 478,
+      "uom": "RL",
+      "leadTimeDays": 28,
+      "lastPurchaseDate": "2025-05-14T17:29:26.493Z"
+    },
+    {
+      "partNumber": "AB-1090",
+      "supplierSku": "SUP50090",
+      "description": "Heavy-Duty Coupling 90",
+      "branch": "DAL",
+      "availableQty": 328,
+      "uom": "BX",
+      "leadTimeDays": 9,
+      "lastPurchaseDate": "2023-04-06T17:29:26.493Z",
+      "lots": [
+        {
+          "lotNumber": "LOT-76209",
+          "qty": 67,
+          "expirationDate": "2025-12-25T17:29:26.493Z"
+        },
+        {
+          "lotNumber": "LOT-35128",
+          "qty": 261,
+          "expirationDate": null
+        }
+      ]
+    },
+    {
+      "partNumber": "ZX-1091",
+      "supplierSku": "VND50091",
+      "description": "Compact Adapter 91",
+      "branch": "ATL",
+      "availableQty": 492,
+      "uom": "BX",
+      "leadTimeDays": 1,
+      "lastPurchaseDate": "2024-05-29T17:29:26.493Z"
+    },
+    {
+      "partNumber": "LM-1092",
+      "supplierSku": "OEM50092",
+      "description": "Heavy-Duty Bearing 92",
+      "branch": "DEN",
+      "availableQty": 77,
+      "uom": "FT",
+      "leadTimeDays": 7,
+      "lastPurchaseDate": "2024-11-23T17:29:26.493Z",
+      "lots": [
+        {
+          "lotNumber": "LOT-43496",
+          "qty": 61,
+          "expirationDate": "2026-07-08T17:29:26.493Z"
+        },
+        {
+          "lotNumber": "LOT-49184",
+          "qty": 14,
+          "expirationDate": null
+        },
+        {
+          "lotNumber": "LOT-84554",
+          "qty": 2,
+          "expirationDate": null
+        }
+      ]
+    },
+    {
+      "partNumber": "QP-1093",
+      "supplierSku": "SUP50093",
+      "description": "Heavy-Duty Pump 93",
+      "branch": "LAX",
+      "availableQty": 325,
+      "uom": "FT",
+      "leadTimeDays": 41,
+      "lastPurchaseDate": "2025-01-16T17:29:26.493Z",
+      "lots": [
+        {
+          "lotNumber": "LOT-54078",
+          "qty": 325,
+          "expirationDate": null
+        }
+      ]
+    },
+    {
+      "partNumber": "RT-1094",
+      "supplierSku": "VND50094",
+      "description": "Lightweight Seal 94",
+      "branch": "ORD",
+      "availableQty": 79,
+      "uom": "EA",
+      "leadTimeDays": 21,
+      "lastPurchaseDate": null,
+      "lots": [
+        {
+          "lotNumber": "LOT-56123",
+          "qty": 79,
+          "expirationDate": "2026-04-21T17:29:26.493Z"
+        }
+      ]
+    },
+    {
+      "partNumber": "AB-1095",
+      "supplierSku": "OEM50095",
+      "description": "Compact Gasket 95",
+      "branch": "SFO",
+      "availableQty": 371,
+      "uom": "LB",
+      "leadTimeDays": 28,
+      "lastPurchaseDate": null,
+      "lots": [
+        {
+          "lotNumber": "LOT-17087",
+          "qty": 124,
+          "expirationDate": null
+        },
+        {
+          "lotNumber": "LOT-19299",
+          "qty": 163,
+          "expirationDate": "2026-02-21T17:29:26.493Z"
+        },
+        {
+          "lotNumber": "LOT-72953",
+          "qty": 84,
+          "expirationDate": null
+        }
+      ]
+    },
+    {
+      "partNumber": "ZX-1096",
+      "supplierSku": "SUP50096",
+      "description": "Industrial Coupling 96",
+      "branch": "SEA",
+      "availableQty": 78,
+      "uom": "EA",
+      "leadTimeDays": 20,
+      "lastPurchaseDate": null
+    },
+    {
+      "partNumber": "LM-1097",
+      "supplierSku": "VND50097",
+      "description": "Compact Adapter 97",
+      "branch": "PDX",
+      "availableQty": 35,
+      "uom": "BX",
+      "leadTimeDays": 25,
+      "lastPurchaseDate": "2025-01-13T17:29:26.493Z",
+      "lots": [
+        {
+          "lotNumber": "LOT-20158",
+          "qty": 14,
+          "expirationDate": null
+        },
+        {
+          "lotNumber": "LOT-78823",
+          "qty": 17,
+          "expirationDate": "2026-01-29T17:29:26.493Z"
+        },
+        {
+          "lotNumber": "LOT-41388",
+          "qty": 4,
+          "expirationDate": "2026-03-12T17:29:26.493Z"
+        }
+      ]
+    },
+    {
+      "partNumber": "QP-1098",
+      "supplierSku": "OEM50098",
+      "description": "Lightweight Valve 98",
+      "branch": "DAL",
+      "availableQty": 164,
+      "uom": "EA",
+      "leadTimeDays": 41,
+      "lastPurchaseDate": null,
+      "lots": [
+        {
+          "lotNumber": "LOT-40717",
+          "qty": 164,
+          "expirationDate": null
+        }
+      ]
+    },
+    {
+      "partNumber": "RT-1099",
+      "supplierSku": "SUP50099",
+      "description": "Standard Valve 99",
+      "branch": "LAX",
+      "availableQty": 165,
+      "uom": "FT",
+      "leadTimeDays": null,
+      "lastPurchaseDate": null,
+      "lots": [
+        {
+          "lotNumber": "LOT-74744",
+          "qty": 98,
+          "expirationDate": null
+        },
+        {
+          "lotNumber": "LOT-42525",
+          "qty": 67,
+          "expirationDate": "2026-05-24T17:29:26.493Z"
+        }
+      ]
+    },
+    {
+      "partNumber": "AB-1100",
+      "supplierSku": "VND50100",
+      "description": "Economy Seal 100",
+      "branch": "SEA",
+      "availableQty": 275,
+      "uom": "RL",
+      "leadTimeDays": 18,
+      "lastPurchaseDate": "2023-10-14T17:29:26.493Z",
+      "lots": [
+        {
+          "lotNumber": "LOT-95913",
+          "qty": 161,
+          "expirationDate": null
+        },
+        {
+          "lotNumber": "LOT-87750",
+          "qty": 114,
+          "expirationDate": null
+        }
+      ]
+    },
+    {
+      "partNumber": "ZX-1101",
+      "supplierSku": "OEM50101",
+      "description": "Premium Adapter 101",
+      "branch": "LAX",
+      "availableQty": 52,
+      "uom": "PK",
+      "leadTimeDays": 17,
+      "lastPurchaseDate": "2023-12-12T17:29:26.493Z",
+      "lots": [
+        {
+          "lotNumber": "LOT-45021",
+          "qty": 14,
+          "expirationDate": null
+        },
+        {
+          "lotNumber": "LOT-46416",
+          "qty": 19,
+          "expirationDate": "2026-11-30T17:29:26.493Z"
+        },
+        {
+          "lotNumber": "LOT-93172",
+          "qty": 19,
+          "expirationDate": null
+        }
+      ]
+    },
+    {
+      "partNumber": "LM-1102",
+      "supplierSku": "SUP50102",
+      "description": "Standard Adapter 102",
+      "branch": "ORD",
+      "availableQty": 169,
+      "uom": "EA",
+      "leadTimeDays": 11,
+      "lastPurchaseDate": "2025-08-07T17:29:26.493Z"
+    },
+    {
+      "partNumber": "QP-1103",
+      "supplierSku": "VND50103",
+      "description": "Heavy-Duty Coupling 103",
+      "branch": "DAL",
+      "availableQty": 482,
+      "uom": "FT",
+      "leadTimeDays": 33,
+      "lastPurchaseDate": "2024-09-25T17:29:26.493Z",
+      "lots": [
+        {
+          "lotNumber": "LOT-79824",
+          "qty": 261,
+          "expirationDate": "2026-06-17T17:29:26.493Z"
+        },
+        {
+          "lotNumber": "LOT-86232",
+          "qty": 221,
+          "expirationDate": "2026-07-27T17:29:26.493Z"
+        }
+      ]
+    },
+    {
+      "partNumber": "RT-1104",
+      "supplierSku": "OEM50104",
+      "description": "Economy Gasket 104",
+      "branch": "PDX",
+      "availableQty": 87,
+      "uom": "FT",
+      "leadTimeDays": 21,
+      "lastPurchaseDate": "2025-02-16T17:29:26.493Z"
+    },
+    {
+      "partNumber": "AB-1105",
+      "supplierSku": "SUP50105",
+      "description": "Premium Seal 105",
+      "branch": "SFO",
+      "availableQty": 198,
+      "uom": "BX",
+      "leadTimeDays": 14,
+      "lastPurchaseDate": "2025-01-04T17:29:26.493Z",
+      "lots": [
+        {
+          "lotNumber": "LOT-87723",
+          "qty": 182,
+          "expirationDate": "2026-05-12T17:29:26.493Z"
+        },
+        {
+          "lotNumber": "LOT-35785",
+          "qty": 16,
+          "expirationDate": "2026-12-16T17:29:26.493Z"
+        }
+      ]
+    },
+    {
+      "partNumber": "ZX-1106",
+      "supplierSku": "VND50106",
+      "description": "Economy Clamp 106",
+      "branch": "LAX",
+      "availableQty": 362,
+      "uom": "EA",
+      "leadTimeDays": null,
+      "lastPurchaseDate": "2024-09-24T17:29:26.493Z"
+    },
+    {
+      "partNumber": "LM-1107",
+      "supplierSku": "OEM50107",
+      "description": "Industrial Bearing 107",
+      "branch": "ORD",
+      "availableQty": 36,
+      "uom": "FT",
+      "leadTimeDays": 33,
+      "lastPurchaseDate": "2025-03-09T17:29:26.493Z"
+    },
+    {
+      "partNumber": "QP-1108",
+      "supplierSku": "SUP50108",
+      "description": "Lightweight Filter 108",
+      "branch": "JFK",
+      "availableQty": 450,
+      "uom": "LB",
+      "leadTimeDays": 23,
+      "lastPurchaseDate": "2024-08-29T17:29:26.493Z",
+      "lots": [
+        {
+          "lotNumber": "LOT-82595",
+          "qty": 450,
+          "expirationDate": "2026-06-17T17:29:26.493Z"
+        }
+      ]
+    },
+    {
+      "partNumber": "RT-1109",
+      "supplierSku": "VND50109",
+      "description": "Heavy-Duty Fitting 109",
+      "branch": "DEN",
+      "availableQty": 162,
+      "uom": "EA",
+      "leadTimeDays": 16,
+      "lastPurchaseDate": null,
+      "lots": [
+        {
+          "lotNumber": "LOT-65069",
+          "qty": 157,
+          "expirationDate": null
+        },
+        {
+          "lotNumber": "LOT-79129",
+          "qty": 5,
+          "expirationDate": null
+        }
+      ]
+    },
+    {
+      "partNumber": "AB-1110",
+      "supplierSku": "OEM50110",
+      "description": "Compact Valve 110",
+      "branch": "ORD",
+      "availableQty": 422,
+      "uom": "LB",
+      "leadTimeDays": null,
+      "lastPurchaseDate": "2023-05-11T17:29:26.493Z"
+    },
+    {
+      "partNumber": "ZX-1111",
+      "supplierSku": "SUP50111",
+      "description": "Economy Pump 111",
+      "branch": "JFK",
+      "availableQty": 368,
+      "uom": "EA",
+      "leadTimeDays": 34,
+      "lastPurchaseDate": "2025-01-14T17:29:26.493Z"
+    },
+    {
+      "partNumber": "LM-1112",
+      "supplierSku": "VND50112",
+      "description": "Standard Filter 112",
+      "branch": "PHX",
+      "availableQty": 91,
+      "uom": "BX",
+      "leadTimeDays": null,
+      "lastPurchaseDate": "2024-09-23T17:29:26.493Z"
+    },
+    {
+      "partNumber": "QP-1113",
+      "supplierSku": "OEM50113",
+      "description": "Premium Seal 113",
+      "branch": "SEA",
+      "availableQty": 333,
+      "uom": "EA",
+      "leadTimeDays": 35,
+      "lastPurchaseDate": "2023-10-26T17:29:26.493Z",
+      "lots": [
+        {
+          "lotNumber": "LOT-28650",
+          "qty": 107,
+          "expirationDate": "2026-09-06T17:29:26.493Z"
+        },
+        {
+          "lotNumber": "LOT-49824",
+          "qty": 161,
+          "expirationDate": "2026-03-18T17:29:26.493Z"
+        },
+        {
+          "lotNumber": "LOT-40878",
+          "qty": 65,
+          "expirationDate": null
+        }
+      ]
+    },
+    {
+      "partNumber": "RT-1114",
+      "supplierSku": "SUP50114",
+      "description": "Lightweight Seal 114",
+      "branch": "SFO",
+      "availableQty": 69,
+      "uom": "PK",
+      "leadTimeDays": 9,
+      "lastPurchaseDate": null
+    },
+    {
+      "partNumber": "AB-1115",
+      "supplierSku": "VND50115",
+      "description": "Standard Bearing 115",
+      "branch": "DEN",
+      "availableQty": 245,
+      "uom": "RL",
+      "leadTimeDays": 41,
+      "lastPurchaseDate": null,
+      "lots": [
+        {
+          "lotNumber": "LOT-29656",
+          "qty": 164,
+          "expirationDate": "2026-10-06T17:29:26.493Z"
+        },
+        {
+          "lotNumber": "LOT-70838",
+          "qty": 6,
+          "expirationDate": null
+        },
+        {
+          "lotNumber": "LOT-95885",
+          "qty": 75,
+          "expirationDate": null
+        }
+      ]
+    },
+    {
+      "partNumber": "ZX-1116",
+      "supplierSku": "OEM50116",
+      "description": "Industrial Fitting 116",
+      "branch": "DAL",
+      "availableQty": 41,
+      "uom": "PK",
+      "leadTimeDays": 24,
+      "lastPurchaseDate": "2023-09-02T17:29:26.493Z"
+    },
+    {
+      "partNumber": "LM-1117",
+      "supplierSku": "SUP50117",
+      "description": "Lightweight Fitting 117",
+      "branch": "SFO",
+      "availableQty": 379,
+      "uom": "FT",
+      "leadTimeDays": 1,
+      "lastPurchaseDate": "2023-03-19T17:29:26.493Z",
+      "lots": [
+        {
+          "lotNumber": "LOT-21773",
+          "qty": 322,
+          "expirationDate": null
+        },
+        {
+          "lotNumber": "LOT-33940",
+          "qty": 57,
+          "expirationDate": "2026-12-26T17:29:26.493Z"
+        }
+      ]
+    },
+    {
+      "partNumber": "QP-1118",
+      "supplierSku": "VND50118",
+      "description": "Economy Clamp 118",
+      "branch": "PDX",
+      "availableQty": 322,
+      "uom": "BX",
+      "leadTimeDays": 41,
+      "lastPurchaseDate": "2025-06-02T17:29:26.493Z"
+    },
+    {
+      "partNumber": "RT-1119",
+      "supplierSku": "OEM50119",
+      "description": "Lightweight Adapter 119",
+      "branch": "PDX",
+      "availableQty": 109,
+      "uom": "BX",
+      "leadTimeDays": 32,
+      "lastPurchaseDate": null
+    },
+    {
+      "partNumber": "AB-1120",
+      "supplierSku": "SUP50120",
+      "description": "Compact Pump 120",
+      "branch": "LAX",
+      "availableQty": 152,
+      "uom": "LB",
+      "leadTimeDays": 2,
+      "lastPurchaseDate": "2024-03-07T17:29:26.493Z"
+    },
+    {
+      "partNumber": "ZX-1121",
+      "supplierSku": "VND50121",
+      "description": "Economy Adapter 121",
+      "branch": "ORD",
+      "availableQty": 473,
+      "uom": "EA",
+      "leadTimeDays": 16,
+      "lastPurchaseDate": null,
+      "lots": [
+        {
+          "lotNumber": "LOT-12745",
+          "qty": 229,
+          "expirationDate": "2026-04-09T17:29:26.493Z"
+        },
+        {
+          "lotNumber": "LOT-89748",
+          "qty": 135,
+          "expirationDate": null
+        },
+        {
+          "lotNumber": "LOT-41442",
+          "qty": 109,
+          "expirationDate": "2026-05-10T17:29:26.493Z"
+        }
+      ]
+    },
+    {
+      "partNumber": "LM-1122",
+      "supplierSku": "OEM50122",
+      "description": "Heavy-Duty Clamp 122",
+      "branch": "PHX",
+      "availableQty": 126,
+      "uom": "RL",
+      "leadTimeDays": 18,
+      "lastPurchaseDate": "2023-05-25T17:29:26.493Z"
+    },
+    {
+      "partNumber": "QP-1123",
+      "supplierSku": "SUP50123",
+      "description": "Premium Gasket 123",
+      "branch": "SFO",
+      "availableQty": 201,
+      "uom": "LB",
+      "leadTimeDays": 35,
+      "lastPurchaseDate": null,
+      "lots": [
+        {
+          "lotNumber": "LOT-83137",
+          "qty": 164,
+          "expirationDate": null
+        },
+        {
+          "lotNumber": "LOT-69670",
+          "qty": 37,
+          "expirationDate": "2026-10-10T17:29:26.493Z"
+        }
+      ]
+    },
+    {
+      "partNumber": "RT-1124",
+      "supplierSku": "VND50124",
+      "description": "Lightweight Adapter 124",
+      "branch": "SEA",
+      "availableQty": 475,
+      "uom": "RL",
+      "leadTimeDays": 17,
+      "lastPurchaseDate": "2025-06-28T17:29:26.493Z"
+    },
+    {
+      "partNumber": "AB-1125",
+      "supplierSku": "OEM50125",
+      "description": "Industrial Bearing 125",
+      "branch": "LAX",
+      "availableQty": 8,
+      "uom": "PK",
+      "leadTimeDays": 20,
+      "lastPurchaseDate": "2025-02-05T17:29:26.493Z",
+      "lots": [
+        {
+          "lotNumber": "LOT-27890",
+          "qty": 2,
+          "expirationDate": "2026-03-08T17:29:26.493Z"
+        },
+        {
+          "lotNumber": "LOT-27362",
+          "qty": 3,
+          "expirationDate": "2026-03-10T17:29:26.493Z"
+        },
+        {
+          "lotNumber": "LOT-90321",
+          "qty": 3,
+          "expirationDate": null
+        }
+      ]
+    },
+    {
+      "partNumber": "ZX-1126",
+      "supplierSku": "SUP50126",
+      "description": "Standard Fitting 126",
+      "branch": "PHX",
+      "availableQty": 160,
+      "uom": "EA",
+      "leadTimeDays": 16,
+      "lastPurchaseDate": "2023-05-26T17:29:26.493Z"
+    },
+    {
+      "partNumber": "LM-1127",
+      "supplierSku": "VND50127",
+      "description": "Economy Valve 127",
+      "branch": "LAX",
+      "availableQty": 29,
+      "uom": "RL",
+      "leadTimeDays": 1,
+      "lastPurchaseDate": "2024-09-24T17:29:26.493Z"
+    },
+    {
+      "partNumber": "QP-1128",
+      "supplierSku": "OEM50128",
+      "description": "Industrial Adapter 128",
+      "branch": "ATL",
+      "availableQty": 316,
+      "uom": "FT",
+      "leadTimeDays": 27,
+      "lastPurchaseDate": "2024-07-20T17:29:26.493Z"
+    },
+    {
+      "partNumber": "RT-1129",
+      "supplierSku": "SUP50129",
+      "description": "Premium Gasket 129",
+      "branch": "DEN",
+      "availableQty": 413,
+      "uom": "FT",
+      "leadTimeDays": 7,
+      "lastPurchaseDate": "2024-09-21T17:29:26.493Z"
+    },
+    {
+      "partNumber": "AB-1130",
+      "supplierSku": "VND50130",
+      "description": "Standard Bearing 130",
+      "branch": "ATL",
+      "availableQty": 106,
+      "uom": "RL",
+      "leadTimeDays": 19,
+      "lastPurchaseDate": null
+    },
+    {
+      "partNumber": "ZX-1131",
+      "supplierSku": "OEM50131",
+      "description": "Lightweight Filter 131",
+      "branch": "ATL",
+      "availableQty": 434,
+      "uom": "FT",
+      "leadTimeDays": 27,
+      "lastPurchaseDate": "2024-08-20T17:29:26.493Z"
+    },
+    {
+      "partNumber": "LM-1132",
+      "supplierSku": "SUP50132",
+      "description": "Lightweight Fitting 132",
+      "branch": "ATL",
+      "availableQty": 321,
+      "uom": "LB",
+      "leadTimeDays": 6,
+      "lastPurchaseDate": "2025-02-26T17:29:26.493Z"
+    },
+    {
+      "partNumber": "QP-1133",
+      "supplierSku": "VND50133",
+      "description": "Lightweight Fitting 133",
+      "branch": "PHX",
+      "availableQty": 463,
+      "uom": "RL",
+      "leadTimeDays": 25,
+      "lastPurchaseDate": "2025-01-09T17:29:26.493Z",
+      "lots": [
+        {
+          "lotNumber": "LOT-63038",
+          "qty": 286,
+          "expirationDate": null
+        },
+        {
+          "lotNumber": "LOT-66773",
+          "qty": 120,
+          "expirationDate": "2026-02-26T17:29:26.493Z"
+        },
+        {
+          "lotNumber": "LOT-49075",
+          "qty": 57,
+          "expirationDate": "2026-12-05T17:29:26.493Z"
+        }
+      ]
+    },
+    {
+      "partNumber": "RT-1134",
+      "supplierSku": "OEM50134",
+      "description": "Economy Seal 134",
+      "branch": "SFO",
+      "availableQty": 472,
+      "uom": "FT",
+      "leadTimeDays": null,
+      "lastPurchaseDate": "2024-10-08T17:29:26.493Z"
+    },
+    {
+      "partNumber": "AB-1135",
+      "supplierSku": "SUP50135",
+      "description": "Lightweight Coupling 135",
+      "branch": "LAX",
+      "availableQty": 468,
+      "uom": "RL",
+      "leadTimeDays": 26,
+      "lastPurchaseDate": null,
+      "lots": [
+        {
+          "lotNumber": "LOT-36448",
+          "qty": 468,
+          "expirationDate": null
+        }
+      ]
+    },
+    {
+      "partNumber": "ZX-1136",
+      "supplierSku": "VND50136",
+      "description": "Premium Gasket 136",
+      "branch": "ORD",
+      "availableQty": 268,
+      "uom": "LB",
+      "leadTimeDays": 12,
+      "lastPurchaseDate": "2024-07-17T17:29:26.493Z",
+      "lots": [
+        {
+          "lotNumber": "LOT-57241",
+          "qty": 159,
+          "expirationDate": "2026-01-24T17:29:26.493Z"
+        },
+        {
+          "lotNumber": "LOT-96764",
+          "qty": 109,
+          "expirationDate": "2026-06-26T17:29:26.493Z"
+        }
+      ]
+    },
+    {
+      "partNumber": "LM-1137",
+      "supplierSku": "OEM50137",
+      "description": "Economy Fitting 137",
+      "branch": "DEN",
+      "availableQty": 47,
+      "uom": "LB",
+      "leadTimeDays": 33,
+      "lastPurchaseDate": "2025-10-07T17:29:26.493Z",
+      "lots": [
+        {
+          "lotNumber": "LOT-88729",
+          "qty": 11,
+          "expirationDate": "2026-06-12T17:29:26.493Z"
+        },
+        {
+          "lotNumber": "LOT-25890",
+          "qty": 36,
+          "expirationDate": "2026-01-30T17:29:26.493Z"
+        }
+      ]
+    },
+    {
+      "partNumber": "QP-1138",
+      "supplierSku": "SUP50138",
+      "description": "Lightweight Filter 138",
+      "branch": "LAX",
+      "availableQty": 298,
+      "uom": "EA",
+      "leadTimeDays": null,
+      "lastPurchaseDate": "2023-08-11T17:29:26.493Z",
+      "lots": [
+        {
+          "lotNumber": "LOT-42704",
+          "qty": 118,
+          "expirationDate": "2025-12-20T17:29:26.493Z"
+        },
+        {
+          "lotNumber": "LOT-90819",
+          "qty": 180,
+          "expirationDate": null
+        }
+      ]
+    },
+    {
+      "partNumber": "RT-1139",
+      "supplierSku": "VND50139",
+      "description": "Lightweight Clamp 139",
+      "branch": "LAX",
+      "availableQty": 167,
+      "uom": "FT",
+      "leadTimeDays": 6,
+      "lastPurchaseDate": "2024-09-18T17:29:26.493Z"
+    },
+    {
+      "partNumber": "AB-1140",
+      "supplierSku": "OEM50140",
+      "description": "Economy Clamp 140",
+      "branch": "SEA",
+      "availableQty": 263,
+      "uom": "BX",
+      "leadTimeDays": 30,
+      "lastPurchaseDate": "2025-08-11T17:29:26.493Z"
+    },
+    {
+      "partNumber": "ZX-1141",
+      "supplierSku": "SUP50141",
+      "description": "Industrial Filter 141",
+      "branch": "LAX",
+      "availableQty": 152,
+      "uom": "LB",
+      "leadTimeDays": 39,
+      "lastPurchaseDate": null,
+      "lots": [
+        {
+          "lotNumber": "LOT-52420",
+          "qty": 71,
+          "expirationDate": "2026-01-12T17:29:26.493Z"
+        },
+        {
+          "lotNumber": "LOT-38070",
+          "qty": 81,
+          "expirationDate": null
+        }
+      ]
+    },
+    {
+      "partNumber": "LM-1142",
+      "supplierSku": "VND50142",
+      "description": "Compact Bearing 142",
+      "branch": "SEA",
+      "availableQty": 497,
+      "uom": "EA",
+      "leadTimeDays": 41,
+      "lastPurchaseDate": null
+    },
+    {
+      "partNumber": "QP-1143",
+      "supplierSku": "OEM50143",
+      "description": "Economy Adapter 143",
+      "branch": "SFO",
+      "availableQty": 211,
+      "uom": "EA",
+      "leadTimeDays": 8,
+      "lastPurchaseDate": "2024-04-29T17:29:26.493Z"
+    },
+    {
+      "partNumber": "RT-1144",
+      "supplierSku": "SUP50144",
+      "description": "Lightweight Seal 144",
+      "branch": "ORD",
+      "availableQty": 313,
+      "uom": "LB",
+      "leadTimeDays": 12,
+      "lastPurchaseDate": null,
+      "lots": [
+        {
+          "lotNumber": "LOT-58967",
+          "qty": 71,
+          "expirationDate": null
+        },
+        {
+          "lotNumber": "LOT-90984",
+          "qty": 242,
+          "expirationDate": "2026-03-23T17:29:26.493Z"
+        }
+      ]
+    },
+    {
+      "partNumber": "AB-1145",
+      "supplierSku": "VND50145",
+      "description": "Industrial Pump 145",
+      "branch": "PDX",
+      "availableQty": 137,
+      "uom": "PK",
+      "leadTimeDays": 31,
+      "lastPurchaseDate": "2023-10-07T17:29:26.493Z",
+      "lots": [
+        {
+          "lotNumber": "LOT-98622",
+          "qty": 73,
+          "expirationDate": "2026-11-17T17:29:26.493Z"
+        },
+        {
+          "lotNumber": "LOT-37783",
+          "qty": 64,
+          "expirationDate": null
+        }
+      ]
+    },
+    {
+      "partNumber": "ZX-1146",
+      "supplierSku": "OEM50146",
+      "description": "Premium Coupling 146",
+      "branch": "PDX",
+      "availableQty": 151,
+      "uom": "RL",
+      "leadTimeDays": 6,
+      "lastPurchaseDate": null
+    },
+    {
+      "partNumber": "LM-1147",
+      "supplierSku": "SUP50147",
+      "description": "Heavy-Duty Gasket 147",
+      "branch": "JFK",
+      "availableQty": 437,
+      "uom": "LB",
+      "leadTimeDays": 4,
+      "lastPurchaseDate": null
+    },
+    {
+      "partNumber": "QP-1148",
+      "supplierSku": "VND50148",
+      "description": "Lightweight Clamp 148",
+      "branch": "ATL",
+      "availableQty": 416,
+      "uom": "FT",
+      "leadTimeDays": 14,
+      "lastPurchaseDate": null
+    },
+    {
+      "partNumber": "RT-1149",
+      "supplierSku": "OEM50149",
+      "description": "Standard Fitting 149",
+      "branch": "ATL",
+      "availableQty": 428,
+      "uom": "PK",
+      "leadTimeDays": null,
+      "lastPurchaseDate": "2025-02-22T17:29:26.493Z"
+    },
+    {
+      "partNumber": "AB-1150",
+      "supplierSku": "SUP50150",
+      "description": "Lightweight Adapter 150",
+      "branch": "PHX",
+      "availableQty": 55,
+      "uom": "FT",
+      "leadTimeDays": 2,
+      "lastPurchaseDate": "2024-04-20T17:29:26.493Z"
+    },
+    {
+      "partNumber": "ZX-1151",
+      "supplierSku": "VND50151",
+      "description": "Lightweight Fitting 151",
+      "branch": "PDX",
+      "availableQty": 497,
+      "uom": "PK",
+      "leadTimeDays": null,
+      "lastPurchaseDate": "2023-09-24T17:29:26.493Z"
+    },
+    {
+      "partNumber": "LM-1152",
+      "supplierSku": "OEM50152",
+      "description": "Standard Bearing 152",
+      "branch": "DEN",
+      "availableQty": 319,
+      "uom": "BX",
+      "leadTimeDays": 13,
+      "lastPurchaseDate": "2025-04-28T17:29:26.493Z"
+    },
+    {
+      "partNumber": "QP-1153",
+      "supplierSku": "SUP50153",
+      "description": "Industrial Valve 153",
+      "branch": "SFO",
+      "availableQty": 426,
+      "uom": "FT",
+      "leadTimeDays": 7,
+      "lastPurchaseDate": null
+    },
+    {
+      "partNumber": "RT-1154",
+      "supplierSku": "VND50154",
+      "description": "Standard Clamp 154",
+      "branch": "LAX",
+      "availableQty": 371,
+      "uom": "BX",
+      "leadTimeDays": 7,
+      "lastPurchaseDate": "2025-03-21T17:29:26.493Z",
+      "lots": [
+        {
+          "lotNumber": "LOT-21449",
+          "qty": 158,
+          "expirationDate": "2026-12-13T17:29:26.493Z"
+        },
+        {
+          "lotNumber": "LOT-28210",
+          "qty": 213,
+          "expirationDate": "2026-03-16T17:29:26.493Z"
+        }
+      ]
+    },
+    {
+      "partNumber": "AB-1155",
+      "supplierSku": "OEM50155",
+      "description": "Compact Gasket 155",
+      "branch": "ATL",
+      "availableQty": 43,
+      "uom": "PK",
+      "leadTimeDays": 38,
+      "lastPurchaseDate": "2024-11-15T17:29:26.493Z",
+      "lots": [
+        {
+          "lotNumber": "LOT-99380",
+          "qty": 34,
+          "expirationDate": "2026-08-26T17:29:26.493Z"
+        },
+        {
+          "lotNumber": "LOT-69296",
+          "qty": 3,
+          "expirationDate": "2026-04-04T17:29:26.493Z"
+        },
+        {
+          "lotNumber": "LOT-63176",
+          "qty": 6,
+          "expirationDate": null
+        }
+      ]
+    },
+    {
+      "partNumber": "ZX-1156",
+      "supplierSku": "SUP50156",
+      "description": "Economy Pump 156",
+      "branch": "DAL",
+      "availableQty": 159,
+      "uom": "BX",
+      "leadTimeDays": 15,
+      "lastPurchaseDate": "2025-01-27T17:29:26.493Z",
+      "lots": [
+        {
+          "lotNumber": "LOT-13372",
+          "qty": 45,
+          "expirationDate": null
+        },
+        {
+          "lotNumber": "LOT-36150",
+          "qty": 46,
+          "expirationDate": "2026-07-07T17:29:26.493Z"
+        },
+        {
+          "lotNumber": "LOT-44549",
+          "qty": 68,
+          "expirationDate": null
+        }
+      ]
+    },
+    {
+      "partNumber": "LM-1157",
+      "supplierSku": "VND50157",
+      "description": "Heavy-Duty Valve 157",
+      "branch": "DAL",
+      "availableQty": 256,
+      "uom": "LB",
+      "leadTimeDays": null,
+      "lastPurchaseDate": "2023-09-26T17:29:26.493Z"
+    },
+    {
+      "partNumber": "QP-1158",
+      "supplierSku": "OEM50158",
+      "description": "Standard Coupling 158",
+      "branch": "JFK",
+      "availableQty": 401,
+      "uom": "FT",
+      "leadTimeDays": 34,
+      "lastPurchaseDate": "2024-12-19T17:29:26.493Z"
+    },
+    {
+      "partNumber": "RT-1159",
+      "supplierSku": "SUP50159",
+      "description": "Compact Bearing 159",
+      "branch": "DAL",
+      "availableQty": 77,
+      "uom": "BX",
+      "leadTimeDays": 11,
+      "lastPurchaseDate": "2024-10-06T17:29:26.493Z"
+    },
+    {
+      "partNumber": "AB-1160",
+      "supplierSku": "VND50160",
+      "description": "Premium Bearing 160",
+      "branch": "SFO",
+      "availableQty": 435,
+      "uom": "FT",
+      "leadTimeDays": 24,
+      "lastPurchaseDate": "2024-04-05T17:29:26.493Z"
+    },
+    {
+      "partNumber": "ZX-1161",
+      "supplierSku": "OEM50161",
+      "description": "Lightweight Bearing 161",
+      "branch": "SEA",
+      "availableQty": 413,
+      "uom": "BX",
+      "leadTimeDays": 34,
+      "lastPurchaseDate": "2024-11-22T17:29:26.493Z"
+    },
+    {
+      "partNumber": "LM-1162",
+      "supplierSku": "SUP50162",
+      "description": "Heavy-Duty Pump 162",
+      "branch": "DAL",
+      "availableQty": 207,
+      "uom": "FT",
+      "leadTimeDays": 26,
+      "lastPurchaseDate": null
+    },
+    {
+      "partNumber": "QP-1163",
+      "supplierSku": "VND50163",
+      "description": "Lightweight Seal 163",
+      "branch": "ATL",
+      "availableQty": 498,
+      "uom": "LB",
+      "leadTimeDays": 25,
+      "lastPurchaseDate": "2024-04-04T17:29:26.493Z",
+      "lots": [
+        {
+          "lotNumber": "LOT-25949",
+          "qty": 498,
+          "expirationDate": "2026-11-23T17:29:26.493Z"
+        }
+      ]
+    },
+    {
+      "partNumber": "RT-1164",
+      "supplierSku": "OEM50164",
+      "description": "Industrial Fitting 164",
+      "branch": "ATL",
+      "availableQty": 146,
+      "uom": "RL",
+      "leadTimeDays": null,
+      "lastPurchaseDate": "2025-04-30T17:29:26.493Z",
+      "lots": [
+        {
+          "lotNumber": "LOT-10517",
+          "qty": 27,
+          "expirationDate": "2026-10-09T17:29:26.493Z"
+        },
+        {
+          "lotNumber": "LOT-68333",
+          "qty": 119,
+          "expirationDate": null
+        }
+      ]
+    },
+    {
+      "partNumber": "AB-1165",
+      "supplierSku": "SUP50165",
+      "description": "Industrial Seal 165",
+      "branch": "LAX",
+      "availableQty": 222,
+      "uom": "EA",
+      "leadTimeDays": null,
+      "lastPurchaseDate": "2023-12-15T17:29:26.493Z",
+      "lots": [
+        {
+          "lotNumber": "LOT-37992",
+          "qty": 215,
+          "expirationDate": "2026-05-16T17:29:26.493Z"
+        },
+        {
+          "lotNumber": "LOT-95362",
+          "qty": 7,
+          "expirationDate": "2025-12-31T17:29:26.493Z"
+        }
+      ]
+    },
+    {
+      "partNumber": "ZX-1166",
+      "supplierSku": "VND50166",
+      "description": "Economy Valve 166",
+      "branch": "PDX",
+      "availableQty": 203,
+      "uom": "LB",
+      "leadTimeDays": null,
+      "lastPurchaseDate": null,
+      "lots": [
+        {
+          "lotNumber": "LOT-86358",
+          "qty": 99,
+          "expirationDate": null
+        },
+        {
+          "lotNumber": "LOT-39071",
+          "qty": 104,
+          "expirationDate": null
+        }
+      ]
+    },
+    {
+      "partNumber": "LM-1167",
+      "supplierSku": "OEM50167",
+      "description": "Industrial Coupling 167",
+      "branch": "ATL",
+      "availableQty": 226,
+      "uom": "RL",
+      "leadTimeDays": 2,
+      "lastPurchaseDate": null,
+      "lots": [
+        {
+          "lotNumber": "LOT-83465",
+          "qty": 226,
+          "expirationDate": null
+        }
+      ]
+    },
+    {
+      "partNumber": "QP-1168",
+      "supplierSku": "SUP50168",
+      "description": "Standard Filter 168",
+      "branch": "ATL",
+      "availableQty": 35,
+      "uom": "PK",
+      "leadTimeDays": 23,
+      "lastPurchaseDate": null,
+      "lots": [
+        {
+          "lotNumber": "LOT-13852",
+          "qty": 35,
+          "expirationDate": null
+        }
+      ]
+    },
+    {
+      "partNumber": "RT-1169",
+      "supplierSku": "VND50169",
+      "description": "Economy Seal 169",
+      "branch": "LAX",
+      "availableQty": 408,
+      "uom": "PK",
+      "leadTimeDays": null,
+      "lastPurchaseDate": null
+    },
+    {
+      "partNumber": "AB-1170",
+      "supplierSku": "OEM50170",
+      "description": "Heavy-Duty Adapter 170",
+      "branch": "SEA",
+      "availableQty": 334,
+      "uom": "LB",
+      "leadTimeDays": 30,
+      "lastPurchaseDate": null
+    },
+    {
+      "partNumber": "ZX-1171",
+      "supplierSku": "SUP50171",
+      "description": "Compact Filter 171",
+      "branch": "ATL",
+      "availableQty": 231,
+      "uom": "RL",
+      "leadTimeDays": 8,
+      "lastPurchaseDate": null
+    },
+    {
+      "partNumber": "LM-1172",
+      "supplierSku": "VND50172",
+      "description": "Industrial Coupling 172",
+      "branch": "DEN",
+      "availableQty": 275,
+      "uom": "EA",
+      "leadTimeDays": null,
+      "lastPurchaseDate": "2025-10-18T17:29:26.493Z"
+    },
+    {
+      "partNumber": "QP-1173",
+      "supplierSku": "OEM50173",
+      "description": "Lightweight Coupling 173",
+      "branch": "PDX",
+      "availableQty": 153,
+      "uom": "BX",
+      "leadTimeDays": null,
+      "lastPurchaseDate": "2023-09-16T17:29:26.493Z"
+    },
+    {
+      "partNumber": "RT-1174",
+      "supplierSku": "SUP50174",
+      "description": "Standard Clamp 174",
+      "branch": "ATL",
+      "availableQty": 88,
+      "uom": "LB",
+      "leadTimeDays": 25,
+      "lastPurchaseDate": "2023-07-25T17:29:26.493Z",
+      "lots": [
+        {
+          "lotNumber": "LOT-59487",
+          "qty": 82,
+          "expirationDate": "2026-09-28T17:29:26.493Z"
+        },
+        {
+          "lotNumber": "LOT-44347",
+          "qty": 6,
+          "expirationDate": "2026-02-06T17:29:26.493Z"
+        }
+      ]
+    },
+    {
+      "partNumber": "AB-1175",
+      "supplierSku": "VND50175",
+      "description": "Economy Filter 175",
+      "branch": "SFO",
+      "availableQty": 219,
+      "uom": "RL",
+      "leadTimeDays": 22,
+      "lastPurchaseDate": null,
+      "lots": [
+        {
+          "lotNumber": "LOT-63203",
+          "qty": 85,
+          "expirationDate": null
+        },
+        {
+          "lotNumber": "LOT-41610",
+          "qty": 93,
+          "expirationDate": null
+        },
+        {
+          "lotNumber": "LOT-59900",
+          "qty": 41,
+          "expirationDate": "2026-01-02T17:29:26.493Z"
+        }
+      ]
+    },
+    {
+      "partNumber": "ZX-1176",
+      "supplierSku": "OEM50176",
+      "description": "Premium Adapter 176",
+      "branch": "DAL",
+      "availableQty": 15,
+      "uom": "BX",
+      "leadTimeDays": 6,
+      "lastPurchaseDate": null
+    },
+    {
+      "partNumber": "LM-1177",
+      "supplierSku": "SUP50177",
+      "description": "Economy Fitting 177",
+      "branch": "SFO",
+      "availableQty": 75,
+      "uom": "BX",
+      "leadTimeDays": 14,
+      "lastPurchaseDate": "2023-12-09T17:29:26.493Z"
+    },
+    {
+      "partNumber": "QP-1178",
+      "supplierSku": "VND50178",
+      "description": "Premium Clamp 178",
+      "branch": "PHX",
+      "availableQty": 298,
+      "uom": "LB",
+      "leadTimeDays": 3,
+      "lastPurchaseDate": null
+    },
+    {
+      "partNumber": "RT-1179",
+      "supplierSku": "OEM50179",
+      "description": "Premium Bearing 179",
+      "branch": "PHX",
+      "availableQty": 464,
+      "uom": "RL",
+      "leadTimeDays": 15,
+      "lastPurchaseDate": null,
+      "lots": [
+        {
+          "lotNumber": "LOT-76544",
+          "qty": 464,
+          "expirationDate": null
+        }
+      ]
+    },
+    {
+      "partNumber": "AB-1180",
+      "supplierSku": "SUP50180",
+      "description": "Lightweight Pump 180",
+      "branch": "ORD",
+      "availableQty": 157,
+      "uom": "PK",
+      "leadTimeDays": 42,
+      "lastPurchaseDate": null,
+      "lots": [
+        {
+          "lotNumber": "LOT-52482",
+          "qty": 108,
+          "expirationDate": null
+        },
+        {
+          "lotNumber": "LOT-28856",
+          "qty": 6,
+          "expirationDate": null
+        },
+        {
+          "lotNumber": "LOT-39191",
+          "qty": 43,
+          "expirationDate": null
+        }
+      ]
+    },
+    {
+      "partNumber": "ZX-1181",
+      "supplierSku": "VND50181",
+      "description": "Economy Bearing 181",
+      "branch": "SFO",
+      "availableQty": 244,
+      "uom": "RL",
+      "leadTimeDays": 16,
+      "lastPurchaseDate": "2024-12-16T17:29:26.493Z"
+    },
+    {
+      "partNumber": "LM-1182",
+      "supplierSku": "OEM50182",
+      "description": "Heavy-Duty Gasket 182",
+      "branch": "SEA",
+      "availableQty": 83,
+      "uom": "BX",
+      "leadTimeDays": 28,
+      "lastPurchaseDate": "2023-10-02T17:29:26.493Z",
+      "lots": [
+        {
+          "lotNumber": "LOT-32045",
+          "qty": 8,
+          "expirationDate": "2026-04-25T17:29:26.493Z"
+        },
+        {
+          "lotNumber": "LOT-65876",
+          "qty": 55,
+          "expirationDate": null
+        },
+        {
+          "lotNumber": "LOT-61551",
+          "qty": 20,
+          "expirationDate": null
+        }
+      ]
+    },
+    {
+      "partNumber": "QP-1183",
+      "supplierSku": "SUP50183",
+      "description": "Compact Filter 183",
+      "branch": "ORD",
+      "availableQty": 364,
+      "uom": "FT",
+      "leadTimeDays": 22,
+      "lastPurchaseDate": "2025-10-27T17:29:26.493Z"
+    },
+    {
+      "partNumber": "RT-1184",
+      "supplierSku": "VND50184",
+      "description": "Premium Coupling 184",
+      "branch": "DEN",
+      "availableQty": 273,
+      "uom": "EA",
+      "leadTimeDays": 3,
+      "lastPurchaseDate": "2024-06-17T17:29:26.493Z"
+    },
+    {
+      "partNumber": "AB-1185",
+      "supplierSku": "OEM50185",
+      "description": "Compact Fitting 185",
+      "branch": "SFO",
+      "availableQty": 339,
+      "uom": "EA",
+      "leadTimeDays": 22,
+      "lastPurchaseDate": "2023-07-11T17:29:26.493Z"
+    },
+    {
+      "partNumber": "ZX-1186",
+      "supplierSku": "SUP50186",
+      "description": "Economy Coupling 186",
+      "branch": "ORD",
+      "availableQty": 159,
+      "uom": "EA",
+      "leadTimeDays": 10,
+      "lastPurchaseDate": "2025-02-10T17:29:26.493Z"
+    },
+    {
+      "partNumber": "LM-1187",
+      "supplierSku": "VND50187",
+      "description": "Premium Filter 187",
+      "branch": "PHX",
+      "availableQty": 346,
+      "uom": "FT",
+      "leadTimeDays": 32,
+      "lastPurchaseDate": "2025-09-14T17:29:26.493Z"
+    },
+    {
+      "partNumber": "QP-1188",
+      "supplierSku": "OEM50188",
+      "description": "Compact Seal 188",
+      "branch": "LAX",
+      "availableQty": 166,
+      "uom": "LB",
+      "leadTimeDays": null,
+      "lastPurchaseDate": "2023-04-16T17:29:26.493Z",
+      "lots": [
+        {
+          "lotNumber": "LOT-79210",
+          "qty": 12,
+          "expirationDate": "2026-03-07T17:29:26.493Z"
+        },
+        {
+          "lotNumber": "LOT-82997",
+          "qty": 154,
+          "expirationDate": "2027-01-05T17:29:26.493Z"
+        }
+      ]
+    },
+    {
+      "partNumber": "RT-1189",
+      "supplierSku": "SUP50189",
+      "description": "Industrial Seal 189",
+      "branch": "PHX",
+      "availableQty": 71,
+      "uom": "BX",
+      "leadTimeDays": 42,
+      "lastPurchaseDate": null,
+      "lots": [
+        {
+          "lotNumber": "LOT-66123",
+          "qty": 11,
+          "expirationDate": null
+        },
+        {
+          "lotNumber": "LOT-73043",
+          "qty": 60,
+          "expirationDate": null
+        }
+      ]
+    },
+    {
+      "partNumber": "AB-1190",
+      "supplierSku": "VND50190",
+      "description": "Standard Coupling 190",
+      "branch": "PHX",
+      "availableQty": 232,
+      "uom": "EA",
+      "leadTimeDays": 23,
+      "lastPurchaseDate": "2023-10-10T17:29:26.493Z"
+    },
+    {
+      "partNumber": "ZX-1191",
+      "supplierSku": "OEM50191",
+      "description": "Premium Clamp 191",
+      "branch": "LAX",
+      "availableQty": 161,
+      "uom": "EA",
+      "leadTimeDays": null,
+      "lastPurchaseDate": "2024-06-03T17:29:26.493Z",
+      "lots": [
+        {
+          "lotNumber": "LOT-36951",
+          "qty": 14,
+          "expirationDate": "2027-01-01T17:29:26.493Z"
+        },
+        {
+          "lotNumber": "LOT-54224",
+          "qty": 119,
+          "expirationDate": "2026-04-28T17:29:26.493Z"
+        },
+        {
+          "lotNumber": "LOT-85373",
+          "qty": 28,
+          "expirationDate": null
+        }
+      ]
+    },
+    {
+      "partNumber": "LM-1192",
+      "supplierSku": "SUP50192",
+      "description": "Lightweight Adapter 192",
+      "branch": "DAL",
+      "availableQty": 430,
+      "uom": "BX",
+      "leadTimeDays": 16,
+      "lastPurchaseDate": "2024-11-09T17:29:26.493Z",
+      "lots": [
+        {
+          "lotNumber": "LOT-12337",
+          "qty": 307,
+          "expirationDate": null
+        },
+        {
+          "lotNumber": "LOT-94796",
+          "qty": 121,
+          "expirationDate": null
+        },
+        {
+          "lotNumber": "LOT-14721",
+          "qty": 2,
+          "expirationDate": "2026-08-30T17:29:26.493Z"
+        }
+      ]
+    },
+    {
+      "partNumber": "QP-1193",
+      "supplierSku": "VND50193",
+      "description": "Heavy-Duty Gasket 193",
+      "branch": "ORD",
+      "availableQty": 339,
+      "uom": "BX",
+      "leadTimeDays": 14,
+      "lastPurchaseDate": null
+    },
+    {
+      "partNumber": "RT-1194",
+      "supplierSku": "OEM50194",
+      "description": "Compact Filter 194",
+      "branch": "DEN",
+      "availableQty": 238,
+      "uom": "LB",
+      "leadTimeDays": 40,
+      "lastPurchaseDate": null
+    },
+    {
+      "partNumber": "AB-1195",
+      "supplierSku": "SUP50195",
+      "description": "Standard Coupling 195",
+      "branch": "JFK",
+      "availableQty": 435,
+      "uom": "RL",
+      "leadTimeDays": 8,
+      "lastPurchaseDate": "2024-07-15T17:29:26.493Z",
+      "lots": [
+        {
+          "lotNumber": "LOT-90770",
+          "qty": 80,
+          "expirationDate": null
+        },
+        {
+          "lotNumber": "LOT-83631",
+          "qty": 277,
+          "expirationDate": null
+        },
+        {
+          "lotNumber": "LOT-65251",
+          "qty": 78,
+          "expirationDate": "2026-12-01T17:29:26.493Z"
+        }
+      ]
+    },
+    {
+      "partNumber": "ZX-1196",
+      "supplierSku": "VND50196",
+      "description": "Heavy-Duty Valve 196",
+      "branch": "PDX",
+      "availableQty": 21,
+      "uom": "LB",
+      "leadTimeDays": 33,
+      "lastPurchaseDate": "2024-08-13T17:29:26.493Z",
+      "lots": [
+        {
+          "lotNumber": "LOT-40908",
+          "qty": 21,
+          "expirationDate": "2026-07-23T17:29:26.493Z"
+        }
+      ]
+    },
+    {
+      "partNumber": "LM-1197",
+      "supplierSku": "OEM50197",
+      "description": "Lightweight Seal 197",
+      "branch": "JFK",
+      "availableQty": 109,
+      "uom": "PK",
+      "leadTimeDays": 9,
+      "lastPurchaseDate": "2023-11-14T17:29:26.493Z"
+    },
+    {
+      "partNumber": "QP-1198",
+      "supplierSku": "SUP50198",
+      "description": "Lightweight Clamp 198",
+      "branch": "DAL",
+      "availableQty": 239,
+      "uom": "PK",
+      "leadTimeDays": 11,
+      "lastPurchaseDate": "2025-07-25T17:29:26.493Z",
+      "lots": [
+        {
+          "lotNumber": "LOT-55405",
+          "qty": 124,
+          "expirationDate": null
+        },
+        {
+          "lotNumber": "LOT-10080",
+          "qty": 48,
+          "expirationDate": null
+        },
+        {
+          "lotNumber": "LOT-50585",
+          "qty": 67,
+          "expirationDate": "2026-05-03T17:29:26.493Z"
+        }
+      ]
+    },
+    {
+      "partNumber": "RT-1199",
+      "supplierSku": "VND50199",
+      "description": "Heavy-Duty Valve 199",
+      "branch": "ORD",
+      "availableQty": 477,
+      "uom": "BX",
+      "leadTimeDays": 33,
+      "lastPurchaseDate": null
+    },
+    {
+      "partNumber": "AB-1200",
+      "supplierSku": "OEM50200",
+      "description": "Premium Bearing 200",
+      "branch": "SFO",
+      "availableQty": 75,
+      "uom": "RL",
+      "leadTimeDays": 18,
+      "lastPurchaseDate": "2023-09-08T17:29:26.493Z"
+    },
+    {
+      "partNumber": "ZX-1201",
+      "supplierSku": "SUP50201",
+      "description": "Industrial Filter 201",
+      "branch": "LAX",
+      "availableQty": 207,
+      "uom": "FT",
+      "leadTimeDays": 10,
+      "lastPurchaseDate": null
+    },
+    {
+      "partNumber": "LM-1202",
+      "supplierSku": "VND50202",
+      "description": "Standard Coupling 202",
+      "branch": "SEA",
+      "availableQty": 173,
+      "uom": "LB",
+      "leadTimeDays": null,
+      "lastPurchaseDate": "2025-01-13T17:29:26.493Z"
+    },
+    {
+      "partNumber": "QP-1203",
+      "supplierSku": "OEM50203",
+      "description": "Compact Pump 203",
+      "branch": "ORD",
+      "availableQty": 273,
+      "uom": "FT",
+      "leadTimeDays": 13,
+      "lastPurchaseDate": "2025-10-01T17:29:26.493Z"
+    },
+    {
+      "partNumber": "RT-1204",
+      "supplierSku": "SUP50204",
+      "description": "Lightweight Coupling 204",
+      "branch": "DEN",
+      "availableQty": 108,
+      "uom": "BX",
+      "leadTimeDays": 38,
+      "lastPurchaseDate": "2024-11-26T17:29:26.493Z"
+    },
+    {
+      "partNumber": "AB-1205",
+      "supplierSku": "VND50205",
+      "description": "Standard Seal 205",
+      "branch": "PDX",
+      "availableQty": 377,
+      "uom": "BX",
+      "leadTimeDays": 12,
+      "lastPurchaseDate": "2023-09-11T17:29:26.493Z"
+    },
+    {
+      "partNumber": "ZX-1206",
+      "supplierSku": "OEM50206",
+      "description": "Standard Gasket 206",
+      "branch": "JFK",
+      "availableQty": 47,
+      "uom": "FT",
+      "leadTimeDays": 7,
+      "lastPurchaseDate": "2025-07-09T17:29:26.493Z",
+      "lots": [
+        {
+          "lotNumber": "LOT-32979",
+          "qty": 45,
+          "expirationDate": "2026-09-21T17:29:26.493Z"
+        },
+        {
+          "lotNumber": "LOT-16012",
+          "qty": 2,
+          "expirationDate": "2026-04-11T17:29:26.493Z"
+        }
+      ]
+    },
+    {
+      "partNumber": "LM-1207",
+      "supplierSku": "SUP50207",
+      "description": "Lightweight Adapter 207",
+      "branch": "SFO",
+      "availableQty": 57,
+      "uom": "FT",
+      "leadTimeDays": 29,
+      "lastPurchaseDate": "2024-05-07T17:29:26.493Z"
+    },
+    {
+      "partNumber": "QP-1208",
+      "supplierSku": "VND50208",
+      "description": "Lightweight Coupling 208",
+      "branch": "ATL",
+      "availableQty": 399,
+      "uom": "PK",
+      "leadTimeDays": 18,
+      "lastPurchaseDate": null,
+      "lots": [
+        {
+          "lotNumber": "LOT-22687",
+          "qty": 180,
+          "expirationDate": "2026-09-13T17:29:26.493Z"
+        },
+        {
+          "lotNumber": "LOT-97813",
+          "qty": 97,
+          "expirationDate": null
+        },
+        {
+          "lotNumber": "LOT-76272",
+          "qty": 122,
+          "expirationDate": "2026-10-06T17:29:26.493Z"
+        }
+      ]
+    },
+    {
+      "partNumber": "RT-1209",
+      "supplierSku": "OEM50209",
+      "description": "Heavy-Duty Clamp 209",
+      "branch": "DEN",
+      "availableQty": 452,
+      "uom": "EA",
+      "leadTimeDays": 33,
+      "lastPurchaseDate": "2024-10-28T17:29:26.493Z",
+      "lots": [
+        {
+          "lotNumber": "LOT-66567",
+          "qty": 452,
+          "expirationDate": null
+        }
+      ]
+    },
+    {
+      "partNumber": "AB-1210",
+      "supplierSku": "SUP50210",
+      "description": "Economy Fitting 210",
+      "branch": "PDX",
+      "availableQty": 495,
+      "uom": "FT",
+      "leadTimeDays": 19,
+      "lastPurchaseDate": null
+    },
+    {
+      "partNumber": "ZX-1211",
+      "supplierSku": "VND50211",
+      "description": "Economy Fitting 211",
+      "branch": "JFK",
+      "availableQty": 441,
+      "uom": "LB",
+      "leadTimeDays": 33,
+      "lastPurchaseDate": null
+    },
+    {
+      "partNumber": "LM-1212",
+      "supplierSku": "OEM50212",
+      "description": "Premium Clamp 212",
+      "branch": "DAL",
+      "availableQty": 486,
+      "uom": "PK",
+      "leadTimeDays": 27,
+      "lastPurchaseDate": "2023-07-26T17:29:26.493Z",
+      "lots": [
+        {
+          "lotNumber": "LOT-68516",
+          "qty": 443,
+          "expirationDate": "2026-09-09T17:29:26.493Z"
+        },
+        {
+          "lotNumber": "LOT-58749",
+          "qty": 29,
+          "expirationDate": null
+        },
+        {
+          "lotNumber": "LOT-79784",
+          "qty": 14,
+          "expirationDate": null
+        }
+      ]
+    },
+    {
+      "partNumber": "QP-1213",
+      "supplierSku": "SUP50213",
+      "description": "Economy Bearing 213",
+      "branch": "LAX",
+      "availableQty": 438,
+      "uom": "RL",
+      "leadTimeDays": 40,
+      "lastPurchaseDate": null,
+      "lots": [
+        {
+          "lotNumber": "LOT-70999",
+          "qty": 438,
+          "expirationDate": null
+        }
+      ]
+    },
+    {
+      "partNumber": "RT-1214",
+      "supplierSku": "VND50214",
+      "description": "Heavy-Duty Pump 214",
+      "branch": "DAL",
+      "availableQty": 277,
+      "uom": "EA",
+      "leadTimeDays": 40,
+      "lastPurchaseDate": "2024-01-14T17:29:26.493Z",
+      "lots": [
+        {
+          "lotNumber": "LOT-11952",
+          "qty": 64,
+          "expirationDate": null
+        },
+        {
+          "lotNumber": "LOT-58627",
+          "qty": 179,
+          "expirationDate": "2026-04-02T17:29:26.493Z"
+        },
+        {
+          "lotNumber": "LOT-96735",
+          "qty": 34,
+          "expirationDate": null
+        }
+      ]
+    },
+    {
+      "partNumber": "AB-1215",
+      "supplierSku": "OEM50215",
+      "description": "Lightweight Bearing 215",
+      "branch": "DEN",
+      "availableQty": 264,
+      "uom": "EA",
+      "leadTimeDays": 19,
+      "lastPurchaseDate": "2025-11-11T17:29:26.493Z",
+      "lots": [
+        {
+          "lotNumber": "LOT-81582",
+          "qty": 61,
+          "expirationDate": null
+        },
+        {
+          "lotNumber": "LOT-17877",
+          "qty": 203,
+          "expirationDate": "2026-01-24T17:29:26.493Z"
+        }
+      ]
+    },
+    {
+      "partNumber": "ZX-1216",
+      "supplierSku": "SUP50216",
+      "description": "Industrial Adapter 216",
+      "branch": "DEN",
+      "availableQty": 306,
+      "uom": "BX",
+      "leadTimeDays": 1,
+      "lastPurchaseDate": "2024-03-28T17:29:26.493Z"
+    },
+    {
+      "partNumber": "LM-1217",
+      "supplierSku": "VND50217",
+      "description": "Premium Gasket 217",
+      "branch": "DEN",
+      "availableQty": 465,
+      "uom": "LB",
+      "leadTimeDays": null,
+      "lastPurchaseDate": "2025-02-21T17:29:26.493Z",
+      "lots": [
+        {
+          "lotNumber": "LOT-99287",
+          "qty": 465,
+          "expirationDate": null
+        }
+      ]
+    },
+    {
+      "partNumber": "QP-1218",
+      "supplierSku": "OEM50218",
+      "description": "Lightweight Fitting 218",
+      "branch": "SEA",
+      "availableQty": 98,
+      "uom": "BX",
+      "leadTimeDays": 2,
+      "lastPurchaseDate": "2023-12-30T17:29:26.493Z",
+      "lots": [
+        {
+          "lotNumber": "LOT-66583",
+          "qty": 54,
+          "expirationDate": null
+        },
+        {
+          "lotNumber": "LOT-91003",
+          "qty": 9,
+          "expirationDate": "2026-04-19T17:29:26.493Z"
+        },
+        {
+          "lotNumber": "LOT-78504",
+          "qty": 35,
+          "expirationDate": "2026-02-20T17:29:26.493Z"
+        }
+      ]
+    },
+    {
+      "partNumber": "RT-1219",
+      "supplierSku": "SUP50219",
+      "description": "Compact Coupling 219",
+      "branch": "ATL",
+      "availableQty": 173,
+      "uom": "PK",
+      "leadTimeDays": 2,
+      "lastPurchaseDate": null,
+      "lots": [
+        {
+          "lotNumber": "LOT-84301",
+          "qty": 112,
+          "expirationDate": "2026-03-30T17:29:26.493Z"
+        },
+        {
+          "lotNumber": "LOT-13528",
+          "qty": 61,
+          "expirationDate": "2026-07-30T17:29:26.493Z"
+        }
+      ]
+    },
+    {
+      "partNumber": "AB-1220",
+      "supplierSku": "VND50220",
+      "description": "Heavy-Duty Bearing 220",
+      "branch": "DEN",
+      "availableQty": 153,
+      "uom": "RL",
+      "leadTimeDays": 18,
+      "lastPurchaseDate": null
+    },
+    {
+      "partNumber": "ZX-1221",
+      "supplierSku": "OEM50221",
+      "description": "Lightweight Filter 221",
+      "branch": "LAX",
+      "availableQty": 72,
+      "uom": "LB",
+      "leadTimeDays": null,
+      "lastPurchaseDate": "2025-01-11T17:29:26.493Z"
+    },
+    {
+      "partNumber": "LM-1222",
+      "supplierSku": "SUP50222",
+      "description": "Standard Clamp 222",
+      "branch": "JFK",
+      "availableQty": 383,
+      "uom": "LB",
+      "leadTimeDays": 24,
+      "lastPurchaseDate": null,
+      "lots": [
+        {
+          "lotNumber": "LOT-17124",
+          "qty": 383,
+          "expirationDate": null
+        }
+      ]
+    },
+    {
+      "partNumber": "QP-1223",
+      "supplierSku": "VND50223",
+      "description": "Standard Adapter 223",
+      "branch": "DEN",
+      "availableQty": 213,
+      "uom": "PK",
+      "leadTimeDays": 25,
+      "lastPurchaseDate": null,
+      "lots": [
+        {
+          "lotNumber": "LOT-89828",
+          "qty": 213,
+          "expirationDate": "2026-12-03T17:29:26.493Z"
+        }
+      ]
+    },
+    {
+      "partNumber": "RT-1224",
+      "supplierSku": "OEM50224",
+      "description": "Premium Pump 224",
+      "branch": "PHX",
+      "availableQty": 486,
+      "uom": "LB",
+      "leadTimeDays": 33,
+      "lastPurchaseDate": "2023-09-23T17:29:26.493Z",
+      "lots": [
+        {
+          "lotNumber": "LOT-14202",
+          "qty": 486,
+          "expirationDate": "2026-03-24T17:29:26.493Z"
+        }
+      ]
+    },
+    {
+      "partNumber": "AB-1225",
+      "supplierSku": "SUP50225",
+      "description": "Industrial Filter 225",
+      "branch": "JFK",
+      "availableQty": 365,
+      "uom": "EA",
+      "leadTimeDays": null,
+      "lastPurchaseDate": "2024-11-28T17:29:26.493Z"
+    },
+    {
+      "partNumber": "ZX-1226",
+      "supplierSku": "VND50226",
+      "description": "Lightweight Pump 226",
+      "branch": "SFO",
+      "availableQty": 229,
+      "uom": "LB",
+      "leadTimeDays": 30,
+      "lastPurchaseDate": "2024-01-18T17:29:26.493Z",
+      "lots": [
+        {
+          "lotNumber": "LOT-92659",
+          "qty": 229,
+          "expirationDate": null
+        }
+      ]
+    },
+    {
+      "partNumber": "LM-1227",
+      "supplierSku": "OEM50227",
+      "description": "Compact Pump 227",
+      "branch": "DAL",
+      "availableQty": 250,
+      "uom": "LB",
+      "leadTimeDays": 12,
+      "lastPurchaseDate": "2023-08-03T17:29:26.493Z",
+      "lots": [
+        {
+          "lotNumber": "LOT-99269",
+          "qty": 72,
+          "expirationDate": "2026-01-21T17:29:26.493Z"
+        },
+        {
+          "lotNumber": "LOT-28759",
+          "qty": 129,
+          "expirationDate": "2026-04-10T17:29:26.493Z"
+        },
+        {
+          "lotNumber": "LOT-77599",
+          "qty": 49,
+          "expirationDate": null
+        }
+      ]
+    },
+    {
+      "partNumber": "QP-1228",
+      "supplierSku": "SUP50228",
+      "description": "Industrial Coupling 228",
+      "branch": "SEA",
+      "availableQty": 217,
+      "uom": "FT",
+      "leadTimeDays": 37,
+      "lastPurchaseDate": "2024-07-01T17:29:26.493Z"
+    },
+    {
+      "partNumber": "RT-1229",
+      "supplierSku": "VND50229",
+      "description": "Premium Filter 229",
+      "branch": "ATL",
+      "availableQty": 481,
+      "uom": "FT",
+      "leadTimeDays": null,
+      "lastPurchaseDate": null
+    },
+    {
+      "partNumber": "AB-1230",
+      "supplierSku": "OEM50230",
+      "description": "Standard Coupling 230",
+      "branch": "ATL",
+      "availableQty": 178,
+      "uom": "RL",
+      "leadTimeDays": 19,
+      "lastPurchaseDate": null
+    },
+    {
+      "partNumber": "ZX-1231",
+      "supplierSku": "SUP50231",
+      "description": "Standard Seal 231",
+      "branch": "SFO",
+      "availableQty": 447,
+      "uom": "RL",
+      "leadTimeDays": 17,
+      "lastPurchaseDate": "2025-03-24T17:29:26.493Z"
+    },
+    {
+      "partNumber": "LM-1232",
+      "supplierSku": "VND50232",
+      "description": "Industrial Adapter 232",
+      "branch": "PDX",
+      "availableQty": 164,
+      "uom": "RL",
+      "leadTimeDays": 14,
+      "lastPurchaseDate": "2024-08-27T17:29:26.493Z"
+    },
+    {
+      "partNumber": "QP-1233",
+      "supplierSku": "OEM50233",
+      "description": "Standard Adapter 233",
+      "branch": "LAX",
+      "availableQty": 57,
+      "uom": "EA",
+      "leadTimeDays": 2,
+      "lastPurchaseDate": "2025-01-06T17:29:26.493Z",
+      "lots": [
+        {
+          "lotNumber": "LOT-82371",
+          "qty": 23,
+          "expirationDate": "2026-12-23T17:29:26.493Z"
+        },
+        {
+          "lotNumber": "LOT-75074",
+          "qty": 6,
+          "expirationDate": "2025-12-24T17:29:26.493Z"
+        },
+        {
+          "lotNumber": "LOT-40452",
+          "qty": 28,
+          "expirationDate": null
+        }
+      ]
+    },
+    {
+      "partNumber": "RT-1234",
+      "supplierSku": "SUP50234",
+      "description": "Premium Seal 234",
+      "branch": "LAX",
+      "availableQty": 260,
+      "uom": "EA",
+      "leadTimeDays": null,
+      "lastPurchaseDate": null
+    },
+    {
+      "partNumber": "AB-1235",
+      "supplierSku": "VND50235",
+      "description": "Industrial Filter 235",
+      "branch": "DEN",
+      "availableQty": 65,
+      "uom": "EA",
+      "leadTimeDays": 22,
+      "lastPurchaseDate": "2023-10-21T17:29:26.493Z",
+      "lots": [
+        {
+          "lotNumber": "LOT-84353",
+          "qty": 65,
+          "expirationDate": "2026-09-22T17:29:26.493Z"
+        }
+      ]
+    },
+    {
+      "partNumber": "ZX-1236",
+      "supplierSku": "OEM50236",
+      "description": "Heavy-Duty Bearing 236",
+      "branch": "PHX",
+      "availableQty": 440,
+      "uom": "FT",
+      "leadTimeDays": 23,
+      "lastPurchaseDate": "2024-04-11T17:29:26.493Z"
+    },
+    {
+      "partNumber": "LM-1237",
+      "supplierSku": "SUP50237",
+      "description": "Premium Pump 237",
+      "branch": "DAL",
+      "availableQty": 431,
+      "uom": "LB",
+      "leadTimeDays": 1,
+      "lastPurchaseDate": "2024-10-17T17:29:26.493Z"
+    },
+    {
+      "partNumber": "QP-1238",
+      "supplierSku": "VND50238",
+      "description": "Economy Adapter 238",
+      "branch": "JFK",
+      "availableQty": 459,
+      "uom": "LB",
+      "leadTimeDays": 7,
+      "lastPurchaseDate": "2025-01-31T17:29:26.493Z"
+    },
+    {
+      "partNumber": "RT-1239",
+      "supplierSku": "OEM50239",
+      "description": "Premium Bearing 239",
+      "branch": "DEN",
+      "availableQty": 161,
+      "uom": "LB",
+      "leadTimeDays": 11,
+      "lastPurchaseDate": null,
+      "lots": [
+        {
+          "lotNumber": "LOT-28679",
+          "qty": 161,
+          "expirationDate": "2026-11-13T17:29:26.493Z"
+        }
+      ]
+    },
+    {
+      "partNumber": "AB-1240",
+      "supplierSku": "SUP50240",
+      "description": "Standard Bearing 240",
+      "branch": "SFO",
+      "availableQty": 223,
+      "uom": "EA",
+      "leadTimeDays": 8,
+      "lastPurchaseDate": "2025-07-30T17:29:26.493Z",
+      "lots": [
+        {
+          "lotNumber": "LOT-63741",
+          "qty": 113,
+          "expirationDate": "2026-11-24T17:29:26.493Z"
+        },
+        {
+          "lotNumber": "LOT-36390",
+          "qty": 110,
+          "expirationDate": "2026-08-08T17:29:26.493Z"
+        }
+      ]
+    },
+    {
+      "partNumber": "ZX-1241",
+      "supplierSku": "VND50241",
+      "description": "Heavy-Duty Fitting 241",
+      "branch": "PHX",
+      "availableQty": 124,
+      "uom": "RL",
+      "leadTimeDays": null,
+      "lastPurchaseDate": "2025-06-05T17:29:26.493Z",
+      "lots": [
+        {
+          "lotNumber": "LOT-78199",
+          "qty": 92,
+          "expirationDate": "2026-10-16T17:29:26.493Z"
+        },
+        {
+          "lotNumber": "LOT-62549",
+          "qty": 32,
+          "expirationDate": "2026-03-13T17:29:26.493Z"
+        }
+      ]
+    },
+    {
+      "partNumber": "LM-1242",
+      "supplierSku": "OEM50242",
+      "description": "Heavy-Duty Pump 242",
+      "branch": "SEA",
+      "availableQty": 387,
+      "uom": "FT",
+      "leadTimeDays": 21,
+      "lastPurchaseDate": "2024-12-01T17:29:26.493Z"
+    },
+    {
+      "partNumber": "QP-1243",
+      "supplierSku": "SUP50243",
+      "description": "Industrial Fitting 243",
+      "branch": "LAX",
+      "availableQty": 233,
+      "uom": "RL",
+      "leadTimeDays": 33,
+      "lastPurchaseDate": "2025-09-19T17:29:26.493Z"
+    },
+    {
+      "partNumber": "RT-1244",
+      "supplierSku": "VND50244",
+      "description": "Compact Coupling 244",
+      "branch": "DEN",
+      "availableQty": 190,
+      "uom": "FT",
+      "leadTimeDays": 9,
+      "lastPurchaseDate": "2025-08-07T17:29:26.493Z",
+      "lots": [
+        {
+          "lotNumber": "LOT-49102",
+          "qty": 190,
+          "expirationDate": null
+        }
+      ]
+    },
+    {
+      "partNumber": "AB-1245",
+      "supplierSku": "OEM50245",
+      "description": "Industrial Adapter 245",
+      "branch": "DEN",
+      "availableQty": 32,
+      "uom": "LB",
+      "leadTimeDays": null,
+      "lastPurchaseDate": null
+    },
+    {
+      "partNumber": "ZX-1246",
+      "supplierSku": "SUP50246",
+      "description": "Standard Gasket 246",
+      "branch": "ATL",
+      "availableQty": 266,
+      "uom": "EA",
+      "leadTimeDays": 31,
+      "lastPurchaseDate": null
+    },
+    {
+      "partNumber": "LM-1247",
+      "supplierSku": "VND50247",
+      "description": "Lightweight Bearing 247",
+      "branch": "ATL",
+      "availableQty": 120,
+      "uom": "PK",
+      "leadTimeDays": null,
+      "lastPurchaseDate": "2023-08-22T17:29:26.493Z"
+    },
+    {
+      "partNumber": "QP-1248",
+      "supplierSku": "OEM50248",
+      "description": "Standard Fitting 248",
+      "branch": "JFK",
+      "availableQty": 65,
+      "uom": "FT",
+      "leadTimeDays": null,
+      "lastPurchaseDate": null
+    },
+    {
+      "partNumber": "RT-1249",
+      "supplierSku": "SUP50249",
+      "description": "Premium Valve 249",
+      "branch": "SEA",
+      "availableQty": 284,
+      "uom": "PK",
+      "leadTimeDays": null,
+      "lastPurchaseDate": "2025-10-16T17:29:26.493Z"
+    },
+    {
+      "partNumber": "AB-1250",
+      "supplierSku": "VND50250",
+      "description": "Standard Seal 250",
+      "branch": "SEA",
+      "availableQty": 243,
+      "uom": "EA",
+      "leadTimeDays": 21,
+      "lastPurchaseDate": "2023-11-19T17:29:26.493Z"
+    },
+    {
+      "partNumber": "ZX-1251",
+      "supplierSku": "OEM50251",
+      "description": "Lightweight Adapter 251",
+      "branch": "PDX",
+      "availableQty": 264,
+      "uom": "PK",
+      "leadTimeDays": null,
+      "lastPurchaseDate": "2024-10-24T17:29:26.493Z"
+    },
+    {
+      "partNumber": "LM-1252",
+      "supplierSku": "SUP50252",
+      "description": "Industrial Adapter 252",
+      "branch": "PDX",
+      "availableQty": 95,
+      "uom": "LB",
+      "leadTimeDays": null,
+      "lastPurchaseDate": "2023-08-31T17:29:26.493Z",
+      "lots": [
+        {
+          "lotNumber": "LOT-17184",
+          "qty": 95,
+          "expirationDate": "2026-02-19T17:29:26.493Z"
+        }
+      ]
+    },
+    {
+      "partNumber": "QP-1253",
+      "supplierSku": "VND50253",
+      "description": "Premium Clamp 253",
+      "branch": "ATL",
+      "availableQty": 184,
+      "uom": "FT",
+      "leadTimeDays": null,
+      "lastPurchaseDate": null
+    },
+    {
+      "partNumber": "RT-1254",
+      "supplierSku": "OEM50254",
+      "description": "Economy Filter 254",
+      "branch": "PDX",
+      "availableQty": 239,
+      "uom": "RL",
+      "leadTimeDays": 40,
+      "lastPurchaseDate": "2025-10-25T17:29:26.493Z"
+    },
+    {
+      "partNumber": "AB-1255",
+      "supplierSku": "SUP50255",
+      "description": "Compact Coupling 255",
+      "branch": "ATL",
+      "availableQty": 391,
+      "uom": "FT",
+      "leadTimeDays": 20,
+      "lastPurchaseDate": "2024-03-29T17:29:26.493Z",
+      "lots": [
+        {
+          "lotNumber": "LOT-99350",
+          "qty": 37,
+          "expirationDate": null
+        },
+        {
+          "lotNumber": "LOT-75273",
+          "qty": 354,
+          "expirationDate": null
+        }
+      ]
+    },
+    {
+      "partNumber": "ZX-1256",
+      "supplierSku": "VND50256",
+      "description": "Compact Gasket 256",
+      "branch": "SFO",
+      "availableQty": 156,
+      "uom": "FT",
+      "leadTimeDays": 22,
+      "lastPurchaseDate": "2023-05-28T17:29:26.493Z",
+      "lots": [
+        {
+          "lotNumber": "LOT-42777",
+          "qty": 22,
+          "expirationDate": "2026-07-22T17:29:26.493Z"
+        },
+        {
+          "lotNumber": "LOT-56768",
+          "qty": 134,
+          "expirationDate": null
+        }
+      ]
+    },
+    {
+      "partNumber": "LM-1257",
+      "supplierSku": "OEM50257",
+      "description": "Compact Clamp 257",
+      "branch": "DAL",
+      "availableQty": 31,
+      "uom": "EA",
+      "leadTimeDays": 25,
+      "lastPurchaseDate": "2025-03-17T17:29:26.493Z"
+    },
+    {
+      "partNumber": "QP-1258",
+      "supplierSku": "SUP50258",
+      "description": "Compact Valve 258",
+      "branch": "JFK",
+      "availableQty": 481,
+      "uom": "RL",
+      "leadTimeDays": 32,
+      "lastPurchaseDate": "2024-12-22T17:29:26.493Z",
+      "lots": [
+        {
+          "lotNumber": "LOT-62076",
+          "qty": 15,
+          "expirationDate": null
+        },
+        {
+          "lotNumber": "LOT-12254",
+          "qty": 235,
+          "expirationDate": null
+        },
+        {
+          "lotNumber": "LOT-44330",
+          "qty": 231,
+          "expirationDate": null
+        }
+      ]
+    },
+    {
+      "partNumber": "RT-1259",
+      "supplierSku": "VND50259",
+      "description": "Heavy-Duty Filter 259",
+      "branch": "ORD",
+      "availableQty": 2,
+      "uom": "RL",
+      "leadTimeDays": 34,
+      "lastPurchaseDate": "2023-11-24T17:29:26.493Z",
+      "lots": [
+        {
+          "lotNumber": "LOT-96063",
+          "qty": 2,
+          "expirationDate": null
+        }
+      ]
+    },
+    {
+      "partNumber": "AB-1260",
+      "supplierSku": "OEM50260",
+      "description": "Heavy-Duty Seal 260",
+      "branch": "ATL",
+      "availableQty": 458,
+      "uom": "EA",
+      "leadTimeDays": 10,
+      "lastPurchaseDate": "2025-04-15T17:29:26.493Z"
+    },
+    {
+      "partNumber": "ZX-1261",
+      "supplierSku": "SUP50261",
+      "description": "Standard Fitting 261",
+      "branch": "LAX",
+      "availableQty": 225,
+      "uom": "RL",
+      "leadTimeDays": 33,
+      "lastPurchaseDate": null,
+      "lots": [
+        {
+          "lotNumber": "LOT-93792",
+          "qty": 131,
+          "expirationDate": null
+        },
+        {
+          "lotNumber": "LOT-62177",
+          "qty": 94,
+          "expirationDate": null
+        }
+      ]
+    },
+    {
+      "partNumber": "LM-1262",
+      "supplierSku": "VND50262",
+      "description": "Lightweight Seal 262",
+      "branch": "ATL",
+      "availableQty": 271,
+      "uom": "EA",
+      "leadTimeDays": 28,
+      "lastPurchaseDate": "2023-06-05T17:29:26.493Z",
+      "lots": [
+        {
+          "lotNumber": "LOT-45535",
+          "qty": 271,
+          "expirationDate": "2026-12-25T17:29:26.493Z"
+        }
+      ]
+    },
+    {
+      "partNumber": "QP-1263",
+      "supplierSku": "OEM50263",
+      "description": "Lightweight Bearing 263",
+      "branch": "SEA",
+      "availableQty": 94,
+      "uom": "BX",
+      "leadTimeDays": 13,
+      "lastPurchaseDate": "2024-05-20T17:29:26.493Z",
+      "lots": [
+        {
+          "lotNumber": "LOT-85631",
+          "qty": 94,
+          "expirationDate": "2026-06-24T17:29:26.493Z"
+        }
+      ]
+    },
+    {
+      "partNumber": "RT-1264",
+      "supplierSku": "SUP50264",
+      "description": "Industrial Pump 264",
+      "branch": "DAL",
+      "availableQty": 90,
+      "uom": "EA",
+      "leadTimeDays": 29,
+      "lastPurchaseDate": "2024-02-20T17:29:26.493Z"
+    },
+    {
+      "partNumber": "AB-1265",
+      "supplierSku": "VND50265",
+      "description": "Compact Bearing 265",
+      "branch": "LAX",
+      "availableQty": 107,
+      "uom": "FT",
+      "leadTimeDays": null,
+      "lastPurchaseDate": "2024-11-07T17:29:26.493Z"
+    },
+    {
+      "partNumber": "ZX-1266",
+      "supplierSku": "OEM50266",
+      "description": "Compact Fitting 266",
+      "branch": "LAX",
+      "availableQty": 285,
+      "uom": "BX",
+      "leadTimeDays": 2,
+      "lastPurchaseDate": "2025-01-01T17:29:26.493Z",
+      "lots": [
+        {
+          "lotNumber": "LOT-12921",
+          "qty": 33,
+          "expirationDate": null
+        },
+        {
+          "lotNumber": "LOT-94764",
+          "qty": 252,
+          "expirationDate": "2027-01-04T17:29:26.493Z"
+        }
+      ]
+    },
+    {
+      "partNumber": "LM-1267",
+      "supplierSku": "SUP50267",
+      "description": "Standard Adapter 267",
+      "branch": "SEA",
+      "availableQty": 424,
+      "uom": "RL",
+      "leadTimeDays": 21,
+      "lastPurchaseDate": "2023-12-09T17:29:26.493Z",
+      "lots": [
+        {
+          "lotNumber": "LOT-67354",
+          "qty": 338,
+          "expirationDate": "2026-04-25T17:29:26.493Z"
+        },
+        {
+          "lotNumber": "LOT-80912",
+          "qty": 19,
+          "expirationDate": "2026-10-22T17:29:26.493Z"
+        },
+        {
+          "lotNumber": "LOT-35686",
+          "qty": 67,
+          "expirationDate": null
+        }
+      ]
+    },
+    {
+      "partNumber": "QP-1268",
+      "supplierSku": "VND50268",
+      "description": "Compact Seal 268",
+      "branch": "PHX",
+      "availableQty": 107,
+      "uom": "FT",
+      "leadTimeDays": 4,
+      "lastPurchaseDate": null
+    },
+    {
+      "partNumber": "RT-1269",
+      "supplierSku": "OEM50269",
+      "description": "Standard Fitting 269",
+      "branch": "LAX",
+      "availableQty": 351,
+      "uom": "RL",
+      "leadTimeDays": 21,
+      "lastPurchaseDate": "2023-10-04T17:29:26.493Z",
+      "lots": [
+        {
+          "lotNumber": "LOT-31178",
+          "qty": 351,
+          "expirationDate": null
+        }
+      ]
+    },
+    {
+      "partNumber": "AB-1270",
+      "supplierSku": "SUP50270",
+      "description": "Compact Coupling 270",
+      "branch": "DEN",
+      "availableQty": 458,
+      "uom": "EA",
+      "leadTimeDays": null,
+      "lastPurchaseDate": "2023-07-09T17:29:26.493Z"
+    },
+    {
+      "partNumber": "ZX-1271",
+      "supplierSku": "VND50271",
+      "description": "Premium Filter 271",
+      "branch": "SFO",
+      "availableQty": 244,
+      "uom": "RL",
+      "leadTimeDays": null,
+      "lastPurchaseDate": "2025-02-23T17:29:26.493Z"
+    },
+    {
+      "partNumber": "LM-1272",
+      "supplierSku": "OEM50272",
+      "description": "Lightweight Gasket 272",
+      "branch": "SFO",
+      "availableQty": 301,
+      "uom": "PK",
+      "leadTimeDays": 38,
+      "lastPurchaseDate": "2025-02-23T17:29:26.493Z",
+      "lots": [
+        {
+          "lotNumber": "LOT-54342",
+          "qty": 124,
+          "expirationDate": "2026-04-25T17:29:26.493Z"
+        },
+        {
+          "lotNumber": "LOT-96248",
+          "qty": 96,
+          "expirationDate": "2026-09-10T17:29:26.493Z"
+        },
+        {
+          "lotNumber": "LOT-43132",
+          "qty": 81,
+          "expirationDate": "2026-07-13T17:29:26.493Z"
+        }
+      ]
+    },
+    {
+      "partNumber": "QP-1273",
+      "supplierSku": "SUP50273",
+      "description": "Heavy-Duty Pump 273",
+      "branch": "JFK",
+      "availableQty": 30,
+      "uom": "PK",
+      "leadTimeDays": 29,
+      "lastPurchaseDate": "2024-05-23T17:29:26.493Z",
+      "lots": [
+        {
+          "lotNumber": "LOT-49937",
+          "qty": 30,
+          "expirationDate": null
+        }
+      ]
+    },
+    {
+      "partNumber": "RT-1274",
+      "supplierSku": "VND50274",
+      "description": "Industrial Gasket 274",
+      "branch": "DAL",
+      "availableQty": 51,
+      "uom": "LB",
+      "leadTimeDays": 14,
+      "lastPurchaseDate": "2024-06-08T17:29:26.493Z"
+    },
+    {
+      "partNumber": "AB-1275",
+      "supplierSku": "OEM50275",
+      "description": "Compact Pump 275",
+      "branch": "PDX",
+      "availableQty": 289,
+      "uom": "RL",
+      "leadTimeDays": 6,
+      "lastPurchaseDate": "2025-01-24T17:29:26.493Z",
+      "lots": [
+        {
+          "lotNumber": "LOT-48487",
+          "qty": 142,
+          "expirationDate": "2026-09-12T17:29:26.493Z"
+        },
+        {
+          "lotNumber": "LOT-28584",
+          "qty": 147,
+          "expirationDate": null
+        }
+      ]
+    },
+    {
+      "partNumber": "ZX-1276",
+      "supplierSku": "SUP50276",
+      "description": "Lightweight Valve 276",
+      "branch": "PHX",
+      "availableQty": 219,
+      "uom": "EA",
+      "leadTimeDays": 36,
+      "lastPurchaseDate": "2025-06-12T17:29:26.493Z"
+    },
+    {
+      "partNumber": "LM-1277",
+      "supplierSku": "VND50277",
+      "description": "Compact Coupling 277",
+      "branch": "PHX",
+      "availableQty": 230,
+      "uom": "FT",
+      "leadTimeDays": 10,
+      "lastPurchaseDate": "2023-07-18T17:29:26.493Z"
+    },
+    {
+      "partNumber": "QP-1278",
+      "supplierSku": "OEM50278",
+      "description": "Industrial Gasket 278",
+      "branch": "PHX",
+      "availableQty": 72,
+      "uom": "LB",
+      "leadTimeDays": 9,
+      "lastPurchaseDate": "2025-04-08T17:29:26.493Z"
+    },
+    {
+      "partNumber": "RT-1279",
+      "supplierSku": "SUP50279",
+      "description": "Industrial Bearing 279",
+      "branch": "PDX",
+      "availableQty": 27,
+      "uom": "PK",
+      "leadTimeDays": 35,
+      "lastPurchaseDate": "2024-02-28T17:29:26.493Z"
+    },
+    {
+      "partNumber": "AB-1280",
+      "supplierSku": "VND50280",
+      "description": "Lightweight Filter 280",
+      "branch": "LAX",
+      "availableQty": 295,
+      "uom": "FT",
+      "leadTimeDays": null,
+      "lastPurchaseDate": "2023-07-17T17:29:26.493Z"
+    },
+    {
+      "partNumber": "ZX-1281",
+      "supplierSku": "OEM50281",
+      "description": "Heavy-Duty Pump 281",
+      "branch": "ATL",
+      "availableQty": 30,
+      "uom": "PK",
+      "leadTimeDays": 17,
+      "lastPurchaseDate": "2025-11-02T17:29:26.493Z"
+    },
+    {
+      "partNumber": "LM-1282",
+      "supplierSku": "SUP50282",
+      "description": "Standard Adapter 282",
+      "branch": "SFO",
+      "availableQty": 415,
+      "uom": "BX",
+      "leadTimeDays": 4,
+      "lastPurchaseDate": null
+    },
+    {
+      "partNumber": "QP-1283",
+      "supplierSku": "VND50283",
+      "description": "Lightweight Pump 283",
+      "branch": "ORD",
+      "availableQty": 44,
+      "uom": "EA",
+      "leadTimeDays": 1,
+      "lastPurchaseDate": "2024-11-25T17:29:26.493Z"
+    },
+    {
+      "partNumber": "RT-1284",
+      "supplierSku": "OEM50284",
+      "description": "Premium Seal 284",
+      "branch": "SEA",
+      "availableQty": 59,
+      "uom": "RL",
+      "leadTimeDays": null,
+      "lastPurchaseDate": "2024-07-29T17:29:26.493Z"
+    },
+    {
+      "partNumber": "AB-1285",
+      "supplierSku": "SUP50285",
+      "description": "Premium Gasket 285",
+      "branch": "JFK",
+      "availableQty": 400,
+      "uom": "EA",
+      "leadTimeDays": null,
+      "lastPurchaseDate": null,
+      "lots": [
+        {
+          "lotNumber": "LOT-92625",
+          "qty": 83,
+          "expirationDate": "2026-12-29T17:29:26.493Z"
+        },
+        {
+          "lotNumber": "LOT-90601",
+          "qty": 174,
+          "expirationDate": null
+        },
+        {
+          "lotNumber": "LOT-78189",
+          "qty": 143,
+          "expirationDate": "2026-03-06T17:29:26.493Z"
+        }
+      ]
+    },
+    {
+      "partNumber": "ZX-1286",
+      "supplierSku": "VND50286",
+      "description": "Compact Filter 286",
+      "branch": "ORD",
+      "availableQty": 242,
+      "uom": "BX",
+      "leadTimeDays": 40,
+      "lastPurchaseDate": "2024-08-13T17:29:26.493Z",
+      "lots": [
+        {
+          "lotNumber": "LOT-80282",
+          "qty": 242,
+          "expirationDate": "2026-02-15T17:29:26.493Z"
+        }
+      ]
+    },
+    {
+      "partNumber": "LM-1287",
+      "supplierSku": "OEM50287",
+      "description": "Lightweight Pump 287",
+      "branch": "DAL",
+      "availableQty": 211,
+      "uom": "BX",
+      "leadTimeDays": 20,
+      "lastPurchaseDate": null
+    },
+    {
+      "partNumber": "QP-1288",
+      "supplierSku": "SUP50288",
+      "description": "Economy Gasket 288",
+      "branch": "JFK",
+      "availableQty": 392,
+      "uom": "FT",
+      "leadTimeDays": null,
+      "lastPurchaseDate": "2023-07-19T17:29:26.493Z"
+    },
+    {
+      "partNumber": "RT-1289",
+      "supplierSku": "VND50289",
+      "description": "Industrial Gasket 289",
+      "branch": "SFO",
+      "availableQty": 453,
+      "uom": "EA",
+      "leadTimeDays": 9,
+      "lastPurchaseDate": "2023-08-18T17:29:26.493Z",
+      "lots": [
+        {
+          "lotNumber": "LOT-84987",
+          "qty": 48,
+          "expirationDate": null
+        },
+        {
+          "lotNumber": "LOT-95983",
+          "qty": 397,
+          "expirationDate": null
+        },
+        {
+          "lotNumber": "LOT-15707",
+          "qty": 8,
+          "expirationDate": "2026-11-05T17:29:26.493Z"
+        }
+      ]
+    },
+    {
+      "partNumber": "AB-1290",
+      "supplierSku": "OEM50290",
+      "description": "Standard Coupling 290",
+      "branch": "ATL",
+      "availableQty": 495,
+      "uom": "RL",
+      "leadTimeDays": 29,
+      "lastPurchaseDate": "2023-07-30T17:29:26.493Z",
+      "lots": [
+        {
+          "lotNumber": "LOT-43920",
+          "qty": 495,
+          "expirationDate": null
+        }
+      ]
+    },
+    {
+      "partNumber": "ZX-1291",
+      "supplierSku": "SUP50291",
+      "description": "Heavy-Duty Clamp 291",
+      "branch": "ATL",
+      "availableQty": 299,
+      "uom": "RL",
+      "leadTimeDays": 6,
+      "lastPurchaseDate": "2025-06-19T17:29:26.493Z"
+    },
+    {
+      "partNumber": "LM-1292",
+      "supplierSku": "VND50292",
+      "description": "Industrial Valve 292",
+      "branch": "PDX",
+      "availableQty": 447,
+      "uom": "EA",
+      "leadTimeDays": 25,
+      "lastPurchaseDate": "2023-12-10T17:29:26.493Z"
+    },
+    {
+      "partNumber": "QP-1293",
+      "supplierSku": "OEM50293",
+      "description": "Premium Filter 293",
+      "branch": "PHX",
+      "availableQty": 478,
+      "uom": "EA",
+      "leadTimeDays": 36,
+      "lastPurchaseDate": "2025-11-23T17:29:26.493Z"
+    },
+    {
+      "partNumber": "RT-1294",
+      "supplierSku": "SUP50294",
+      "description": "Lightweight Filter 294",
+      "branch": "DAL",
+      "availableQty": 3,
+      "uom": "EA",
+      "leadTimeDays": 32,
+      "lastPurchaseDate": "2025-05-24T17:29:26.493Z",
+      "lots": [
+        {
+          "lotNumber": "LOT-45734",
+          "qty": 1,
+          "expirationDate": null
+        },
+        {
+          "lotNumber": "LOT-31863",
+          "qty": 1,
+          "expirationDate": "2026-11-13T17:29:26.493Z"
+        },
+        {
+          "lotNumber": "LOT-33995",
+          "qty": 1,
+          "expirationDate": null
+        }
+      ]
+    },
+    {
+      "partNumber": "AB-1295",
+      "supplierSku": "VND50295",
+      "description": "Standard Coupling 295",
+      "branch": "ATL",
+      "availableQty": 77,
+      "uom": "LB",
+      "leadTimeDays": 23,
+      "lastPurchaseDate": "2023-06-05T17:29:26.493Z"
+    },
+    {
+      "partNumber": "ZX-1296",
+      "supplierSku": "OEM50296",
+      "description": "Industrial Filter 296",
+      "branch": "DEN",
+      "availableQty": 242,
+      "uom": "PK",
+      "leadTimeDays": 42,
+      "lastPurchaseDate": "2025-02-16T17:29:26.493Z"
+    },
+    {
+      "partNumber": "LM-1297",
+      "supplierSku": "SUP50297",
+      "description": "Heavy-Duty Clamp 297",
+      "branch": "DEN",
+      "availableQty": 166,
+      "uom": "PK",
+      "leadTimeDays": 6,
+      "lastPurchaseDate": "2023-09-29T17:29:26.493Z"
+    },
+    {
+      "partNumber": "QP-1298",
+      "supplierSku": "VND50298",
+      "description": "Industrial Bearing 298",
+      "branch": "JFK",
+      "availableQty": 207,
+      "uom": "EA",
+      "leadTimeDays": 36,
+      "lastPurchaseDate": null
+    },
+    {
+      "partNumber": "RT-1299",
+      "supplierSku": "OEM50299",
+      "description": "Industrial Clamp 299",
+      "branch": "PDX",
+      "availableQty": 385,
+      "uom": "FT",
+      "leadTimeDays": 21,
+      "lastPurchaseDate": "2025-04-01T17:29:26.493Z"
+    },
+    {
+      "partNumber": "AB-1300",
+      "supplierSku": "SUP50300",
+      "description": "Economy Coupling 300",
+      "branch": "SFO",
+      "availableQty": 281,
+      "uom": "PK",
+      "leadTimeDays": 29,
+      "lastPurchaseDate": null
+    },
+    {
+      "partNumber": "ZX-1301",
+      "supplierSku": "VND50301",
+      "description": "Premium Clamp 301",
+      "branch": "SFO",
+      "availableQty": 132,
+      "uom": "BX",
+      "leadTimeDays": null,
+      "lastPurchaseDate": "2025-02-09T17:29:26.493Z"
+    },
+    {
+      "partNumber": "LM-1302",
+      "supplierSku": "OEM50302",
+      "description": "Standard Bearing 302",
+      "branch": "PDX",
+      "availableQty": 409,
+      "uom": "LB",
+      "leadTimeDays": 4,
+      "lastPurchaseDate": "2025-03-06T17:29:26.493Z",
+      "lots": [
+        {
+          "lotNumber": "LOT-81446",
+          "qty": 409,
+          "expirationDate": null
+        }
+      ]
+    },
+    {
+      "partNumber": "QP-1303",
+      "supplierSku": "SUP50303",
+      "description": "Premium Pump 303",
+      "branch": "LAX",
+      "availableQty": 369,
+      "uom": "EA",
+      "leadTimeDays": 22,
+      "lastPurchaseDate": "2023-10-04T17:29:26.493Z"
+    },
+    {
+      "partNumber": "RT-1304",
+      "supplierSku": "VND50304",
+      "description": "Economy Bearing 304",
+      "branch": "SFO",
+      "availableQty": 158,
+      "uom": "PK",
+      "leadTimeDays": 14,
+      "lastPurchaseDate": null
+    },
+    {
+      "partNumber": "AB-1305",
+      "supplierSku": "OEM50305",
+      "description": "Lightweight Coupling 305",
+      "branch": "PHX",
+      "availableQty": 164,
+      "uom": "BX",
+      "leadTimeDays": 19,
+      "lastPurchaseDate": null
+    },
+    {
+      "partNumber": "ZX-1306",
+      "supplierSku": "SUP50306",
+      "description": "Standard Seal 306",
+      "branch": "ATL",
+      "availableQty": 419,
+      "uom": "BX",
+      "leadTimeDays": null,
+      "lastPurchaseDate": "2023-04-19T17:29:26.493Z",
+      "lots": [
+        {
+          "lotNumber": "LOT-64311",
+          "qty": 338,
+          "expirationDate": null
+        },
+        {
+          "lotNumber": "LOT-98494",
+          "qty": 81,
+          "expirationDate": "2026-05-15T17:29:26.493Z"
+        }
+      ]
+    },
+    {
+      "partNumber": "LM-1307",
+      "supplierSku": "VND50307",
+      "description": "Economy Coupling 307",
+      "branch": "PHX",
+      "availableQty": 414,
+      "uom": "BX",
+      "leadTimeDays": null,
+      "lastPurchaseDate": null,
+      "lots": [
+        {
+          "lotNumber": "LOT-16106",
+          "qty": 358,
+          "expirationDate": "2026-06-01T17:29:26.493Z"
+        },
+        {
+          "lotNumber": "LOT-22305",
+          "qty": 3,
+          "expirationDate": null
+        },
+        {
+          "lotNumber": "LOT-76816",
+          "qty": 53,
+          "expirationDate": null
+        }
+      ]
+    },
+    {
+      "partNumber": "QP-1308",
+      "supplierSku": "OEM50308",
+      "description": "Lightweight Seal 308",
+      "branch": "PDX",
+      "availableQty": 485,
+      "uom": "LB",
+      "leadTimeDays": null,
+      "lastPurchaseDate": "2024-12-13T17:29:26.493Z"
+    },
+    {
+      "partNumber": "RT-1309",
+      "supplierSku": "SUP50309",
+      "description": "Industrial Pump 309",
+      "branch": "SFO",
+      "availableQty": 294,
+      "uom": "FT",
+      "leadTimeDays": 27,
+      "lastPurchaseDate": "2024-01-05T17:29:26.493Z"
+    },
+    {
+      "partNumber": "AB-1310",
+      "supplierSku": "VND50310",
+      "description": "Compact Coupling 310",
+      "branch": "PHX",
+      "availableQty": 464,
+      "uom": "LB",
+      "leadTimeDays": 20,
+      "lastPurchaseDate": null
+    },
+    {
+      "partNumber": "ZX-1311",
+      "supplierSku": "OEM50311",
+      "description": "Economy Adapter 311",
+      "branch": "ATL",
+      "availableQty": 338,
+      "uom": "FT",
+      "leadTimeDays": 25,
+      "lastPurchaseDate": "2025-01-31T17:29:26.493Z"
+    },
+    {
+      "partNumber": "LM-1312",
+      "supplierSku": "SUP50312",
+      "description": "Standard Pump 312",
+      "branch": "SFO",
+      "availableQty": 373,
+      "uom": "LB",
+      "leadTimeDays": 34,
+      "lastPurchaseDate": "2023-08-03T17:29:26.493Z",
+      "lots": [
+        {
+          "lotNumber": "LOT-10182",
+          "qty": 98,
+          "expirationDate": null
+        },
+        {
+          "lotNumber": "LOT-80835",
+          "qty": 275,
+          "expirationDate": "2026-10-05T17:29:26.493Z"
+        }
+      ]
+    },
+    {
+      "partNumber": "QP-1313",
+      "supplierSku": "VND50313",
+      "description": "Lightweight Filter 313",
+      "branch": "DEN",
+      "availableQty": 155,
+      "uom": "EA",
+      "leadTimeDays": 14,
+      "lastPurchaseDate": null
+    },
+    {
+      "partNumber": "RT-1314",
+      "supplierSku": "OEM50314",
+      "description": "Compact Seal 314",
+      "branch": "JFK",
+      "availableQty": 428,
+      "uom": "BX",
+      "leadTimeDays": 29,
+      "lastPurchaseDate": "2024-02-27T17:29:26.493Z"
+    },
+    {
+      "partNumber": "AB-1315",
+      "supplierSku": "SUP50315",
+      "description": "Standard Fitting 315",
+      "branch": "PHX",
+      "availableQty": 370,
+      "uom": "LB",
+      "leadTimeDays": 14,
+      "lastPurchaseDate": "2024-06-03T17:29:26.493Z"
+    },
+    {
+      "partNumber": "ZX-1316",
+      "supplierSku": "VND50316",
+      "description": "Standard Seal 316",
+      "branch": "DAL",
+      "availableQty": 6,
+      "uom": "RL",
+      "leadTimeDays": 15,
+      "lastPurchaseDate": "2024-07-20T17:29:26.493Z",
+      "lots": [
+        {
+          "lotNumber": "LOT-19683",
+          "qty": 3,
+          "expirationDate": null
+        },
+        {
+          "lotNumber": "LOT-44549",
+          "qty": 3,
+          "expirationDate": "2026-03-14T17:29:26.494Z"
+        }
+      ]
+    },
+    {
+      "partNumber": "LM-1317",
+      "supplierSku": "OEM50317",
+      "description": "Economy Seal 317",
+      "branch": "LAX",
+      "availableQty": 445,
+      "uom": "LB",
+      "leadTimeDays": 31,
+      "lastPurchaseDate": "2024-12-05T17:29:26.494Z",
+      "lots": [
+        {
+          "lotNumber": "LOT-85550",
+          "qty": 445,
+          "expirationDate": "2026-05-19T17:29:26.494Z"
+        }
+      ]
+    },
+    {
+      "partNumber": "QP-1318",
+      "supplierSku": "SUP50318",
+      "description": "Standard Clamp 318",
+      "branch": "LAX",
+      "availableQty": 141,
+      "uom": "EA",
+      "leadTimeDays": 3,
+      "lastPurchaseDate": "2024-01-17T17:29:26.494Z"
+    },
+    {
+      "partNumber": "RT-1319",
+      "supplierSku": "VND50319",
+      "description": "Standard Filter 319",
+      "branch": "ORD",
+      "availableQty": 39,
+      "uom": "PK",
+      "leadTimeDays": 30,
+      "lastPurchaseDate": "2024-11-24T17:29:26.494Z"
+    },
+    {
+      "partNumber": "AB-1320",
+      "supplierSku": "OEM50320",
+      "description": "Premium Bearing 320",
+      "branch": "JFK",
+      "availableQty": 254,
+      "uom": "BX",
+      "leadTimeDays": 15,
+      "lastPurchaseDate": "2025-10-26T17:29:26.494Z",
+      "lots": [
+        {
+          "lotNumber": "LOT-36705",
+          "qty": 19,
+          "expirationDate": "2026-11-08T17:29:26.494Z"
+        },
+        {
+          "lotNumber": "LOT-67120",
+          "qty": 235,
+          "expirationDate": null
+        }
+      ]
+    },
+    {
+      "partNumber": "ZX-1321",
+      "supplierSku": "SUP50321",
+      "description": "Standard Coupling 321",
+      "branch": "ORD",
+      "availableQty": 331,
+      "uom": "RL",
+      "leadTimeDays": 31,
+      "lastPurchaseDate": "2025-05-18T17:29:26.494Z"
+    },
+    {
+      "partNumber": "LM-1322",
+      "supplierSku": "VND50322",
+      "description": "Premium Bearing 322",
+      "branch": "ORD",
+      "availableQty": 155,
+      "uom": "FT",
+      "leadTimeDays": 40,
+      "lastPurchaseDate": "2023-03-17T17:29:26.494Z"
+    },
+    {
+      "partNumber": "QP-1323",
+      "supplierSku": "OEM50323",
+      "description": "Economy Gasket 323",
+      "branch": "LAX",
+      "availableQty": 179,
+      "uom": "EA",
+      "leadTimeDays": null,
+      "lastPurchaseDate": null
+    },
+    {
+      "partNumber": "RT-1324",
+      "supplierSku": "SUP50324",
+      "description": "Premium Filter 324",
+      "branch": "LAX",
+      "availableQty": 176,
+      "uom": "PK",
+      "leadTimeDays": 40,
+      "lastPurchaseDate": "2025-09-27T17:29:26.494Z"
+    },
+    {
+      "partNumber": "AB-1325",
+      "supplierSku": "VND50325",
+      "description": "Economy Coupling 325",
+      "branch": "PHX",
+      "availableQty": 246,
+      "uom": "LB",
+      "leadTimeDays": 10,
+      "lastPurchaseDate": "2023-03-19T17:29:26.494Z"
+    },
+    {
+      "partNumber": "ZX-1326",
+      "supplierSku": "OEM50326",
+      "description": "Compact Fitting 326",
+      "branch": "DAL",
+      "availableQty": 239,
+      "uom": "BX",
+      "leadTimeDays": 11,
+      "lastPurchaseDate": "2024-03-27T17:29:26.494Z",
+      "lots": [
+        {
+          "lotNumber": "LOT-77073",
+          "qty": 194,
+          "expirationDate": null
+        },
+        {
+          "lotNumber": "LOT-43232",
+          "qty": 45,
+          "expirationDate": null
+        }
+      ]
+    },
+    {
+      "partNumber": "LM-1327",
+      "supplierSku": "SUP50327",
+      "description": "Lightweight Seal 327",
+      "branch": "ORD",
+      "availableQty": 57,
+      "uom": "EA",
+      "leadTimeDays": null,
+      "lastPurchaseDate": "2024-08-13T17:29:26.494Z",
+      "lots": [
+        {
+          "lotNumber": "LOT-22634",
+          "qty": 38,
+          "expirationDate": null
+        },
+        {
+          "lotNumber": "LOT-61907",
+          "qty": 5,
+          "expirationDate": "2026-07-21T17:29:26.494Z"
+        },
+        {
+          "lotNumber": "LOT-44130",
+          "qty": 14,
+          "expirationDate": null
+        }
+      ]
+    },
+    {
+      "partNumber": "QP-1328",
+      "supplierSku": "VND50328",
+      "description": "Standard Gasket 328",
+      "branch": "SFO",
+      "availableQty": 239,
+      "uom": "PK",
+      "leadTimeDays": 37,
+      "lastPurchaseDate": "2025-04-06T17:29:26.494Z",
+      "lots": [
+        {
+          "lotNumber": "LOT-55156",
+          "qty": 239,
+          "expirationDate": null
+        }
+      ]
+    },
+    {
+      "partNumber": "RT-1329",
+      "supplierSku": "OEM50329",
+      "description": "Premium Gasket 329",
+      "branch": "SEA",
+      "availableQty": 461,
+      "uom": "LB",
+      "leadTimeDays": 38,
+      "lastPurchaseDate": "2024-09-25T17:29:26.494Z"
+    },
+    {
+      "partNumber": "AB-1330",
+      "supplierSku": "SUP50330",
+      "description": "Industrial Seal 330",
+      "branch": "PDX",
+      "availableQty": 328,
+      "uom": "PK",
+      "leadTimeDays": 38,
+      "lastPurchaseDate": "2024-06-12T17:29:26.494Z"
+    },
+    {
+      "partNumber": "ZX-1331",
+      "supplierSku": "VND50331",
+      "description": "Heavy-Duty Pump 331",
+      "branch": "ORD",
+      "availableQty": 9,
+      "uom": "PK",
+      "leadTimeDays": 31,
+      "lastPurchaseDate": null
+    },
+    {
+      "partNumber": "LM-1332",
+      "supplierSku": "OEM50332",
+      "description": "Heavy-Duty Adapter 332",
+      "branch": "DEN",
+      "availableQty": 57,
+      "uom": "FT",
+      "leadTimeDays": 12,
+      "lastPurchaseDate": "2025-04-22T17:29:26.494Z"
+    },
+    {
+      "partNumber": "QP-1333",
+      "supplierSku": "SUP50333",
+      "description": "Standard Adapter 333",
+      "branch": "DAL",
+      "availableQty": 494,
+      "uom": "EA",
+      "leadTimeDays": 41,
+      "lastPurchaseDate": "2024-12-25T17:29:26.494Z",
+      "lots": [
+        {
+          "lotNumber": "LOT-39004",
+          "qty": 313,
+          "expirationDate": null
+        },
+        {
+          "lotNumber": "LOT-52754",
+          "qty": 181,
+          "expirationDate": null
+        }
+      ]
+    },
+    {
+      "partNumber": "RT-1334",
+      "supplierSku": "VND50334",
+      "description": "Industrial Seal 334",
+      "branch": "DAL",
+      "availableQty": 378,
+      "uom": "FT",
+      "leadTimeDays": 23,
+      "lastPurchaseDate": "2025-02-13T17:29:26.494Z"
+    },
+    {
+      "partNumber": "AB-1335",
+      "supplierSku": "OEM50335",
+      "description": "Compact Fitting 335",
+      "branch": "PDX",
+      "availableQty": 381,
+      "uom": "BX",
+      "leadTimeDays": 1,
+      "lastPurchaseDate": null
+    },
+    {
+      "partNumber": "ZX-1336",
+      "supplierSku": "SUP50336",
+      "description": "Premium Seal 336",
+      "branch": "DAL",
+      "availableQty": 294,
+      "uom": "FT",
+      "leadTimeDays": 34,
+      "lastPurchaseDate": null,
+      "lots": [
+        {
+          "lotNumber": "LOT-41407",
+          "qty": 289,
+          "expirationDate": "2026-08-07T17:29:26.494Z"
+        },
+        {
+          "lotNumber": "LOT-46067",
+          "qty": 3,
+          "expirationDate": "2026-02-25T17:29:26.494Z"
+        },
+        {
+          "lotNumber": "LOT-55614",
+          "qty": 2,
+          "expirationDate": "2026-06-22T17:29:26.494Z"
+        }
+      ]
+    },
+    {
+      "partNumber": "LM-1337",
+      "supplierSku": "VND50337",
+      "description": "Economy Seal 337",
+      "branch": "LAX",
+      "availableQty": 52,
+      "uom": "EA",
+      "leadTimeDays": null,
+      "lastPurchaseDate": null,
+      "lots": [
+        {
+          "lotNumber": "LOT-32966",
+          "qty": 9,
+          "expirationDate": "2026-12-05T17:29:26.494Z"
+        },
+        {
+          "lotNumber": "LOT-22503",
+          "qty": 43,
+          "expirationDate": null
+        }
+      ]
+    },
+    {
+      "partNumber": "QP-1338",
+      "supplierSku": "OEM50338",
+      "description": "Economy Gasket 338",
+      "branch": "LAX",
+      "availableQty": 220,
+      "uom": "RL",
+      "leadTimeDays": 33,
+      "lastPurchaseDate": "2023-10-23T17:29:26.494Z"
+    },
+    {
+      "partNumber": "RT-1339",
+      "supplierSku": "SUP50339",
+      "description": "Industrial Clamp 339",
+      "branch": "LAX",
+      "availableQty": 88,
+      "uom": "RL",
+      "leadTimeDays": 28,
+      "lastPurchaseDate": null,
+      "lots": [
+        {
+          "lotNumber": "LOT-15360",
+          "qty": 44,
+          "expirationDate": "2025-12-23T17:29:26.494Z"
+        },
+        {
+          "lotNumber": "LOT-30069",
+          "qty": 4,
+          "expirationDate": null
+        },
+        {
+          "lotNumber": "LOT-11416",
+          "qty": 40,
+          "expirationDate": "2026-08-29T17:29:26.494Z"
+        }
+      ]
+    },
+    {
+      "partNumber": "AB-1340",
+      "supplierSku": "VND50340",
+      "description": "Compact Pump 340",
+      "branch": "SFO",
+      "availableQty": 292,
+      "uom": "LB",
+      "leadTimeDays": 2,
+      "lastPurchaseDate": null,
+      "lots": [
+        {
+          "lotNumber": "LOT-96093",
+          "qty": 146,
+          "expirationDate": null
+        },
+        {
+          "lotNumber": "LOT-27041",
+          "qty": 146,
+          "expirationDate": null
+        }
+      ]
+    },
+    {
+      "partNumber": "ZX-1341",
+      "supplierSku": "OEM50341",
+      "description": "Industrial Pump 341",
+      "branch": "JFK",
+      "availableQty": 1,
+      "uom": "PK",
+      "leadTimeDays": 33,
+      "lastPurchaseDate": "2023-12-08T17:29:26.494Z"
+    },
+    {
+      "partNumber": "LM-1342",
+      "supplierSku": "SUP50342",
+      "description": "Compact Bearing 342",
+      "branch": "ORD",
+      "availableQty": 90,
+      "uom": "BX",
+      "leadTimeDays": 10,
+      "lastPurchaseDate": "2023-12-08T17:29:26.494Z",
+      "lots": [
+        {
+          "lotNumber": "LOT-97834",
+          "qty": 90,
+          "expirationDate": "2026-09-09T17:29:26.494Z"
+        }
+      ]
+    },
+    {
+      "partNumber": "QP-1343",
+      "supplierSku": "VND50343",
+      "description": "Premium Clamp 343",
+      "branch": "ORD",
+      "availableQty": 25,
+      "uom": "LB",
+      "leadTimeDays": 31,
+      "lastPurchaseDate": "2023-10-02T17:29:26.494Z",
+      "lots": [
+        {
+          "lotNumber": "LOT-16051",
+          "qty": 16,
+          "expirationDate": "2026-12-31T17:29:26.494Z"
+        },
+        {
+          "lotNumber": "LOT-40617",
+          "qty": 9,
+          "expirationDate": null
+        }
+      ]
+    },
+    {
+      "partNumber": "RT-1344",
+      "supplierSku": "OEM50344",
+      "description": "Premium Valve 344",
+      "branch": "SEA",
+      "availableQty": 249,
+      "uom": "RL",
+      "leadTimeDays": 24,
+      "lastPurchaseDate": "2024-11-09T17:29:26.494Z"
+    },
+    {
+      "partNumber": "AB-1345",
+      "supplierSku": "SUP50345",
+      "description": "Industrial Coupling 345",
+      "branch": "SFO",
+      "availableQty": 208,
+      "uom": "RL",
+      "leadTimeDays": 34,
+      "lastPurchaseDate": "2023-04-11T17:29:26.494Z",
+      "lots": [
+        {
+          "lotNumber": "LOT-19699",
+          "qty": 67,
+          "expirationDate": null
+        },
+        {
+          "lotNumber": "LOT-12751",
+          "qty": 141,
+          "expirationDate": "2026-06-13T17:29:26.494Z"
+        }
+      ]
+    },
+    {
+      "partNumber": "ZX-1346",
+      "supplierSku": "VND50346",
+      "description": "Standard Adapter 346",
+      "branch": "SEA",
+      "availableQty": 8,
+      "uom": "BX",
+      "leadTimeDays": 38,
+      "lastPurchaseDate": "2024-04-07T17:29:26.494Z"
+    },
+    {
+      "partNumber": "LM-1347",
+      "supplierSku": "OEM50347",
+      "description": "Lightweight Pump 347",
+      "branch": "PDX",
+      "availableQty": 411,
+      "uom": "PK",
+      "leadTimeDays": 17,
+      "lastPurchaseDate": null
+    },
+    {
+      "partNumber": "QP-1348",
+      "supplierSku": "SUP50348",
+      "description": "Heavy-Duty Coupling 348",
+      "branch": "DEN",
+      "availableQty": 192,
+      "uom": "FT",
+      "leadTimeDays": 12,
+      "lastPurchaseDate": "2023-08-08T17:29:26.494Z"
+    },
+    {
+      "partNumber": "RT-1349",
+      "supplierSku": "VND50349",
+      "description": "Lightweight Seal 349",
+      "branch": "SEA",
+      "availableQty": 235,
+      "uom": "RL",
+      "leadTimeDays": 17,
+      "lastPurchaseDate": null
+    },
+    {
+      "partNumber": "AB-1350",
+      "supplierSku": "OEM50350",
+      "description": "Lightweight Adapter 350",
+      "branch": "JFK",
+      "availableQty": 291,
+      "uom": "PK",
+      "leadTimeDays": 20,
+      "lastPurchaseDate": null
+    },
+    {
+      "partNumber": "ZX-1351",
+      "supplierSku": "SUP50351",
+      "description": "Compact Bearing 351",
+      "branch": "LAX",
+      "availableQty": 214,
+      "uom": "RL",
+      "leadTimeDays": 21,
+      "lastPurchaseDate": null
+    },
+    {
+      "partNumber": "LM-1352",
+      "supplierSku": "VND50352",
+      "description": "Economy Valve 352",
+      "branch": "SEA",
+      "availableQty": 202,
+      "uom": "RL",
+      "leadTimeDays": null,
+      "lastPurchaseDate": "2025-08-24T17:29:26.494Z"
+    },
+    {
+      "partNumber": "QP-1353",
+      "supplierSku": "OEM50353",
+      "description": "Lightweight Gasket 353",
+      "branch": "PHX",
+      "availableQty": 255,
+      "uom": "FT",
+      "leadTimeDays": null,
+      "lastPurchaseDate": null,
+      "lots": [
+        {
+          "lotNumber": "LOT-42152",
+          "qty": 21,
+          "expirationDate": "2026-12-11T17:29:26.494Z"
+        },
+        {
+          "lotNumber": "LOT-65370",
+          "qty": 117,
+          "expirationDate": null
+        },
+        {
+          "lotNumber": "LOT-73054",
+          "qty": 117,
+          "expirationDate": "2026-10-21T17:29:26.494Z"
+        }
+      ]
+    },
+    {
+      "partNumber": "RT-1354",
+      "supplierSku": "SUP50354",
+      "description": "Premium Gasket 354",
+      "branch": "SEA",
+      "availableQty": 69,
+      "uom": "EA",
+      "leadTimeDays": 3,
+      "lastPurchaseDate": "2025-09-12T17:29:26.494Z",
+      "lots": [
+        {
+          "lotNumber": "LOT-84541",
+          "qty": 69,
+          "expirationDate": "2026-03-17T17:29:26.494Z"
+        }
+      ]
+    },
+    {
+      "partNumber": "AB-1355",
+      "supplierSku": "VND50355",
+      "description": "Lightweight Fitting 355",
+      "branch": "PDX",
+      "availableQty": 158,
+      "uom": "BX",
+      "leadTimeDays": 28,
+      "lastPurchaseDate": "2024-09-07T17:29:26.494Z",
+      "lots": [
+        {
+          "lotNumber": "LOT-13503",
+          "qty": 60,
+          "expirationDate": null
+        },
+        {
+          "lotNumber": "LOT-84398",
+          "qty": 98,
+          "expirationDate": "2026-04-03T17:29:26.494Z"
+        }
+      ]
+    },
+    {
+      "partNumber": "ZX-1356",
+      "supplierSku": "OEM50356",
+      "description": "Premium Filter 356",
+      "branch": "SEA",
+      "availableQty": 106,
+      "uom": "RL",
+      "leadTimeDays": null,
+      "lastPurchaseDate": "2025-04-13T17:29:26.494Z"
+    },
+    {
+      "partNumber": "LM-1357",
+      "supplierSku": "SUP50357",
+      "description": "Compact Pump 357",
+      "branch": "DAL",
+      "availableQty": 362,
+      "uom": "PK",
+      "leadTimeDays": null,
+      "lastPurchaseDate": "2024-04-01T17:29:26.494Z",
+      "lots": [
+        {
+          "lotNumber": "LOT-88215",
+          "qty": 54,
+          "expirationDate": null
+        },
+        {
+          "lotNumber": "LOT-97149",
+          "qty": 17,
+          "expirationDate": "2026-02-28T17:29:26.494Z"
+        },
+        {
+          "lotNumber": "LOT-62283",
+          "qty": 291,
+          "expirationDate": "2026-01-07T17:29:26.494Z"
+        }
+      ]
+    },
+    {
+      "partNumber": "QP-1358",
+      "supplierSku": "VND50358",
+      "description": "Lightweight Adapter 358",
+      "branch": "PHX",
+      "availableQty": 171,
+      "uom": "FT",
+      "leadTimeDays": 17,
+      "lastPurchaseDate": null
+    },
+    {
+      "partNumber": "RT-1359",
+      "supplierSku": "OEM50359",
+      "description": "Heavy-Duty Filter 359",
+      "branch": "PHX",
+      "availableQty": 278,
+      "uom": "EA",
+      "leadTimeDays": 4,
+      "lastPurchaseDate": null
+    },
+    {
+      "partNumber": "AB-1360",
+      "supplierSku": "SUP50360",
+      "description": "Standard Gasket 360",
+      "branch": "PHX",
+      "availableQty": 344,
+      "uom": "FT",
+      "leadTimeDays": 22,
+      "lastPurchaseDate": null
+    },
+    {
+      "partNumber": "ZX-1361",
+      "supplierSku": "VND50361",
+      "description": "Economy Clamp 361",
+      "branch": "PHX",
+      "availableQty": 3,
+      "uom": "PK",
+      "leadTimeDays": 37,
+      "lastPurchaseDate": "2025-01-09T17:29:26.494Z"
+    },
+    {
+      "partNumber": "LM-1362",
+      "supplierSku": "OEM50362",
+      "description": "Heavy-Duty Pump 362",
+      "branch": "PDX",
+      "availableQty": 442,
+      "uom": "LB",
+      "leadTimeDays": 7,
+      "lastPurchaseDate": "2025-06-24T17:29:26.494Z"
+    },
+    {
+      "partNumber": "QP-1363",
+      "supplierSku": "SUP50363",
+      "description": "Lightweight Clamp 363",
+      "branch": "PDX",
+      "availableQty": 175,
+      "uom": "FT",
+      "leadTimeDays": 29,
+      "lastPurchaseDate": "2025-10-05T17:29:26.494Z"
+    },
+    {
+      "partNumber": "RT-1364",
+      "supplierSku": "VND50364",
+      "description": "Lightweight Clamp 364",
+      "branch": "PDX",
+      "availableQty": 25,
+      "uom": "PK",
+      "leadTimeDays": 30,
+      "lastPurchaseDate": "2023-09-02T17:29:26.494Z",
+      "lots": [
+        {
+          "lotNumber": "LOT-37842",
+          "qty": 23,
+          "expirationDate": "2026-05-18T17:29:26.494Z"
+        },
+        {
+          "lotNumber": "LOT-17941",
+          "qty": 1,
+          "expirationDate": null
+        },
+        {
+          "lotNumber": "LOT-24724",
+          "qty": 1,
+          "expirationDate": null
+        }
+      ]
+    },
+    {
+      "partNumber": "AB-1365",
+      "supplierSku": "OEM50365",
+      "description": "Standard Seal 365",
+      "branch": "PDX",
+      "availableQty": 4,
+      "uom": "PK",
+      "leadTimeDays": 39,
+      "lastPurchaseDate": null,
+      "lots": [
+        {
+          "lotNumber": "LOT-73935",
+          "qty": 4,
+          "expirationDate": "2026-12-08T17:29:26.494Z"
+        }
+      ]
+    },
+    {
+      "partNumber": "ZX-1366",
+      "supplierSku": "SUP50366",
+      "description": "Economy Filter 366",
+      "branch": "SEA",
+      "availableQty": 426,
+      "uom": "RL",
+      "leadTimeDays": 22,
+      "lastPurchaseDate": null,
+      "lots": [
+        {
+          "lotNumber": "LOT-89187",
+          "qty": 426,
+          "expirationDate": null
+        }
+      ]
+    },
+    {
+      "partNumber": "LM-1367",
+      "supplierSku": "VND50367",
+      "description": "Heavy-Duty Pump 367",
+      "branch": "PHX",
+      "availableQty": 235,
+      "uom": "EA",
+      "leadTimeDays": 3,
+      "lastPurchaseDate": "2024-03-06T17:29:26.494Z",
+      "lots": [
+        {
+          "lotNumber": "LOT-71086",
+          "qty": 12,
+          "expirationDate": "2026-10-21T17:29:26.494Z"
+        },
+        {
+          "lotNumber": "LOT-85453",
+          "qty": 223,
+          "expirationDate": null
+        }
+      ]
+    },
+    {
+      "partNumber": "QP-1368",
+      "supplierSku": "OEM50368",
+      "description": "Economy Clamp 368",
+      "branch": "LAX",
+      "availableQty": 304,
+      "uom": "EA",
+      "leadTimeDays": 11,
+      "lastPurchaseDate": "2025-07-30T17:29:26.494Z"
+    },
+    {
+      "partNumber": "RT-1369",
+      "supplierSku": "SUP50369",
+      "description": "Compact Pump 369",
+      "branch": "DEN",
+      "availableQty": 21,
+      "uom": "BX",
+      "leadTimeDays": null,
+      "lastPurchaseDate": null,
+      "lots": [
+        {
+          "lotNumber": "LOT-10215",
+          "qty": 18,
+          "expirationDate": null
+        },
+        {
+          "lotNumber": "LOT-39800",
+          "qty": 3,
+          "expirationDate": null
+        }
+      ]
+    },
+    {
+      "partNumber": "AB-1370",
+      "supplierSku": "VND50370",
+      "description": "Premium Filter 370",
+      "branch": "ATL",
+      "availableQty": 329,
+      "uom": "LB",
+      "leadTimeDays": null,
+      "lastPurchaseDate": null,
+      "lots": [
+        {
+          "lotNumber": "LOT-51046",
+          "qty": 329,
+          "expirationDate": "2026-09-15T17:29:26.494Z"
+        }
+      ]
+    },
+    {
+      "partNumber": "ZX-1371",
+      "supplierSku": "OEM50371",
+      "description": "Heavy-Duty Adapter 371",
+      "branch": "DAL",
+      "availableQty": 53,
+      "uom": "RL",
+      "leadTimeDays": null,
+      "lastPurchaseDate": "2023-12-15T17:29:26.494Z"
+    },
+    {
+      "partNumber": "LM-1372",
+      "supplierSku": "SUP50372",
+      "description": "Industrial Valve 372",
+      "branch": "DEN",
+      "availableQty": 207,
+      "uom": "PK",
+      "leadTimeDays": 36,
+      "lastPurchaseDate": null
+    },
+    {
+      "partNumber": "QP-1373",
+      "supplierSku": "VND50373",
+      "description": "Industrial Clamp 373",
+      "branch": "ATL",
+      "availableQty": 262,
+      "uom": "RL",
+      "leadTimeDays": 39,
+      "lastPurchaseDate": "2024-06-30T17:29:26.494Z"
+    },
+    {
+      "partNumber": "RT-1374",
+      "supplierSku": "OEM50374",
+      "description": "Industrial Gasket 374",
+      "branch": "SFO",
+      "availableQty": 461,
+      "uom": "RL",
+      "leadTimeDays": 38,
+      "lastPurchaseDate": "2023-10-30T17:29:26.494Z"
+    },
+    {
+      "partNumber": "AB-1375",
+      "supplierSku": "SUP50375",
+      "description": "Standard Valve 375",
+      "branch": "JFK",
+      "availableQty": 0,
+      "uom": "LB",
+      "leadTimeDays": null,
+      "lastPurchaseDate": "2024-07-17T17:29:26.494Z"
+    },
+    {
+      "partNumber": "ZX-1376",
+      "supplierSku": "VND50376",
+      "description": "Lightweight Clamp 376",
+      "branch": "DEN",
+      "availableQty": 0,
+      "uom": "LB",
+      "leadTimeDays": null,
+      "lastPurchaseDate": null
+    },
+    {
+      "partNumber": "LM-1377",
+      "supplierSku": "OEM50377",
+      "description": "Standard Bearing 377",
+      "branch": "DEN",
+      "availableQty": 72,
+      "uom": "BX",
+      "leadTimeDays": 32,
+      "lastPurchaseDate": "2023-05-12T17:29:26.494Z"
+    },
+    {
+      "partNumber": "QP-1378",
+      "supplierSku": "SUP50378",
+      "description": "Economy Coupling 378",
+      "branch": "PHX",
+      "availableQty": 191,
+      "uom": "LB",
+      "leadTimeDays": 23,
+      "lastPurchaseDate": "2024-08-13T17:29:26.494Z"
+    },
+    {
+      "partNumber": "RT-1379",
+      "supplierSku": "VND50379",
+      "description": "Economy Gasket 379",
+      "branch": "ORD",
+      "availableQty": 414,
+      "uom": "LB",
+      "leadTimeDays": null,
+      "lastPurchaseDate": "2024-06-15T17:29:26.494Z",
+      "lots": [
+        {
+          "lotNumber": "LOT-61530",
+          "qty": 330,
+          "expirationDate": "2026-07-06T17:29:26.494Z"
+        },
+        {
+          "lotNumber": "LOT-94166",
+          "qty": 84,
+          "expirationDate": "2026-12-30T17:29:26.494Z"
+        }
+      ]
+    },
+    {
+      "partNumber": "AB-1380",
+      "supplierSku": "OEM50380",
+      "description": "Lightweight Filter 380",
+      "branch": "SFO",
+      "availableQty": 33,
+      "uom": "LB",
+      "leadTimeDays": 40,
+      "lastPurchaseDate": "2024-01-04T17:29:26.494Z"
+    },
+    {
+      "partNumber": "ZX-1381",
+      "supplierSku": "SUP50381",
+      "description": "Compact Fitting 381",
+      "branch": "SFO",
+      "availableQty": 50,
+      "uom": "LB",
+      "leadTimeDays": 37,
+      "lastPurchaseDate": "2025-06-07T17:29:26.494Z",
+      "lots": [
+        {
+          "lotNumber": "LOT-15612",
+          "qty": 45,
+          "expirationDate": "2026-04-05T17:29:26.494Z"
+        },
+        {
+          "lotNumber": "LOT-78483",
+          "qty": 4,
+          "expirationDate": null
+        },
+        {
+          "lotNumber": "LOT-30831",
+          "qty": 1,
+          "expirationDate": null
+        }
+      ]
+    },
+    {
+      "partNumber": "LM-1382",
+      "supplierSku": "VND50382",
+      "description": "Economy Coupling 382",
+      "branch": "SFO",
+      "availableQty": 169,
+      "uom": "RL",
+      "leadTimeDays": null,
+      "lastPurchaseDate": "2025-09-04T17:29:26.494Z",
+      "lots": [
+        {
+          "lotNumber": "LOT-28629",
+          "qty": 104,
+          "expirationDate": "2026-01-30T17:29:26.494Z"
+        },
+        {
+          "lotNumber": "LOT-58262",
+          "qty": 38,
+          "expirationDate": "2026-09-06T17:29:26.494Z"
+        },
+        {
+          "lotNumber": "LOT-85254",
+          "qty": 27,
+          "expirationDate": "2026-05-11T17:29:26.494Z"
+        }
+      ]
+    },
+    {
+      "partNumber": "QP-1383",
+      "supplierSku": "OEM50383",
+      "description": "Economy Adapter 383",
+      "branch": "ORD",
+      "availableQty": 480,
+      "uom": "RL",
+      "leadTimeDays": 27,
+      "lastPurchaseDate": "2024-08-25T17:29:26.494Z",
+      "lots": [
+        {
+          "lotNumber": "LOT-77950",
+          "qty": 155,
+          "expirationDate": null
+        },
+        {
+          "lotNumber": "LOT-53221",
+          "qty": 114,
+          "expirationDate": "2026-10-30T17:29:26.494Z"
+        },
+        {
+          "lotNumber": "LOT-46565",
+          "qty": 211,
+          "expirationDate": "2026-09-23T17:29:26.494Z"
+        }
+      ]
+    },
+    {
+      "partNumber": "RT-1384",
+      "supplierSku": "SUP50384",
+      "description": "Lightweight Coupling 384",
+      "branch": "PDX",
+      "availableQty": 215,
+      "uom": "EA",
+      "leadTimeDays": 38,
+      "lastPurchaseDate": null
+    },
+    {
+      "partNumber": "AB-1385",
+      "supplierSku": "VND50385",
+      "description": "Economy Seal 385",
+      "branch": "SEA",
+      "availableQty": 246,
+      "uom": "LB",
+      "leadTimeDays": 35,
+      "lastPurchaseDate": "2025-05-30T17:29:26.494Z",
+      "lots": [
+        {
+          "lotNumber": "LOT-46869",
+          "qty": 246,
+          "expirationDate": null
+        }
+      ]
+    },
+    {
+      "partNumber": "ZX-1386",
+      "supplierSku": "OEM50386",
+      "description": "Heavy-Duty Clamp 386",
+      "branch": "SFO",
+      "availableQty": 39,
+      "uom": "BX",
+      "leadTimeDays": 8,
+      "lastPurchaseDate": "2024-08-21T17:29:26.494Z",
+      "lots": [
+        {
+          "lotNumber": "LOT-29553",
+          "qty": 39,
+          "expirationDate": null
+        }
+      ]
+    },
+    {
+      "partNumber": "LM-1387",
+      "supplierSku": "SUP50387",
+      "description": "Standard Coupling 387",
+      "branch": "ORD",
+      "availableQty": 18,
+      "uom": "EA",
+      "leadTimeDays": 32,
+      "lastPurchaseDate": null
+    },
+    {
+      "partNumber": "QP-1388",
+      "supplierSku": "VND50388",
+      "description": "Premium Coupling 388",
+      "branch": "PHX",
+      "availableQty": 88,
+      "uom": "FT",
+      "leadTimeDays": 18,
+      "lastPurchaseDate": "2024-02-02T17:29:26.494Z"
+    },
+    {
+      "partNumber": "RT-1389",
+      "supplierSku": "OEM50389",
+      "description": "Premium Valve 389",
+      "branch": "LAX",
+      "availableQty": 160,
+      "uom": "BX",
+      "leadTimeDays": 19,
+      "lastPurchaseDate": null,
+      "lots": [
+        {
+          "lotNumber": "LOT-82672",
+          "qty": 160,
+          "expirationDate": null
+        }
+      ]
+    },
+    {
+      "partNumber": "AB-1390",
+      "supplierSku": "SUP50390",
+      "description": "Heavy-Duty Seal 390",
+      "branch": "SEA",
+      "availableQty": 206,
+      "uom": "BX",
+      "leadTimeDays": 1,
+      "lastPurchaseDate": null,
+      "lots": [
+        {
+          "lotNumber": "LOT-10280",
+          "qty": 206,
+          "expirationDate": "2026-09-20T17:29:26.494Z"
+        }
+      ]
+    },
+    {
+      "partNumber": "ZX-1391",
+      "supplierSku": "VND50391",
+      "description": "Heavy-Duty Adapter 391",
+      "branch": "PHX",
+      "availableQty": 11,
+      "uom": "FT",
+      "leadTimeDays": 5,
+      "lastPurchaseDate": null
+    },
+    {
+      "partNumber": "LM-1392",
+      "supplierSku": "OEM50392",
+      "description": "Compact Coupling 392",
+      "branch": "LAX",
+      "availableQty": 115,
+      "uom": "FT",
+      "leadTimeDays": 25,
+      "lastPurchaseDate": "2025-08-14T17:29:26.494Z"
+    },
+    {
+      "partNumber": "QP-1393",
+      "supplierSku": "SUP50393",
+      "description": "Standard Clamp 393",
+      "branch": "ORD",
+      "availableQty": 458,
+      "uom": "RL",
+      "leadTimeDays": null,
+      "lastPurchaseDate": "2023-07-14T17:29:26.494Z",
+      "lots": [
+        {
+          "lotNumber": "LOT-20843",
+          "qty": 458,
+          "expirationDate": null
+        }
+      ]
+    },
+    {
+      "partNumber": "RT-1394",
+      "supplierSku": "VND50394",
+      "description": "Heavy-Duty Seal 394",
+      "branch": "SEA",
+      "availableQty": 394,
+      "uom": "RL",
+      "leadTimeDays": 32,
+      "lastPurchaseDate": "2024-05-16T17:29:26.494Z"
+    },
+    {
+      "partNumber": "AB-1395",
+      "supplierSku": "OEM50395",
+      "description": "Industrial Clamp 395",
+      "branch": "ORD",
+      "availableQty": 425,
+      "uom": "EA",
+      "leadTimeDays": 5,
+      "lastPurchaseDate": "2023-06-20T17:29:26.494Z",
+      "lots": [
+        {
+          "lotNumber": "LOT-90620",
+          "qty": 366,
+          "expirationDate": "2026-02-11T17:29:26.494Z"
+        },
+        {
+          "lotNumber": "LOT-96457",
+          "qty": 59,
+          "expirationDate": "2027-01-06T17:29:26.494Z"
+        }
+      ]
+    },
+    {
+      "partNumber": "ZX-1396",
+      "supplierSku": "SUP50396",
+      "description": "Standard Adapter 396",
+      "branch": "ORD",
+      "availableQty": 141,
+      "uom": "PK",
+      "leadTimeDays": 17,
+      "lastPurchaseDate": "2025-07-24T17:29:26.494Z",
+      "lots": [
+        {
+          "lotNumber": "LOT-15871",
+          "qty": 141,
+          "expirationDate": null
+        }
+      ]
+    },
+    {
+      "partNumber": "LM-1397",
+      "supplierSku": "VND50397",
+      "description": "Standard Pump 397",
+      "branch": "PHX",
+      "availableQty": 0,
+      "uom": "RL",
+      "leadTimeDays": 14,
+      "lastPurchaseDate": null
+    },
+    {
+      "partNumber": "QP-1398",
+      "supplierSku": "OEM50398",
+      "description": "Heavy-Duty Adapter 398",
+      "branch": "JFK",
+      "availableQty": 363,
+      "uom": "LB",
+      "leadTimeDays": 15,
+      "lastPurchaseDate": null,
+      "lots": [
+        {
+          "lotNumber": "LOT-34236",
+          "qty": 363,
+          "expirationDate": "2026-02-09T17:29:26.494Z"
+        }
+      ]
+    },
+    {
+      "partNumber": "RT-1399",
+      "supplierSku": "SUP50399",
+      "description": "Heavy-Duty Pump 399",
+      "branch": "DAL",
+      "availableQty": 354,
+      "uom": "EA",
+      "leadTimeDays": null,
+      "lastPurchaseDate": null,
+      "lots": [
+        {
+          "lotNumber": "LOT-17025",
+          "qty": 71,
+          "expirationDate": "2026-06-09T17:29:26.494Z"
+        },
+        {
+          "lotNumber": "LOT-23650",
+          "qty": 32,
+          "expirationDate": "2026-11-29T17:29:26.494Z"
+        },
+        {
+          "lotNumber": "LOT-93803",
+          "qty": 251,
+          "expirationDate": null
+        }
+      ]
+    }
+  ]
+}

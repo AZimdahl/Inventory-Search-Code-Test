@@ -9,11 +9,18 @@
 
 ### Steps
 1. **Start the backend** (choose one):
-  - Option A: `inventory-mock-api` - See [ReadMe.txt](./inventory-mock-api/ReadMe.txt)
-  - Option B: `InventoryServer` - TBD
+  1. Option A: `inventory-mock-api` - See [ReadMe.txt](./inventory-mock-api/ReadMe.txt)
+  2. Option B: `InventoryServer`
+    1. Navigate to `./InventoryServer/InventoryServer/InventoryServer/` in a powershell terminal
+    2. Run"
+    ```powershell
+    dotnet run
+    ```
+
+
 
 2. **Start the frontend**:
-  1. Navigate to /Inventory-Search in terminal
+  1. Navigate to `./Inventory-Search` in a bash terminal
   2. Run:
     ```bash
     npm install

@@ -15,4 +15,9 @@
       <Folder Include="Services\" />
     </ItemGroup>
 
+    <ItemGroup>
+        <None Update="Data\items.json">
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </None>
+    </ItemGroup>
 </Project>

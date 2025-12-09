@@ -31,7 +31,7 @@
 * VS Code
   * Preferred standard code editor
 * GitHub Copilot/GitHub Copilot Chat
-  * Used to autocomplete lines/blocks to improve speed and accuracy of code
+  * Used to autocomplete lines/blocks to improve speed and accuracy of code and fill any logical gaps that weren't considered
   * Used to clarify intent and direction when stuck
   * Prompted to write base code after getting stuck to correct incorrect code and engineer base level functionality. Then I review the code to make sure it makes sense to me and will refactor as needed to either fix bugs or to resolve other needs/enhance desired behavior
   * Prompted to create and update unit tests and improve documentation
@@ -40,9 +40,3 @@
 * [Angular Material](https://v18.material.angular.dev/)
   * Installed Angular package for visually better UI components and simpler to implement to use for forms
   * Used for Input, Select, Multiselect, Button, Tooltips, Icons, Table Pagination and Loading Indicators
-
-## TODO:
-* Fix:
-  * Failing unit tests on FE
-* Feat:
-  * Set up FE unit tests

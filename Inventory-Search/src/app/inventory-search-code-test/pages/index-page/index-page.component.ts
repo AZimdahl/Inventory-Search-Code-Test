@@ -102,9 +102,6 @@ export class IndexPageComponent implements OnDestroy, OnInit {
         next: (response) => this.handleSearchResponse(response),
         error: (err) => this.handleSearchError(err)
       });
-
-    // Trigger initial search
-    this.searchTrigger$.next();
   }
 
   ngOnDestroy(): void {

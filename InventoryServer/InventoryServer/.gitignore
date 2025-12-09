@@ -1,3 +1,15 @@
-# Ignore build output directories
-obj/
+# Build output
 bin/
+obj/
+
+# User-specific files
+*.user
+*.suo
+
+# IDE
+.vs/
+.vscode/
+
+# Test results
+*.trx
+*.coverage

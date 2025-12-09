@@ -6,7 +6,7 @@ Comprehensive unit tests for the InventoryServer service layer.
 
 ### InventoryServiceTests
 
-This test suite provides complete coverage for the `InventoryService` class with 30 tests covering:
+This test suite provides complete coverage for the `InventoryService` class with 39 tests covering:
 
 #### Search Functionality Tests (22 tests)
 - **Basic Search**: Tests searching with no criteria, returning all items
@@ -28,8 +28,18 @@ This test suite provides complete coverage for the `InventoryService` class with
 - **Single Branch**: Tests when item exists in only one branch
 - **Zero Quantity**: Tests handling of items with zero availability
 
-#### Configuration Tests (1 test)
+#### Configuration Tests (2 tests)
 - **Simulated Delay**: Tests that configured delays are properly applied
+- **Failure Rate**: Tests that simulated failures throw expected exceptions
+
+#### Error Handling Tests (9 tests)
+- **Repository Exceptions**: Tests that repository errors propagate correctly for both search and availability methods
+- **Null Request**: Tests handling of null search requests
+- **Null Part Number**: Tests handling of null part numbers in availability queries
+- **Negative Page**: Tests behavior with negative page numbers
+- **Negative Size**: Tests behavior with negative page sizes
+- **Zero Size**: Tests behavior with zero page size
+- **Out of Range Page**: Tests behavior when requesting pages beyond available data
 
 ## Dependencies
 

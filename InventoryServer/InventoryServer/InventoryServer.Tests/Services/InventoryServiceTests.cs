@@ -559,6 +559,139 @@ namespace InventoryServer.Tests.Services
             Assert.True(elapsed >= delayMs, $"Expected at least {delayMs}ms delay, but took {elapsed}ms");
         }
 
+        [Fact]
+        public async Task SearchInventoryAsync_WithFailureRate_ThrowsException()
+        {
+            // Arrange
+            _mockConfiguration.Setup(c => c.GetSection("FailureRate").Value).Returns("1.0");
+            _mockRepository.Setup(r => r.GetAllItemsAsync()).ReturnsAsync(_testData);
+            var request = new InventorySearchRequest { Page = 0, Size = 10 };
+
+            // Act & Assert
+            await Assert.ThrowsAsync<InvalidOperationException>(
+                () => _service.SearchInventoryAsync(request)
+            );
+        }
+
+        #endregion
+
+        #region Error Handling Tests
+
+        [Fact]
+        public async Task SearchInventoryAsync_WhenRepositoryThrowsException_PropagatesException()
+        {
+            // Arrange
+            _mockRepository.Setup(r => r.GetAllItemsAsync())
+                .ThrowsAsync(new InvalidOperationException("Database connection failed"));
+            var request = new InventorySearchRequest { Page = 0, Size = 10 };
+
+            // Act & Assert
+            var exception = await Assert.ThrowsAsync<InvalidOperationException>(
+                () => _service.SearchInventoryAsync(request)
+            );
+            Assert.Equal("Database connection failed", exception.Message);
+        }
+
+        [Fact]
+        public async Task GetPeakAvailabilityAsync_WhenRepositoryThrowsException_PropagatesException()
+        {
+            // Arrange
+            var partNumber = "ABC-123";
+            _mockRepository.Setup(r => r.FindByPartNumberAsync(partNumber))
+                .ThrowsAsync(new InvalidOperationException("Database connection failed"));
+
+            // Act & Assert
+            var exception = await Assert.ThrowsAsync<InvalidOperationException>(
+                () => _service.GetPeakAvailabilityAsync(partNumber)
+            );
+            Assert.Equal("Database connection failed", exception.Message);
+        }
+
+        [Fact]
+        public async Task SearchInventoryAsync_WithNullRequest_ThrowsArgumentNullException()
+        {
+            // Act & Assert
+            await Assert.ThrowsAsync<ArgumentNullException>(
+                () => _service.SearchInventoryAsync(null)
+            );
+        }
+
+        [Fact]
+        public async Task GetPeakAvailabilityAsync_WithNullPartNumber_HandlesGracefully()
+        {
+            // Arrange
+            _mockRepository.Setup(r => r.FindByPartNumberAsync(null))
+                .ReturnsAsync(new List<InventoryItem>());
+
+            // Act
+            var result = await _service.GetPeakAvailabilityAsync(null);
+
+            // Assert
+            Assert.Null(result.PartNumber);
+            Assert.Equal(0, result.TotalAvailable);
+            Assert.Empty(result.Branches);
+        }
+
+        [Fact]
+        public async Task SearchInventoryAsync_WithNegativePage_HandlesGracefully()
+        {
+            // Arrange
+            _mockRepository.Setup(r => r.GetAllItemsAsync()).ReturnsAsync(_testData);
+            var request = new InventorySearchRequest { Page = -1, Size = 10 };
+
+            // Act
+            var result = await _service.SearchInventoryAsync(request);
+
+            // Assert - LINQ Skip with negative value treats it as 0
+            Assert.Equal(5, result.Total);
+            Assert.NotEmpty(result.Items);
+        }
+
+        [Fact]
+        public async Task SearchInventoryAsync_WithNegativeSize_ReturnsEmptyItems()
+        {
+            // Arrange
+            _mockRepository.Setup(r => r.GetAllItemsAsync()).ReturnsAsync(_testData);
+            var request = new InventorySearchRequest { Page = 0, Size = -1 };
+
+            // Act
+            var result = await _service.SearchInventoryAsync(request);
+
+            // Assert
+            Assert.Equal(5, result.Total); // Total is still calculated
+            Assert.Empty(result.Items); // But no items are returned
+        }
+
+        [Fact]
+        public async Task SearchInventoryAsync_WithZeroSize_ReturnsEmptyItems()
+        {
+            // Arrange
+            _mockRepository.Setup(r => r.GetAllItemsAsync()).ReturnsAsync(_testData);
+            var request = new InventorySearchRequest { Page = 0, Size = 0 };
+
+            // Act
+            var result = await _service.SearchInventoryAsync(request);
+
+            // Assert
+            Assert.Equal(5, result.Total);
+            Assert.Empty(result.Items);
+        }
+
+        [Fact]
+        public async Task SearchInventoryAsync_WithVeryLargePage_ReturnsEmptyItems()
+        {
+            // Arrange
+            _mockRepository.Setup(r => r.GetAllItemsAsync()).ReturnsAsync(_testData);
+            var request = new InventorySearchRequest { Page = 1000, Size = 10 };
+
+            // Act
+            var result = await _service.SearchInventoryAsync(request);
+
+            // Assert
+            Assert.Equal(5, result.Total);
+            Assert.Empty(result.Items); // No items on page 1000
+        }
+
         #endregion
     }
 }
